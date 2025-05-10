@@ -1,0 +1,274 @@
+{
+    "comparaciones": [
+		{
+            "cursoOrigen": {
+				"idCurso": 7,
+				"nombre": "Introducción a la Programación",
+				"silabo": {
+					"idSilabo": 7,
+					"idCurso": 7,
+					"sumilla": "Este curso se enfoca en la lógica de programación, desarrollando habilidades de resolución de problemas mediante estructuras de control y datos.",
+					"aprendizaje_general": "El estudiante desarrollará algoritmos y programas básicos utilizando un lenguaje de programación estructurado.",
+					"unidades": [
+						{
+							"idUnidad": 25,
+							"idSilabo": 7,
+							"numero": 1,
+							"titulo": "Algoritmos y pensamiento lógico",
+							"duracion_semanas": "1-4",
+							"aprendizajes": "Desarrollar la capacidad de resolución de problemas mediante algoritmos.",
+							"temas": "Metodología de solución de problemas, algoritmos, pseudocódigo."
+						},
+						{
+							"idUnidad": 26,
+							"idSilabo": 7,
+							"numero": 2,
+							"titulo": "Tipos de datos y expresiones",
+							"duracion_semanas": "5-8",
+							"aprendizajes": "Utilizar correctamente tipos de datos y operadores.",
+							"temas": "Variables, constantes, operadores aritméticos y lógicos."
+						},
+						{
+							"idUnidad": 27,
+							"idSilabo": 7,
+							"numero": 3,
+							"titulo": "Problemas condicionales y bucles",
+							"duracion_semanas": "9-12",
+							"aprendizajes": "Solucionar problemas usando decisiones y repeticiones.",
+							"temas": "if-else, for, while."
+						}
+					],
+					"bibliografias": [
+						{
+							"idBibliografia": 24,
+							"idSilabo": 7,
+							"referencia": "Cairo, O. (2013). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.",
+							"url": "https://www.alfaomega.com.mx/metodologia-programacion"
+						},
+						{
+							"idBibliografia": 22,
+							"idSilabo": 7,
+							"referencia": "Joyanes Aguilar, L. (2016). Algoritmos y Estructuras de Datos: Una perspectiva en C. McGraw-Hill.",
+							"url": "https://www.mheducation.es/algoritmos-estructuras-datos"
+						},
+						{
+							"idBibliografia": 23,
+							"idSilabo": 7,
+							"referencia": "Sedgewick, R., & Wayne, K. (2015). Algorithms (4th ed.). Addison-Wesley.",
+							"url": "https://algs4.cs.princeton.edu/home/"
+						}
+					]
+				}
+			},
+			"cursoDestino": {
+				"idCurso": 1,
+				"nombre": "Programación I",
+				"silabo": {
+					"idSilabo": 1,
+					"idCurso": 1,
+					"sumilla": "Este curso introduce los fundamentos de la programación estructurada, haciendo uso del lenguaje C para resolver problemas básicos de lógica computacional.",
+					"aprendizaje_general": "El estudiante será capaz de aplicar conceptos básicos de programación para el desarrollo de algoritmos que resuelvan problemas sencillos utilizando estructuras de control.",
+					"unidades": [
+						{
+							"idUnidad": 1,
+							"idSilabo": 1,
+							"numero": 1,
+							"titulo": "Fundamentos de programación estructurada",
+							"duracion_semanas": "1-4",
+							"aprendizajes": "Comprender los principios básicos de la programación estructurada.",
+							"temas": "Algoritmos, diagramas de flujo, pseudocódigo."
+						},
+						{
+							"idUnidad": 2,
+							"idSilabo": 1,
+							"numero": 2,
+							"titulo": "Introducción al lenguaje C",
+							"duracion_semanas": "5-8",
+							"aprendizajes": "Escribir programas básicos en lenguaje C.",
+							"temas": "Sintaxis básica, entrada/salida, operadores."
+						},
+						{
+							"idUnidad": 3,
+							"idSilabo": 1,
+							"numero": 3,
+							"titulo": "Control de flujo",
+							"duracion_semanas": "9-12",
+							"aprendizajes": "Aplicar estructuras condicionales y repetitivas.",
+							"temas": "if, else, switch, while, for, do-while."
+						},
+						{
+							"idUnidad": 4,
+							"idSilabo": 1,
+							"numero": 4,
+							"titulo": "Funciones y modularidad",
+							"duracion_semanas": "13-16",
+							"aprendizajes": "Implementar funciones para modularizar el código.",
+							"temas": "Funciones, parámetros, ámbito de variables."
+						}
+					],
+					"bibliografias": [
+						{
+							"idBibliografia": 1,
+							"idSilabo": 1,
+							"referencia": "Deitel, P. J., & Deitel, H. M. (2014). C How to Program (8th ed.). Pearson.",
+							"url": "https://www.pearson.com/c-how-to-program"
+						},
+						{
+							"idBibliografia": 3,
+							"idSilabo": 1,
+							"referencia": "Gottfried, B. S. (2011). Programación en C (3ra ed.). McGraw-Hill.",
+							"url": "https://www.mheducation.com/programming-in-c"
+						},
+						{
+							"idBibliografia": 2,
+							"idSilabo": 1,
+							"referencia": "Kernighan, B. W., & Ritchie, D. M. (2012). The C Programming Language (2nd ed.). Prentice Hall.",
+							"url": "https://www.cs.princeton.edu/~bwk/cbook.html"
+						}
+					]
+				}
+			}
+		},
+		{
+			"cursoOrigen": {
+				"idCurso": 8,
+				"nombre": "Programación Web",
+				"silabo": {
+					"idSilabo": 8,
+					"idCurso": 8,
+					"sumilla": "Curso que permite al estudiante desarrollar aplicaciones web completas utilizando tecnologías como HTML5, CSS3, JavaScript y PHP.",
+					"aprendizaje_general": "El estudiante será capaz de diseñar, implementar y mantener sitios web dinámicos y seguros.",
+					"unidades": [
+						{
+							"idUnidad": 29,
+							"idSilabo": 8,
+							"numero": 1,
+							"titulo": "Fundamentos de desarrollo web full-stack",
+							"duracion_semanas": "1-4",
+							"aprendizajes": "Establecer ambiente de desarrollo y comprender arquitecturas web.",
+							"temas": "Frontend vs Backend, herramientas de desarrollo, git."
+						},
+						{
+							"idUnidad": 30,
+							"idSilabo": 8,
+							"numero": 2,
+							"titulo": "Programación del lado servidor",
+							"duracion_semanas": "5-8",
+							"aprendizajes": "Desarrollar lógica de negocio en el servidor.",
+							"temas": "PHP, manejo de peticiones, persistencia de datos."
+						},
+						{
+							"idUnidad": 31,
+							"idSilabo": 8,
+							"numero": 3,
+							"titulo": "Autenticación de usuarios",
+							"duracion_semanas": "9-12",
+							"aprendizajes": "Implementar sistemas de login y registro.",
+							"temas": "Manejo de sesiones, cookies, login seguro."
+						},
+						{
+							"idUnidad": 32,
+							"idSilabo": 8,
+							"numero": 4,
+							"titulo": "Despliegue de aplicaciones web",
+							"duracion_semanas": "13-16",
+							"aprendizajes": "Publicar aplicaciones en servidores web.",
+							"temas": "FTP, configuraciones básicas, hosting."
+						}
+					],
+					"bibliografias": [
+						{
+							"idBibliografia": 26,
+							"idSilabo": 8,
+							"referencia": "Freeman, A. (2020). Pro Angular 9: Build Powerful and Dynamic Web Apps. Apress.",
+							"url": "https://www.apress.com/pro-angular-9"
+						},
+						{
+							"idBibliografia": 27,
+							"idSilabo": 8,
+							"referencia": "Krug, S. (2018). Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd ed.). New Riders.",
+							"url": "https://www.nngroup.com/books/dont-make-me-think/"
+						},
+						{
+							"idBibliografia": 25,
+							"idSilabo": 8,
+							"referencia": "Lockhart, J. (2020). Modern PHP: New Features and Good Practices (2nd ed.). O'Reilly Media.",
+							"url": "https://www.oreilly.com/library/view/modern-php/9781491905173/"
+						},
+						{
+							"idBibliografia": 28,
+							"idSilabo": 8,
+							"referencia": "Stauffer, M. (2019). Laravel: Up & Running (2nd ed.). O'Reilly Media.",
+							"url": "https://www.oreilly.com/library/view/laravel-up/9781492041207/"
+						}
+					]
+				}
+			},
+			"cursoDestino": {
+				"idCurso": 2,
+				"nombre": "Ingeniería web",
+				"silabo": {
+					"idSilabo": 2,
+					"idCurso": 2,
+					"sumilla": "El curso brinda los conceptos y herramientas fundamentales para el desarrollo de aplicaciones web dinámicas, utilizando tecnologías del lado cliente y servidor.",
+					"aprendizaje_general": "El estudiante será capaz de diseñar e implementar sitios web dinámicos aplicando tecnologías modernas y buenas prácticas de desarrollo web.",
+					"unidades": [
+						{
+							"idUnidad": 5,
+							"idSilabo": 2,
+							"numero": 1,
+							"titulo": "Fundamentos de desarrollo web",
+							"duracion_semanas": "1-4",
+							"aprendizajes": "Comprender la arquitectura y componentes de aplicaciones web.",
+							"temas": "HTML5, CSS3, arquitectura cliente-servidor, HTTP."
+						},
+						{
+							"idUnidad": 6,
+							"idSilabo": 2,
+							"numero": 2,
+							"titulo": "JavaScript y programación del lado cliente",
+							"duracion_semanas": "5-8",
+							"aprendizajes": "Implementar interactividad en páginas web mediante JavaScript.",
+							"temas": "Sintaxis JavaScript, DOM, eventos, AJAX."
+						},
+						{
+							"idUnidad": 7,
+							"idSilabo": 2,
+							"numero": 3,
+							"titulo": "Gestión de formularios web",
+							"duracion_semanas": "9-12",
+							"aprendizajes": "Procesar formularios y validar entradas.",
+							"temas": "Formularios HTML, validación, métodos GET y POST."
+						}
+					],
+					"bibliografias": [
+						{
+							"idBibliografia": 4,
+							"idSilabo": 2,
+							"referencia": "Duckett, J. (2014). HTML and CSS: Design and Build Websites. Wiley.",
+							"url": "https://www.htmlandcssbook.com/"
+						},
+						{
+							"idBibliografia": 6,
+							"idSilabo": 2,
+							"referencia": "Flanagan, D. (2016). JavaScript: The Definitive Guide (6th ed.). O'Reilly Media.",
+							"url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781449393854/"
+						},
+						{
+							"idBibliografia": 7,
+							"idSilabo": 2,
+							"referencia": "MDN Web Docs (2018). HTML, CSS, y JavaScript referencia.",
+							"url": "https://developer.mozilla.org/es/"
+						},
+						{
+							"idBibliografia": 5,
+							"idSilabo": 2,
+							"referencia": "Nixon, R. (2018). Learning PHP, MySQL & JavaScript (5th ed.). O'Reilly Media.",
+							"url": "https://www.oreilly.com/library/view/learning-php-mysql/9781491979075/"
+						}
+					]
+				}
+			}
+		}
+	]
+}
