@@ -450,7 +450,7 @@ def calcular_similitud_bibliografia(biblio1, biblio2):
 
 
 # ===============================================
-# 📌 Endpoint principal mejorado
+# 📌 Endpoints
 # ===============================================
 
 @app.route('/comparar_cursos', methods=['POST'])
@@ -583,6 +583,158 @@ def comparar_cursos():
         }), 500
 
 
+@app.route('/busqueda_semantica', methods=['POST'])
+def busqueda_semantica():
+    try:
+        tiempo_inicio = time.perf_counter()
+
+        # Limpieza de cachés
+        with cache_lock:
+            if len(embedding_cache) > 2000:
+                embedding_cache.clear()
+            if len(text_processing_cache) > 2000:
+                text_processing_cache.clear()
+
+        # Obtención de datos
+        data = request.get_json()
+        comparaciones = data.get("comparaciones", [])
+        id_grupo_tematico = data.get("id_grupo_tematico")
+
+        resultados = []
+
+        for comparacion in comparaciones:
+            tiempo_comparacion_inicio = time.perf_counter()
+
+            curso_origen = comparacion.get("cursoOrigen", {})
+            curso_destino = comparacion.get("cursoDestino", {})
+            silabo_origen = curso_origen.get("silabo", {})
+            silabo_destino = curso_destino.get("silabo", {})
+
+            # Textos a comparar
+            nombre_origen = curso_origen.get("nombre", "")
+            nombre_destino = curso_destino.get("nombre", "")
+            sumilla_origen = silabo_origen.get("sumilla", "")
+            sumilla_destino = silabo_destino.get("sumilla", "")
+
+            # Procesamiento en paralelo
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                # 1. Similitud básica
+                nombre_future = executor.submit(
+                    calcular_similitud_seccion,
+                    nombre_origen,
+                    nombre_destino
+                )
+                sumilla_future = executor.submit(
+                    calcular_similitud_seccion,
+                    sumilla_origen,
+                    sumilla_destino
+                )
+
+                # 2. Búsqueda de términos clave
+                terminos_future = executor.submit(
+                    buscar_terminos_clave,
+                    f"{nombre_origen} {sumilla_origen}",
+                    f"{nombre_destino} {sumilla_destino}"
+                )
+
+                similitud_nombre = nombre_future.result()
+                similitud_sumilla = sumilla_future.result()
+                terminos_comunes = terminos_future.result()
+
+            # Ajustar pesos según términos clave y grupo temático
+            peso_terminos = 0.0
+            if terminos_comunes["match_exacto"]:
+                peso_terminos += 0.3
+            if terminos_comunes["match_parcial"]:
+                peso_terminos += 0.2
+
+            # Calcular similitud total con ajustes
+            similitud_total = (similitud_nombre * 0.4) + (similitud_sumilla * 0.4) + peso_terminos
+
+            tiempo_comparacion = time.perf_counter() - tiempo_comparacion_inicio
+
+            resultado = {
+                "cursoOrigen": {
+                    "idCurso": curso_origen.get("idCurso"),
+                    "nombre": nombre_origen
+                },
+                "cursoDestino": {
+                    "idCurso": curso_destino.get("idCurso"),
+                    "nombre": nombre_destino
+                },
+                "resultado_resumido": {
+                    "similitud_global": similitud_total,
+                    "similitud_nombre": similitud_nombre,
+                    "similitud_sumilla": similitud_sumilla,
+                    "terminos_comunes": terminos_comunes["terminos_comunes"]
+                },
+                "tiempo_procesamiento_ms": tiempo_comparacion * 1000,
+                "id_grupo_tematico": id_grupo_tematico
+            }
+            resultados.append(resultado)
+
+        # Ordenar resultados por similitud descendente
+        resultados_ordenados = sorted(
+            resultados,
+            key=lambda x: x["resultado_resumido"]["similitud_global"],
+            reverse=True
+        )
+
+        tiempo_total = time.perf_counter() - tiempo_inicio
+
+        return jsonify({
+            "status": "success",
+            "tiempo_procesamiento_total_s": tiempo_total,
+            "comparaciones": resultados_ordenados
+        })
+
+    except Exception as e:
+        print(f"\n❌ Error en busqueda_semantica: {str(e)}")
+        traceback.print_exc()
+        return jsonify({
+            "status": "error",
+            "error_message": str(e),
+            "stack_trace": traceback.format_exc()
+        }), 500
+
+
+def buscar_terminos_clave(texto1, texto2):
+    # Términos clave para el dominio educativo
+    grupos_terminos = {
+        "programacion": ["programación", "algoritmo", "codificación", "lenguaje"],
+        "redes": ["redes", "protocolo", "conectividad", "TCP/IP"],
+        "web": ["web", "aplicación web", "frontend", "backend"],
+        "datos": ["estructura de datos", "base de datos", "SQL"]
+    }
+
+    texto1 = texto1.lower()
+    texto2 = texto2.lower()
+
+    coincidencias = {
+        "match_exacto": False,
+        "match_parcial": False,
+        "terminos_comunes": []
+    }
+
+    # Buscar coincidencias exactas de grupos
+    for grupo, terminos in grupos_terminos.items():
+        encontrado1 = any(termino in texto1 for termino in terminos)
+        encontrado2 = any(termino in texto2 for termino in terminos)
+
+        if encontrado1 and encontrado2:
+            coincidencias["match_exacto"] = True
+            coincidencias["terminos_comunes"].append(grupo)
+
+    # Buscar coincidencias parciales
+    palabras1 = set(re.findall(r'\w+', texto1))
+    palabras2 = set(re.findall(r'\w+', texto2))
+    comunes = palabras1 & palabras2
+
+    if len(comunes) > 3:
+        coincidencias["match_parcial"] = True
+        coincidencias["terminos_comunes"].extend(list(comunes)[:5])
+
+    return coincidencias
 @app.route('/status', methods=['GET'])
 def status():
     return jsonify({
@@ -600,4 +752,4 @@ print(f"\n⏱ Tiempo total de configuración inicial: {tiempo_total_setup:.4f} s
 print("✅ Servicio listo para recibir peticiones\n")
 
 if __name__ == '__main__':
-    app.run(port=5001, threaded=True)
+    app.run(port=5000, threaded=True)
