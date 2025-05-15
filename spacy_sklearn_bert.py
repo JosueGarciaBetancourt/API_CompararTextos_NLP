@@ -3,6 +3,8 @@
 
 import time
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 # ===============================================
 # 📌 CONSTANTES CONFIGURABLES
 # ===============================================
@@ -43,7 +45,7 @@ app = Flask(__name__)
 # ===============================================
 tiempo_inicio_config = time.perf_counter()
 
-nlp = spacy.load("es_core_news_lg", disable=['parser', 'ner', 'lemmatizer'])
+nlp = spacy.load("es_core_news_lg", disable=['lemmatizer'])
 model_name = "dccuchile/bert-base-spanish-wwm-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
@@ -595,7 +597,6 @@ def busqueda_semantica():
             if len(text_processing_cache) > 2000:
                 text_processing_cache.clear()
 
-        # Obtención de datos
         data = request.get_json()
         comparaciones = data.get("comparaciones", [])
         id_grupo_tematico = data.get("id_grupo_tematico")
@@ -610,77 +611,71 @@ def busqueda_semantica():
             silabo_origen = curso_origen.get("silabo", {})
             silabo_destino = curso_destino.get("silabo", {})
 
-            # Textos a comparar
-            nombre_origen = curso_origen.get("nombre", "")
-            nombre_destino = curso_destino.get("nombre", "")
-            sumilla_origen = silabo_origen.get("sumilla", "")
-            sumilla_destino = silabo_destino.get("sumilla", "")
+            # Preparar texto contextual completo
+            texto_origen = f"{curso_origen.get('nombre', '')} {silabo_origen.get('sumilla', '')}"
+            texto_destino = f"{curso_destino.get('nombre', '')} {silabo_destino.get('sumilla', '')}"
 
-            # Procesamiento en paralelo
+            # Procesamiento en paralelo con contexto mejorado
             with concurrent.futures.ThreadPoolExecutor() as executor:
-                # 1. Similitud básica
-                nombre_future = executor.submit(
-                    calcular_similitud_seccion,
-                    nombre_origen,
-                    nombre_destino
-                )
-                sumilla_future = executor.submit(
-                    calcular_similitud_seccion,
-                    sumilla_origen,
-                    sumilla_destino
+                # Obtener embeddings BERT para texto completo
+                future_embeddings = executor.submit(
+                    obtener_embeddings_bert_contextual,
+                    texto_origen,
+                    texto_destino
                 )
 
-                # 2. Búsqueda de términos clave
-                terminos_future = executor.submit(
-                    buscar_terminos_clave,
-                    f"{nombre_origen} {sumilla_origen}",
-                    f"{nombre_destino} {sumilla_destino}"
+                # Extraer términos clave mejorados
+                future_terminos = executor.submit(
+                    extraer_terminos_clave_avanzado,
+                    texto_origen,
+                    texto_destino
                 )
 
-                similitud_nombre = nombre_future.result()
-                similitud_sumilla = sumilla_future.result()
-                terminos_comunes = terminos_future.result()
+                # Obtener resultados
+                embeddings_result = future_embeddings.result()
+                terminos_result = future_terminos.result()
 
-            # Ajustar pesos según términos clave y grupo temático
-            peso_terminos = 0.0
-            if terminos_comunes["match_exacto"]:
-                peso_terminos += 0.3
-            if terminos_comunes["match_parcial"]:
-                peso_terminos += 0.2
+            # Calcular similitud contextual
+            similitud_contextual = calcular_similitud_contextual(
+                embeddings_result,
+                terminos_result
+            )
 
-            # Calcular similitud total con ajustes
-            similitud_total = (similitud_nombre * 0.4) + (similitud_sumilla * 0.4) + peso_terminos
+            # Filtro de calidad mejorado
+            if similitud_contextual < 0.4:
+                continue
 
-            tiempo_comparacion = time.perf_counter() - tiempo_comparacion_inicio
+            tiempo_comparacion = float(round(time.perf_counter() - tiempo_comparacion_inicio, 2))
 
             resultado = {
                 "cursoOrigen": {
-                    "idCurso": curso_origen.get("idCurso"),
-                    "nombre": nombre_origen
+                    "idCurso": int(curso_origen.get("idCurso", 0)),
+                    "nombre": str(curso_origen.get("nombre", "")),
+                    "sumilla": str(silabo_origen.get("sumilla", ""))
                 },
                 "cursoDestino": {
-                    "idCurso": curso_destino.get("idCurso"),
-                    "nombre": nombre_destino
+                    "idCurso": int(curso_destino.get("idCurso", 0)),
+                    "nombre": str(curso_destino.get("nombre", "")),
+                    "sumilla": str(silabo_destino.get("sumilla", ""))
                 },
                 "resultado_resumido": {
-                    "similitud_global": similitud_total,
-                    "similitud_nombre": similitud_nombre,
-                    "similitud_sumilla": similitud_sumilla,
-                    "terminos_comunes": terminos_comunes["terminos_comunes"]
+                    "similitud_global": similitud_contextual,
+                    "terminos_comunes": terminos_result.get("terminos_comunes", []),
+                    "contexto_compartido": terminos_result.get("contexto_compartido", []),
+                    "ponderacion_contextual": terminos_result.get("ponderacion_contextual", 0.0)
                 },
-                "tiempo_procesamiento_ms": tiempo_comparacion * 1000,
-                "id_grupo_tematico": id_grupo_tematico
+                "tiempo_procesamiento_s": tiempo_comparacion,
+                "id_grupo_tematico": int(id_grupo_tematico) if id_grupo_tematico else None
             }
             resultados.append(resultado)
 
-        # Ordenar resultados por similitud descendente
+        # Ordenar resultados
         resultados_ordenados = sorted(
             resultados,
-            key=lambda x: x["resultado_resumido"]["similitud_global"],
-            reverse=True
+            key=lambda x: -x["resultado_resumido"]["similitud_global"]
         )
 
-        tiempo_total = time.perf_counter() - tiempo_inicio
+        tiempo_total = float(round(time.perf_counter() - tiempo_inicio, 2))
 
         return jsonify({
             "status": "success",
@@ -697,44 +692,85 @@ def busqueda_semantica():
             "stack_trace": traceback.format_exc()
         }), 500
 
+def obtener_embeddings_bert_contextual(texto1, texto2):
+    """
+    Genera embeddings BERT contextuales mejorados para dos textos.
+    """
+    # Combinar textos para contexto cruzado
+    texto_combinado = f"{texto1} [SEP] {texto2}"
 
-def buscar_terminos_clave(texto1, texto2):
-    # Términos clave para el dominio educativo
-    grupos_terminos = {
-        "programacion": ["programación", "algoritmo", "codificación", "lenguaje"],
-        "redes": ["redes", "protocolo", "conectividad", "TCP/IP"],
-        "web": ["web", "aplicación web", "frontend", "backend"],
-        "datos": ["estructura de datos", "base de datos", "SQL"]
+    # Obtener embeddings
+    inputs = tokenizer(
+        texto_combinado,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        max_length=512,
+        add_special_tokens=True
+    )
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    # Extraer embeddings de la última capa
+    embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()[0]
+
+    return {
+        "embeddings": embeddings,
+        "contexto_cruzado": True
     }
 
-    texto1 = texto1.lower()
-    texto2 = texto2.lower()
+def extraer_terminos_clave_avanzado(texto1, texto2):
+    """
+    Extrae términos clave y contexto compartido entre dos textos.
+    """
+    # Tokenización básica
+    palabras1 = set(re.findall(r'\w+', texto1.lower()))
+    palabras2 = set(re.findall(r'\w+', texto2.lower()))
 
-    coincidencias = {
-        "match_exacto": False,
-        "match_parcial": False,
-        "terminos_comunes": []
+    # Filtrar stopwords y palabras cortas
+    palabras1 = {p for p in palabras1 if p not in stopwords_personalizadas and len(p) > 3}
+    palabras2 = {p for p in palabras2 if p not in stopwords_personalizadas and len(p) > 3}
+
+    # Encontrar términos comunes
+    terminos_comunes = list(palabras1 & palabras2)
+
+    # Calcular ponderación contextual
+    ponderacion_contextual = len(terminos_comunes) / max(len(palabras1), len(palabras2))
+
+    return {
+        "terminos_comunes": terminos_comunes[:15],  # Aumentar límite a 15 términos
+        "total_terminos1": len(palabras1),
+        "total_terminos2": len(palabras2),
+        "ponderacion_contextual": ponderacion_contextual
     }
 
-    # Buscar coincidencias exactas de grupos
-    for grupo, terminos in grupos_terminos.items():
-        encontrado1 = any(termino in texto1 for termino in terminos)
-        encontrado2 = any(termino in texto2 for termino in terminos)
 
-        if encontrado1 and encontrado2:
-            coincidencias["match_exacto"] = True
-            coincidencias["terminos_comunes"].append(grupo)
+def calcular_similitud_contextual(embeddings_result, terminos_result):
+    """
+    Calcula la similitud contextual entre dos textos usando embeddings BERT
+    y análisis de términos clave.
+    """
+    # Calcular similitud de embeddings
+    similitud_embeddings = float(cosine_similarity(
+        [embeddings_result["embeddings"]],
+        [embeddings_result["embeddings"]]
+    )[0][0])
 
-    # Buscar coincidencias parciales
-    palabras1 = set(re.findall(r'\w+', texto1))
-    palabras2 = set(re.findall(r'\w+', texto2))
-    comunes = palabras1 & palabras2
+    # Calcular similitud basada en términos
+    similitud_terminos = terminos_result["ponderacion_contextual"]
 
-    if len(comunes) > 3:
-        coincidencias["match_parcial"] = True
-        coincidencias["terminos_comunes"].extend(list(comunes)[:5])
+    # Combinar similitudes con pesos contextuales
+    similitud_contextual = (
+            similitud_embeddings * 0.6 +  # Mayor peso a embeddings
+            similitud_terminos * 0.4  # Peso a términos comunes
+    )
 
-    return coincidencias
+    return float(round(similitud_contextual, 2))
+
+
+
 @app.route('/status', methods=['GET'])
 def status():
     return jsonify({
