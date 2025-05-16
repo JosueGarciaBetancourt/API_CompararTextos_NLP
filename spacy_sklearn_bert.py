@@ -3,38 +3,36 @@
 
 import time
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-# ===============================================
-# 📌 CONSTANTES CONFIGURABLES
-# ===============================================
-
-# Pesos para el cálculo de similitud de unidades
-PESO_TITULO_UNIDAD = 0.30
-PESO_APRENDIZAJE_UNIDAD = 0.40
-PESO_TEMAS_UNIDAD = 0.30
-
-# Umbrales
-UMBRAL_TEMAS_COMUNES = 0.65  # Mínima similitud para considerar temas comunes
-UMBRAL_EMPAREJAMIENTO_UNIDADES = 0.50  # Mínima similitud para emparejar unidades
-
-tiempo_inicio_script = time.perf_counter()
-
-import spacy
-import unicodedata
-import re
 import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
 from flask import Flask, request, jsonify
 from collections import defaultdict
-import time
 import concurrent.futures
 from functools import lru_cache
 from threading import Lock
 import traceback
+import spacy
+import unicodedata
+import re
 
 app = Flask(__name__)
+
+# ===============================================
+# 📌 CONSTANTES CONFIGURABLES
+# ===============================================
+
+# Pesos para el cálculo de similitud de unidades
+PESO_TITULO_UNIDAD = 0.20
+PESO_APRENDIZAJE_UNIDAD = 0.30
+PESO_TEMAS_UNIDAD = 0.50
+
+# Umbrales
+UMBRAL_TEMAS_COMUNES = 0.50  # Mínima similitud para considerar temas comunes
+UMBRAL_EMPAREJAMIENTO_UNIDADES = 0.50  # Mínima similitud para emparejar unidades
+
+tiempo_inicio_script = time.perf_counter()
 
 # ===============================================
 # 📌 Configuración inicial optimizada
@@ -71,6 +69,20 @@ stopwords_personalizadas = {
 # ===============================================
 # 📌 Funciones optimizadas
 # ===============================================
+
+def convert_floats(obj):
+    """Convierte todos los valores numpy a tipos nativos de Python para serialización JSON."""
+    if isinstance(obj, (np.floating, float)):
+        return float(obj)
+    elif isinstance(obj, np.integer):
+        return int(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, dict):
+        return {k: convert_floats(v) for k, v in obj.items()}
+    elif isinstance(obj, (list, tuple)):
+        return [convert_floats(item) for item in obj]
+    return obj
 
 @lru_cache(maxsize=5000)
 def normalizar_texto(texto):
@@ -126,7 +138,7 @@ def obtener_embeddings_bert(texto):
 
 def calcular_similitud(vector1, vector2):
     tiempo_inicio = time.perf_counter()
-    resultado = cosine_similarity([vector1], [vector2])[0][0]
+    resultado = float(cosine_similarity([vector1], [vector2])[0][0])
     tiempo_fin = time.perf_counter()
     print(f"⏱ [calcular_similitud] Tiempo cálculo: {tiempo_fin - tiempo_inicio:.6f} segundos")
     return resultado
@@ -193,7 +205,7 @@ def identificar_temas_comunes(texto1, texto2, umbral=UMBRAL_TEMAS_COMUNES):
                     "tema_origen": tema1,
                     "tema_destino": tema2,
                     "tema_comun": f"{tema1} / {tema2}",
-                    "similitud": sim
+                    "similitud": float(sim)
                 })
 
     tiempo_fin = time.perf_counter()
@@ -236,10 +248,10 @@ def comparar_unidades(unidad_origen, unidad_destino):
     return {
         "id_unidad_origen": unidad_origen.get("idUnidad"),
         "id_unidad_destino": unidad_destino.get("idUnidad"),
-        "similitud_titulo": similitud_titulo,
-        "similitud_aprendizaje": similitud_aprendizaje,
-        "similitud_temas": similitud_temas,
-        "similitud_ponderada": similitud_ponderada,
+        "similitud_titulo": float(similitud_titulo),
+        "similitud_aprendizaje": float(similitud_aprendizaje),
+        "similitud_temas": float(similitud_temas),
+        "similitud_ponderada": float(similitud_ponderada),
         "temas_comunes": temas_comunes
     }
 
@@ -327,7 +339,7 @@ def calcular_similitud_unidades(unidades1, unidades2):
         "unidades_sin_par_origen": unidades_sin_par_origen,
         "unidades_sin_par_destino": unidades_sin_par_destino,
         "similitud_global": float(similitud_global),
-        "porcentaje_emparejamiento_unidades": len(unidades_emparejadas) / max(len(unidades1), len(unidades2))
+        "porcentaje_emparejamiento_unidades": float(len(unidades_emparejadas) / max(len(unidades1), len(unidades2)))
     }
 
 def calcular_similitud_bibliografia(biblio1, biblio2):
@@ -349,7 +361,7 @@ def calcular_similitud_bibliografia(biblio1, biblio2):
     print(f"⏱ [calcular_similitud_bibliografia] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
     print(f"  - Similitud calculada: {similitud:.4f}")
 
-    return similitud
+    return float(similitud)
 
 # ===============================================
 # 📌 Endpoints
@@ -418,13 +430,13 @@ def comparar_cursos():
                 "nombreCursoDestino": curso_destino.get("nombre", ""),
                 "tiempo_procesamiento_ms": tiempo_comparacion,
                 "resultado_resumido": {
-                    "similitud_sumilla": similitud_sumilla,
-                    "similitud_aprendizajes": similitud_aprendizajes,
-                    "similitud_unidades": resultado_unidades["similitud_global"],
-                    "similitud_bibliografia": similitud_bibliografia,
-                    "porcentaje_emparejamiento_unidades": resultado_unidades["porcentaje_emparejamiento_unidades"]
+                    "similitud_sumilla": float(similitud_sumilla),
+                    "similitud_aprendizajes": float(similitud_aprendizajes),
+                    "similitud_unidades": float(resultado_unidades["similitud_global"]),
+                    "similitud_bibliografia": float(similitud_bibliografia),
+                    "porcentaje_emparejamiento_unidades": float(resultado_unidades["porcentaje_emparejamiento_unidades"])
                 },
-                "resultado_detallado": {
+                "resultado_detallado": convert_floats({
                     "unidades_emparejadas": [
                         {
                             "id_unidad_origen": u["id_unidad_origen"],
@@ -438,9 +450,9 @@ def comparar_cursos():
                     ],
                     "unidades_sin_par_origen": resultado_unidades["unidades_sin_par_origen"],
                     "unidades_sin_par_destino": resultado_unidades["unidades_sin_par_destino"]
-                }
+                })
             }
-            resultados.append(resultado)
+            resultados.append(convert_floats(resultado))
 
             print(f"\n✅ Comparación completada en {tiempo_comparacion:.2f} ms")
             print(f"  - Similitud sumilla: {similitud_sumilla:.4f}")
@@ -454,11 +466,11 @@ def comparar_cursos():
         print(f"\n📊 Comparaciones realizadas: {len(comparaciones)}")
         print(f"⏱ Tiempo total de procesamiento: {tiempo_total:.2f} ms")
 
-        return jsonify({
+        return jsonify(convert_floats({
             "status": "success",
-            "tiempo_procesamiento_total_ms": tiempo_total,
+            "tiempo_procesamiento_total_ms": float(tiempo_total),
             "comparaciones": resultados
-        })
+        }))
 
     except Exception as e:
         tiempo_fin = time.perf_counter()
@@ -466,11 +478,11 @@ def comparar_cursos():
         print(f"⏱ Tiempo hasta error: {tiempo_fin - tiempo_inicio:.6f} segundos")
         traceback.print_exc()
 
-        return jsonify({
+        return jsonify(convert_floats({
             "status": "error",
             "error_message": str(e),
             "stack_trace": traceback.format_exc()
-        }), 500
+        })), 500
 
 @app.route('/busqueda_semantica', methods=['POST'])
 def busqueda_semantica():
@@ -536,14 +548,14 @@ def busqueda_semantica():
                     "sumilla": str(silabo_destino.get("sumilla", ""))
                 },
                 "resultado_resumido": {
-                    "similitud_global": similitud_contextual,
+                    "similitud_global": float(similitud_contextual),
                     "terminos_comunes": terminos_result.get("terminos_comunes", []),
                     "contexto_compartido": terminos_result.get("contexto_compartido", []),
-                    "ponderacion_contextual": terminos_result.get("ponderacion_contextual", 0.0)
+                    "ponderacion_contextual": float(terminos_result.get("ponderacion_contextual", 0.0))
                 },
-                "tiempo_procesamiento_s": tiempo_comparacion
+                "tiempo_procesamiento_s": float(tiempo_comparacion)
             }
-            resultados.append(resultado)
+            resultados.append(convert_floats(resultado))
 
         resultados_ordenados = sorted(
             resultados,
@@ -552,19 +564,19 @@ def busqueda_semantica():
 
         tiempo_total = float(round(time.perf_counter() - tiempo_inicio, 2))
 
-        return jsonify({
+        return jsonify(convert_floats({
             "status": "success",
-            "tiempo_procesamiento_total_s": tiempo_total,
+            "tiempo_procesamiento_total_s": float(tiempo_total),
             "comparaciones": resultados_ordenados
-        })
+        }))
     except Exception as e:
         print(f"\n❌ Error en busqueda_semantica: {str(e)}")
         traceback.print_exc()
-        return jsonify({
+        return jsonify(convert_floats({
             "status": "error",
             "error_message": str(e),
             "stack_trace": traceback.format_exc()
-        }), 500
+        })), 500
 
 def obtener_embeddings_bert_contextual(texto1, texto2):
     texto_combinado = f"{texto1} [SEP] {texto2}"
@@ -603,7 +615,7 @@ def extraer_terminos_clave_avanzado(texto1, texto2):
         "terminos_comunes": terminos_comunes[:15],
         "total_terminos1": len(palabras1),
         "total_terminos2": len(palabras2),
-        "ponderacion_contextual": ponderacion_contextual
+        "ponderacion_contextual": float(ponderacion_contextual)
     }
 
 def calcular_similitud_contextual(embeddings_result, terminos_result):
@@ -623,19 +635,19 @@ def calcular_similitud_contextual(embeddings_result, terminos_result):
 
 @app.route('/status', methods=['GET'])
 def status():
-    return jsonify({
+    return jsonify(convert_floats({
         "status": "operativo",
         "cache_embeddings": len(embedding_cache),
         "cache_procesamiento": len(text_processing_cache),
         "device": str(device),
         "constantes_activas": {
-            "PESO_TITULO_UNIDAD": PESO_TITULO_UNIDAD,
-            "PESO_APRENDIZAJE_UNIDAD": PESO_APRENDIZAJE_UNIDAD,
-            "PESO_TEMAS_UNIDAD": PESO_TEMAS_UNIDAD,
-            "UMBRAL_TEMAS_COMUNES": UMBRAL_TEMAS_COMUNES,
-            "UMBRAL_EMPAREJAMIENTO_UNIDADES": UMBRAL_EMPAREJAMIENTO_UNIDADES
+            "PESO_TITULO_UNIDAD": float(PESO_TITULO_UNIDAD),
+            "PESO_APRENDIZAJE_UNIDAD": float(PESO_APRENDIZAJE_UNIDAD),
+            "PESO_TEMAS_UNIDAD": float(PESO_TEMAS_UNIDAD),
+            "UMBRAL_TEMAS_COMUNES": float(UMBRAL_TEMAS_COMUNES),
+            "UMBRAL_EMPAREJAMIENTO_UNIDADES": float(UMBRAL_EMPAREJAMIENTO_UNIDADES)
         }
-    })
+    }))
 
 tiempo_fin_setup = time.perf_counter()
 tiempo_total_setup = tiempo_fin_setup - tiempo_inicio_script
