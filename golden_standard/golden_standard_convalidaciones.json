@@ -1,0 +1,56 @@
+{
+  "comparaciones": [
+    {
+      "idCursoOrigen": 1,
+      "nombreCursoOrigen": "Redes de Computadoras",
+      "idCursoDestino": 2,
+      "nombreCursoDestino": "Redes de Computadores",
+      "resultado_resumido": {
+        "similitud_sumilla": 0.80,
+        "similitud_aprendizajes": 0.80,
+        "similitud_unidades": 0.80,
+        "similitud_bibliografia": 0.50,
+        "porcentaje_emparejamiento_unidades": 1.00
+      }
+    },
+    {
+      "idCursoOrigen": 3,
+      "nombreCursoOrigen": "Base de Datos",
+      "idCursoDestino": 4,
+      "nombreCursoDestino": "Administración de Base de Datos",
+      "resultado_resumido": {
+        "similitud_sumilla": 0.70,
+        "similitud_aprendizajes": 0.75,
+        "similitud_unidades": 0.80,
+        "similitud_bibliografia": 0.50,
+        "porcentaje_emparejamiento_unidades": 1.00
+      }
+    },
+    {
+      "idCursoOrigen": 5,
+      "nombreCursoOrigen": "AUDITORIA Y SEGURIDAD INFORMATICA",
+      "idCursoDestino": 6,
+      "nombreCursoDestino": "Auditoría de Sistemas",
+      "resultado_resumido": {
+        "similitud_sumilla": 0.85,
+        "similitud_aprendizajes": 0.80,
+        "similitud_unidades": 0.78,
+        "similitud_bibliografia": 0.70,
+        "porcentaje_emparejamiento_unidades": 1.00
+      }
+    },
+    {
+      "idCursoOrigen": 7,
+      "nombreCursoOrigen": "Arquitectura de Computadoras",
+      "idCursoDestino": 8,
+      "nombreCursoDestino": "Arquitectura del Computador",
+      "resultado_resumido": {
+        "similitud_sumilla": 0.85,
+        "similitud_aprendizajes": 0.80,
+        "similitud_unidades": 0.70,
+        "similitud_bibliografia": 0.50,
+        "porcentaje_emparejamiento_unidades": 1.00
+      }
+    }
+  ]
+}

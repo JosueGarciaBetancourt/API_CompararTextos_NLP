@@ -1,0 +1,166 @@
+{
+  "comparaciones": [
+    {
+      "cursoOrigen": {
+        "idCurso": 5,
+        "nombre": "AUDITORIA Y SEGURIDAD INFORMATICA",
+        "silabo": {
+          "idSilabo": 5,
+          "idCurso": 5,
+          "sumilla": "Se desarrollaran los siguientes temas: El Proceso de la Auditoria de Sistemas de Información. Gobierno Corporativo y de Tecnología de Información. Ciclo de Vida de Productos Informáticos y sus controles asociados. Servicio de entrega y soporte de Tecnología de Información. Seguridad de la Información. Continuidad del Negocio y recuperación de desastres.",
+          "aprendizaje_general": "Considerando la coyuntura actual en relación a la ventaja competitiva que las Organizaciones obtienen a través del adecuado uso de las tecnologías de Información, se hace imprescindible que los estudiantes conozcan cómo realizar un examen de Auditoría, cuáles son las etapas típicas que se deben realizar, los alcances que pueden tener y conocer los modelos, estándares, procedimientos, técnicas y herramientas pertinentes que apoyan esta labor.",
+          "unidades": [
+            {
+              "idUnidad": 17,
+              "idSilabo": 5,
+              "numero": 1,
+              "titulo": "EL PROCESO DE AUDITORÍA DE SI. Desarrollar e implementar una estrategia de auditoría basada en los riesgos de la organización en cumplimiento con los estándares y mejores prácticas de auditoría de Sistemas de Información. (Sarbanex Oxley, COSO, Basilea y otros). Planificar auditorias específicas para validar que la Tecnología de Información y los sistemas/aplicativos de negocio son protegidos y controlados. Conducir auditorias de Sistemas de Información de conformidad con los estándares y mejores prácticas de auditoría de Sistemas de Información para alcanzar los objetivos planeados en auditoría. (COBIT, NTP ISO/IEC 17799, ISO 27001, NAGU, Circular SBS G-105, ley de contrataciones con el estado, de transparencia, de informe previo y otros). Comunicar los hallazgos emergentes, riesgos potenciales y resultados de auditorías a los accionistas o 'stakeholders' clave.",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Asegurar que el estudiante tenga los conocimientos necesarios de Auditoría de Sistemas de Información de conformidad con los estándares y mejores prácticas, para apoyar a la organización a validar que su tecnología de información y sus sistemas están protegidos y controlados.",
+              "temas": "El proceso de auditoría de TI. Estándares y mejores prácticas (Sarbanex Oxley, COSO, Basilea, COBIT, ISO 27001). Planificación y conducción de auditorías. Comunicación de hallazgos."
+            },
+            {
+              "idUnidad": 18,
+              "idSilabo": 5,
+              "numero": 2,
+              "titulo": "GOBIERNO DE TECNOLOGÍA DE LA INFORMACIÓN. Capacidad para evaluar la efectividad de la estructura, prácticas de inversión y gestión de Gobierno de TI. Capacidad para evaluar la estructura organizacional de TI y la gestión de los recursos humanos. Capacidad para evaluar la estrategia de TI y el proceso para su desarrollo, aprobación, implementación y mantenimiento. Capacidad para evaluar las políticas, los estándares y los procedimientos de TI de la organización. Capacidad para evaluar las estrategias y políticas de contratación de TI así como las prácticas de gestión de contratos. Capacidad para evaluar las prácticas de gestión del riesgo. Capacidad para Evaluar las prácticas de monitoreo y aseguramiento.",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Asegurar que el Estudiante entienda y sea capaz de evaluar si la organización tiene establecidas las políticas que soportan la gestión del servicio y prácticas de monitoreo para satisfacer los requerimientos del gobierno corporativo de las TI.",
+              "temas": "Gobierno de TI. Estructura organizacional y gestión de recursos humanos. Estrategias y políticas de TI. Gestión de contratos y riesgos. Monitoreo y aseguramiento."
+            },
+            {
+              "idUnidad": 19,
+              "idSilabo": 3,
+              "numero": 3,
+              "titulo": "ADMINISTRACIÓN DEL CICLO DE VIDA DE LOS SISTEMAS Y LA INFRAESTRUCTURA. Capacidad para evaluar la estructura y prácticas de la gestión de proyectos. Capacidad para evaluar el proceso de desarrollo y mantenimiento de aplicaciones. Capacidad para evaluar esquemas alternativos detallando las correspondientes a la NTP-12207, CMMI, Moprosoft, Spice y otros. Capacidad para evaluar prácticas implementadas para el desarrollo/adquisición de infraestructura. Capacidad para evaluar la implementación de herramientas para el desarrollo y ayudas de productividad. Capacidad para evaluar la implementación de prácticas para mejora de procesos. IDEAL y otros.",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Asegurar que el estudiante entienda y sea capaz de evaluar si las prácticas para el desarrollo y adquisición, prueba, implementación, mantenimiento y disposición de los sistemas e infraestructura reúnan los objetivos requeridos de la organización.",
+              "temas": "Ciclo de vida de sistemas. Gestión de proyectos. Desarrollo y mantenimiento de aplicaciones. Estándares (NTP-12207, CMMI, Moprosoft). Adquisición de infraestructura. Mejora de procesos."
+            },
+            {
+              "idUnidad": 20,
+              "idSilabo": 5,
+              "numero": 4,
+              "titulo": "SERVICIO DE ENTREGA Y SOPORTE DE TI. PROTECCIÓN DE ACTIVOS DE LA INFORMACIÓN. LA CONTINUIDAD DEL NEGOCIO Y LA RECUPERACIÓN DEL DESASTRE. Evaluar que el nivel de los servicios administran prácticas para garantizar que el nivel de atención de los servicios internos y externos están definidos y gestionados. Valorar si la gestión de operaciones de TI aseguran que las TI soportan adecuadamente las necesidades del negocio. Valorar si las prácticas de administración de datos garantizan la integridad y la optimización de bases de datos. Valorar si el uso de la capacidad y el monitoreo aseguran que los cambios realizados al entorno de producción son adecuadamente controlados y documentados. Valorar si los cambios, configuración y liberación de versiones, aseguran que los cambios realizados de la producción son adecuadamente controlados y documentados. Valorar si se implementan prácticas para solucionar problemas y gestionar incidentes. Valorar si la funcionalidad de la infraestructura de TI garantiza adecuado soporte a los objetivos de la organización. Valorar si la implementación de controles de TI se despliegan en base a un adecuada evaluación de riesgos. Valorar si se han institucionalizado políticas y procedimientos para el aseguramiento de la seguridad de la información. Valorar si la organización ha implementado una adecuada organización que garantice la implementación de prácticas orientadas al aseguramiento de la seguridad de información. Valorar si se ha clasificado la información y su tratamiento se da conforme a su criticidad. Valorar si se han implementado procedimientos para garantizar la seguridad para con el personal, seguridad física, seguridad en las operaciones y comunicaciones. Valorar si se han implementado procedimientos para la seguridad en el desarrollo y mantenimiento de software. Conocer aspectos del planeamiento de la continuidad y recuperación ante desastres. Conocer aspectos de organización y asignación de responsabilidades. Conocer los componentes de un plan de continuidad de negocios efectivo. Conocer aspectos vinculados a las pruebas que se deben realizar. Examen Final.",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Asegurar que el estudiante entienda y sea capaz de evaluar si los servicios de TI son administradas a través de prácticas que garanticen el cumplimiento de los niveles de servicio requeridos. Asegurar que el estudiante entienda y pueda proporcionar garantía de que la arquitectura de seguridad garantiza la confidencialidad, integridad y disponibilidad de los activos de información. Asegurar que el Estudiante tenga el conocimiento suficiente para evaluar la capacidad de una organización para re-establecer los servicios a un nivel acordado de calidad.",
+              "temas": "Servicios de TI. Gestión de operaciones. Administración de datos. Control de cambios. Gestión de incidentes. Seguridad de la información. Continuidad del negocio."
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 29,
+              "idSilabo": 5,
+              "referencia": "L1: Manual de preparación al examen CISA de la Asociación de Auditoría y Control de Sistemas de Información (ISACA).",
+              "url": null
+            },
+            {
+              "idBibliografia": 30,
+              "idSilabo": 5,
+              "referencia": "L2: Auditoria Informática/ Un enfoque práctico Mario Piattini, Emilio del Peso Ed. Alfaomega Ra-ma Edición 2da",
+              "url": null
+            },
+            {
+              "idBibliografia": 31,
+              "idSilabo": 5,
+              "referencia": "D4: COBIT DEL IT Governance Institute Versión 4 en español.",
+              "url": null
+            },
+            {
+              "idBibliografia": 32,
+              "idSilabo": 5,
+              "referencia": "I1: Information Systems audit and Control Association www.isaca.org",
+              "url": "www.isaca.org"
+            },
+            {
+              "idBibliografia": 33,
+              "idSilabo": 5,
+              "referencia": "I3: CAATs www.wizsoft.com; www.acl.com; www.ecora.com",
+              "url": "www.wizsoft.com"
+            }
+          ]
+        }
+      },
+      "cursoDestino": {
+        "idCurso": 6,
+        "nombre": "Auditoría de Sistemas",
+        "silabo": {
+          "idSilabo": 6,
+          "idCurso": 6,
+          "sumilla": "La relevancia de la asignatura radica en preparar al estudiante en la evaluación de riesgos de TI, los controles internos y la seguridad de la información, empleando estándares y guías específicas que permitan uniformizar criterios de evaluación. Los contenidos generales que la asignatura desarrolla son los siguientes: proceso de Auditoría de Sistemas. Evaluación del riesgo. Normas de ISACA. Estándares y marcos de referencia de auditoría: COBIT 5, ISO 27001, normas SBS y CGR. Auditoría al gobierno y gestión de TI. Auditoría al ciclo de vida de desarrollo de software. Auditoría a la continuidad de negocio. Auditoría a las operaciones e infraestructura. Auditoría al desempeño de TI. Auditoría a los procesos de seguridad de TI.",
+          "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de realizar procesos de auditoría de sistemas a una organización, procesos y soluciones tecnológicas de las áreas de sistemas, empleando estándares, normas, metodologías y mejores prácticas internacionales en auditoria de sistemas.",
+          "unidades": [
+            {
+              "idUnidad": 21,
+              "idSilabo": 6,
+              "numero": 6,
+              "titulo": "Proceso de auditoría de sistemas y evaluación del riesgo",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de identificar los conceptos básicos de la auditoría de sistemas y el proceso de evaluación de riesgos en las organizaciones.",
+              "temas": "¿Qué es la auditoría? Importancia de la auditoría. Proceso de auditoría. Proceso de la norma ISO 31000: Gestión del riesgo. Identificación del riesgo. Evaluación del riesgo. Análisis del riesgo. Tratamiento del riesgo."
+            },
+            {
+              "idUnidad": 22,
+              "idSilabo": 6,
+              "numero": 2,
+              "titulo": "Estándares y marcos de referencia de auditoría",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de identificar los diferentes estándares y marcos de referencia nacionales e internacionales relacionados con el proceso de auditoría.",
+              "temas": "Importancia de los estándares y marcos de referencia. Introducción a COBIT 5. Introducción a la norma ISO 27001. Función de la auditoría interna. Regulación de la auditoría interna por la SBS. Regulación de la auditoría interna por la CGR."
+            },
+            {
+              "idUnidad": 23,
+              "idSilabo": 6,
+              "numero": 3,
+              "titulo": "Auditoría al gobierno y gestión de TI, al ciclo de vida de desarrollo de software y la continuidad del negocio",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de identificar el proceso de la auditoría al gobierno de TI, ciclo de vida de desarrollo de software y la continuidad del negocio.",
+              "temas": "Tipos de auditoría de sistemas. Auditoría al gobierno de TI. Auditoría al ciclo de vida de desarrollo de software. Auditoría a la continuidad del negocio."
+            },
+            {
+              "idUnidad": 24,
+              "idSilabo": 6,
+              "numero": 4,
+              "titulo": "Auditoría a las operaciones e infraestructura, al desempeño de TI y a los procesos de seguridad de TI",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de realizar procesos de auditoría de sistemas, operaciones e infraestructura, al desempeño de TI y a los procesos de seguridad de TI.",
+              "temas": "Auditoría a las operaciones de TI. Auditoría a la infraestructura de TI. Medición del desempeño de TI. Auditoría al proceso de seguridad TI según norma ISO 27001."
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 34,
+              "idSilabo": 6,
+              "referencia": "Senft, S., Gallegos, F. y Davis, A. (2013). Information Technology Control and Audit. (4.a ed.). CRC Press, & Taylor & Francis Group. https://cutt.ly/Iwd3BlOX",
+              "url": "https://cutt.ly/Iwd3BlOX"
+            },
+            {
+              "idBibliografia": 35,
+              "idSilabo": 6,
+              "referencia": "ISACA. (2019). CISA Review Manual (27.ª ed.). ISACA.",
+              "url": null
+            },
+            {
+              "idBibliografia": 36,
+              "idSilabo": 6,
+              "referencia": "Acuña E. (2018). Auditoría de Tecnologías de Información. https://bit.ly/3damtd3",
+              "url": "https://bit.ly/3damtd3"
+            },
+            {
+              "idBibliografia": 37,
+              "idSilabo": 6,
+              "referencia": "Domínguez, J. (2020). Conceptos básicos de auditoría informática [video]. Youtube. https://bit.ly/3p47ML2",
+              "url": "https://bit.ly/3p47ML2"
+            },
+            {
+              "idBibliografia": 38,
+              "idSilabo": 6,
+              "referencia": "Instituto Nacional de Ciberseguridad [INCIBE]. (2022). https://www.incibe.es/",
+              "url": "https://www.incibe.es/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

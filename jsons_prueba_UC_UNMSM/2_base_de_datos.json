@@ -1,0 +1,190 @@
+{
+  "comparaciones": [
+    {
+      "cursoOrigen": {
+        "idCurso": 3,
+        "nombre": "Base de Datos",
+        "silabo": {
+          "idSilabo": 3,
+          "idCurso": 3,
+          "sumilla": "Conceptos básicos: objetivos, abstracción de datos, sistema de base de datos y la evolución, sus componentes. Sistema de Base de Datos en las Organizaciones: compartir datos y base de datos, separar la representación lógica y física de los datos, arquitectura de tres-niveles (ANSI/SPARC). Modelo de Datos y Sistemas Relacionales: modelo de datos relacional, algebra relacional, lenguaje de definición y manipulación de datos. SQL (Structured Query Lenguaje). Estructuras Internas de la Base de Datos: almacenamiento y organización de datos, estructuras de índices. Estudio de la funcionalidad de un SGBD: catalogo del sistema, procesamiento de consultas, técnicas de recuperación (recovery), técnicas de control de concurrencia, procesamiento de transacciones, técnicas de optimización de consultas; seguridad y privilegios de acceso a bases de datos. Modelo de Datos Avanzados y Nuevas Tendencias: Base de datos orientados a objetos, Base de datos distribuidos y conceptos de Inteligencia de Negocio con Data Warehousing, OLAP y Data Mining.",
+          "aprendizaje_general": "Capacitar y formar a los estudiantes en los conceptos fundamentales de la Tecnología de Base de Datos, promoviendo la aplicación acertada de métodos y técnicas modernas para el diseño e implementación de Base de Datos eficientes que satisfagan con ventajas los requerimientos de las empresas u organizaciones. Adiestrar en el uso de herramientas que el mercado ofrece al respecto permitiendo así, proporcionar una base sólida al futuro profesional. Se enfatizará también las tareas administrativas de gerencia en la Administración de Bases de Datos y las propuestas futuras relacionadas al avance tecnológico en esta área.",
+          "unidades": [
+            {
+              "idUnidad": 9,
+              "idSilabo": 3,
+              "numero": 1,
+              "titulo": "Conceptos, evolución e importancia: T. de Base  de Datos. Sistema de base de datos en las organizaciones,  arquitectura y componentes de un SGBD. Sistema Relacional. Algebra Relacional y operaciones DML",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Importancia del recurso dato en los negocios, y la necesidad de una metodología y herramientas tecnológicas de la Base de Datos.  Introducción al Modelamiento de Datos (E/R) para el diseño de BD. Objetivos a lograr con una base de datos. Sistemas orientados a procesos vs. Sistemas orientados a los datos, problemas comunes de diseño de BD en los Negocios, razones para cambiar un sistema orientado a archivos a un sistema apoyado con base de datos, tipos de bases de datos, evolución y futuro. Desarrollo de casos. Conceptos de SGBD y su importancia en la organización, Independencia de Datos, Tipos de Usuarios, Arquitectura de tres niveles  ANSI SPARC; funciones de un SGBD, Lenguajes: DDL y DML, Diccionario de Datos; Componentes internas de un Manejador de Base de Datos; Utilitarios y facilidades del mercado actual de SGBDR. Conceptos fundamentales del modelo relacional, Propiedades, Tipos de relaciones, Arquitectura de un SGBDR, el manejador Relacional/Objeto, Reglas de integridad: De Entidad, de Referencia (claves foráneas), de Dominio, rutas referenciales, consideraciones para alterar esquemas, reglas de integridad manejada por Aplicaciones vs  SGBDR. Algebra Relacional: Operaciones relacionales primitivas, adicionales y derivadas. Tipos de Join, ejercicios de consultas en Algebra Relacional.  El catálogo: sus funciones, interacción, contenido, actualización, ejemplos en SQL/Server y Oracle. Reglas modernas de los sistemas relacionales (Codd). Consideraciones en operaciones de actualización con querys.",
+              "temas": "Importancia del recurso dato en los negocios, y la necesidad de una metodología y herramientas tecnológicas de la Base de Datos.  Introducción al Modelamiento de Datos (E/R) para el diseño de BD. Objetivos a lograr con una base de datos. Sistemas orientados a procesos vs. Sistemas orientados a los datos, problemas comunes de diseño de BD en los Negocios, razones para cambiar un sistema orientado a archivos a un sistema apoyado con base de datos, tipos de bases de datos, evolución y futuro. Desarrollo de casos. Conceptos de SGBD y su importancia en la organización, Independencia de Datos, Tipos de Usuarios, Arquitectura de tres niveles  ANSI SPARC; funciones de un SGBD, Lenguajes: DDL y DML, Diccionario de Datos; Componentes internas de un Manejador de Base de Datos; Utilitarios y facilidades del mercado actual de SGBDR. Conceptos fundamentales del modelo relacional, Propiedades, Tipos de relaciones, Arquitectura de un SGBDR, el manejador Relacional/Objeto, Reglas de integridad: De Entidad, de Referencia (claves foráneas), de Dominio, rutas referenciales, consideraciones para alterar esquemas, reglas de integridad manejada por Aplicaciones vs  SGBDR. Algebra Relacional: Operaciones relacionales primitivas, adicionales y derivadas. Tipos de Join, ejercicios de consultas en Algebra Relacional.  El catálogo: sus funciones, interacción, contenido, actualización, ejemplos en SQL/Server y Oracle. Reglas modernas de los sistemas relacionales (Codd). Consideraciones en operaciones de actualización con querys."
+            },
+            {
+              "idUnidad": 10,
+              "idSilabo": 3,
+              "numero": 2,
+              "titulo": "Lenguaje de Base de Datos y SQL. Estructuras Internas y Almacenamiento en Servidores de Base de  Datos. Examen Parcial",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Definición de Datos (DDL), tipos de datos, tipos de índices, Manipulación de datos (DML), Lenguaje estructurado de consulta (SQL), funciones agregados, agrupados, subconsultas, Vistas, catálogo del sistema, Plan de acceso, afirmaciones, disparadores. Introducción a los medios de almacenamiento primario y secundario, Flujo de interacciones en el almacenamiento y acceso a bloques o paginas. Estructuras de  memoria: tipos de buffers, su dimensionamiento, ejemplos en un servidor Oracle. Estructuras en Disco: Registros fijos y variables,  organización de un bloque de BD, el rid (rowid), filas migradas y encadenadas. Asignación de bloques a archivos: espacios. ",
+              "temas": "Definición de Datos (DDL), tipos de datos, tipos de índices, Manipulación de datos (DML), Lenguaje estructurado de consulta (SQL), funciones agregados, agrupados, subconsultas, Vistas, catálogo del sistema, Plan de acceso, afirmaciones, disparadores. Introducción a los medios de almacenamiento primario y secundario, Flujo de interacciones en el almacenamiento y acceso a bloques o paginas. Estructuras de  memoria: tipos de buffers, su dimensionamiento, ejemplos en un servidor Oracle. Estructuras en Disco: Registros fijos y variables,  organización de un bloque de BD, el rid (rowid), filas migradas y encadenadas. Asignación de bloques a archivos: espacios."
+            },
+            {
+              "idUnidad": 11,
+              "idSilabo": 3,
+              "numero": 3,
+              "titulo": "Organización de Archivos y Estructura de Índices. Transacciones,  Técnicas de Recuperación. Técnicas de Control de concurrencia y privilegios",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Organización de archivos físicos:  tipos de archivos y sus características, dispersión interna y externa, ejemplos y problemas. Tipo de Indices ordenados de un solo nivel, Indices de múltiples niveles, Indices B-tree y dinámicos. Evaluación del uso de índices en operaciones DML, ejemplos. Concepto de transacciones, procesamiento de transacciones, ejemplos. Commit, rollback, checkpoint,  Log (bitacora), protocolo de escritura adelantada y diferida. recuperación en caso de fallas, fuentes de fallo, métodos y planes de recuperación. Control de concurrencia. Problemas por falta de control, Técnicas de bloqueo para control de concurrencia, seriabilidad, bloqueo de 2 fases, Marcas de Tiempo, Multiversión, Granularidad de los datos. Accesos autorizados: Roles y privilegios.",
+              "temas": "Organización de archivos físicos:  tipos de archivos y sus características, dispersión interna y externa, ejemplos y problemas. Tipo de Indices ordenados de un solo nivel, Indices de múltiples niveles, Indices B-tree y dinámicos. Evaluación del uso de índices en operaciones DML, ejemplos. Concepto de transacciones, procesamiento de transacciones, ejemplos. Commit, rollback, checkpoint,  Log (bitacora), protocolo de escritura adelantada y diferida. recuperación en caso de fallas, fuentes de fallo, métodos y planes de recuperación. Control de concurrencia. Problemas por falta de control, Técnicas de bloqueo para control de concurrencia, seriabilidad, bloqueo de 2 fases, Marcas de Tiempo, Multiversión, Granularidad de los datos. Accesos autorizados: Roles y privilegios."
+            },
+            {
+              "idUnidad": 12,
+              "idSilabo": 3,
+              "numero": 4,
+              "titulo": "Optimización de Consultas y Tareas del Administrador de Base de Datos. Tópicos Avanzados: SGBD Distribuidas, SGBD Orientados a Objetos y S. G. de Base de Conocimientos. Tópicos Avanzados: Inteligencia de Negocio: Data Warehousing, OLAP, Data Minig. Examen Final",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Optimización por reglas heurística, ejemplos,  optimización por costos, ejemplos.  Administración de Recursos Físicos, procedimientos de recuperación y protección, políticas, normas y procedimientos para la administración de los recursos de información; optimización de consultas. SGBD Distribuida: Conceptos, componentes, arquitectura, técnicas de fragmentación y replicación.  Base de datos orientadas a objeto, estado de los SGBDOO, propiedades básicas, OQL, comparación con B.D. Relacional, aplicaciones. S. G. de Bases de  Conocimiento: Concepto e importancia de KM, necesidad de herramienta para la gestión de Bases  de KM en los negocios, propuestas y aplicación. Inteligencia de Negocio: Necesidades de la toma de decisiones,  Data Warehousing,  componentes, OLAP  vs  OLTP, Data Mart, consideraciones de implementación, herramientas. Data Minig: objetivos, conceptos, tipos de técnicas y aplicaciones.",
+              "temas": "Optimización por reglas heurística, ejemplos,  optimización por costos, ejemplos.  Administración de Recursos Físicos, procedimientos de recuperación y protección, políticas, normas y procedimientos para la administración de los recursos de información; optimización de consultas. SGBD Distribuida: Conceptos, componentes, arquitectura, técnicas de fragmentación y replicación.  Base de datos orientadas a objeto, estado de los SGBDOO, propiedades básicas, OQL, comparación con B.D. Relacional, aplicaciones. S. G. de Bases de  Conocimiento: Concepto e importancia de KM, necesidad de herramienta para la gestión de Bases  de KM en los negocios, propuestas y aplicación. Inteligencia de Negocio: Necesidades de la toma de decisiones,  Data Warehousing,  componentes, OLAP  vs  OLTP, Data Mart, consideraciones de implementación, herramientas. Data Minig: objetivos, conceptos, tipos de técnicas y aplicaciones."
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 15,
+              "idSilabo": 3,
+              "referencia": "Sistemas de Bases de Datos, 2da. Ed. Elmasri/Navathe 1997. Ed. Addison- Wesley.",
+              "url": null
+            },
+            {
+              "idBibliografia": 16,
+              "idSilabo": 3,
+              "referencia": "Diseño y Administración de Base de Datos, 2da Ed. Gary W. Hansen 1997, Ed. Prentice Hall.",
+              "url": null
+            },
+            {
+              "idBibliografia": 17,
+              "idSilabo": 3,
+              "referencia": "Introducción a los Sistemas de Base de Datos, 5ta. Ed. C.J. Date 1993, ED. Addison- Wesley.",
+              "url": null
+            },
+            {
+              "idBibliografia": 18,
+              "idSilabo": 3,
+              "referencia": "Fundamentos y Modelos de Bases de Datos, 2da. Ed. Adoración de Miguel, Mario Plattini. Edit. Alfaomega & rama.",
+              "url": null
+            },
+            {
+              "idBibliografia": 19,
+              "idSilabo": 3,
+              "referencia": "Bases de Datos:  Modelos, lenguajes diseño, James, L. Johnson, Oxford University, 1997.",
+              "url": null
+            },
+            {
+              "idBibliografia": 20,
+              "idSilabo": 3,
+              "referencia": "Fundamentos de Bases de Datos, 2da. Ed. Henry F.Korth. 1994. Ed. McGraw-Hill.",
+              "url": null
+            },
+            {
+              "idBibliografia": 21,
+              "idSilabo": 3,
+              "referencia": "Sistemas de Base de Datos orientadas a Objetos, conceptos y arquitecturas, Elisa Bertino, Lorenzo Martino, 1995, Ed. Addison-Wesley / Diaz de Santos.",
+              "url": null
+            },
+            {
+              "idBibliografia": 22,
+              "idSilabo": 3,
+              "referencia": "Data Warehousing, (Integración de información para la toma de decisiones) Harjinder S. Gilly Prakash C. Rao, 1996, Ed. Prentice Hall H.",
+              "url": null
+            },
+            {
+              "idBibliografia": 23,
+              "idSilabo": 3,
+              "referencia": "Manuales de Administración de Base de Datos y SQL de los SGBDR: Oracle y SQL/Server.",
+              "url": null
+            }
+          ]
+        }
+      },
+      "cursoDestino": {
+        "idCurso": 4,
+        "nombre": "Administración de Base de Datos",
+        "silabo": {
+          "idSilabo": 4,
+          "idCurso": 4,
+          "sumilla": "Los contenidos generales que la asignatura desarrolla son los siguientes: introducción al sistema  gestor de base de datos; Arquitectura del sistema de base de datos; Recuperación de  información y manipulación de datos; Procesos de consulta y optimización; Procesamiento de  transacciones concurrentes; Respaldo y recuperación en base de datos; Gestión de cambios de  una base de datos; Seguridad de la base de datos; Auditoría a base de datos; Sistemas de base  de datos orientada a objetos; Bases de datos paralelas y distribuidas.",
+          "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de aplicar los procedimientos,  metodologías y emplear herramientas modernas para la administración integral óptima de  una base de datos corporativa.",
+          "unidades": [
+            {
+              "idUnidad": 13,
+              "idSilabo": 4,
+              "numero": 1,
+              "titulo": "Administración de base de datos",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de explicar tareas  básicas de un administrador de base de datos (DBA).",
+              "temas": "Conceptos básicos de administración de bases de datos y tareas  de un administrador de bases de datos (DBA). Arquitectura del sistema de base de datos. Automatización de trabajos. Monitoreo y rendimiento de una base de datos."
+            },
+            {
+              "idUnidad": 14,
+              "idSilabo": 4,
+              "numero": 2,
+              "titulo": "Consulta, manipulación y optimización de una base de datos",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de explicar las métricas  en el rendimiento de una base de datos.",
+              "temas": "Procesos de consulta y optimización. Gestión de desencadenadores. Procesamiento de transacciones concurrentes."
+            },
+            {
+              "idUnidad": 15,
+              "idSilabo": 4,
+              "numero": 3,
+              "titulo": "Seguridad de bases de datos",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de explicar el uso de  procedimientos, normas y políticas para el salvaguardado y recuperación de bases de datos corporativas.",
+              "temas": "Respaldo y recuperación en base de datos. Seguridad de la base de datos. Gestión de cambios de una base de datos"
+            },
+            {
+              "idUnidad": 16,
+              "idSilabo": 4,
+              "numero": 4,
+              "titulo": "Base de datos paralelas y distribuidas",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de aplicar procedimientos y metodologías en la administración integral de una base de datos corporativa.",
+              "temas": "Sistemas de base de datos orientada a objetos. Bases de datos paralelas y distribuidas. Auditoría a base de datos."
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 24,
+              "idSilabo": 4,
+              "referencia": "Bhatnagar, A., Bansal, V. (2015). Database management system. Alpha Science.",
+              "url": "https://bit.ly/3YiGLnf"
+            },
+            {
+              "idBibliografia": 25,
+              "idSilabo": 4,
+              "referencia": "Chopra, R. (2015). Database management system (DBMS): a practical approach (5th ed.). S. Chand.",
+              "url": null
+            },
+            {
+              "idBibliografia": 26,
+              "idSilabo": 4,
+              "referencia": "Gabillaud, J. (2015). SQL Server 2014: administración de una base de datos transaccional  con SQL Server Management Studio. Ediciones ENI.",
+              "url": null
+            },
+            {
+              "idBibliografia": 27,
+              "idSilabo": 4,
+              "referencia": "Ricardo, C. (2009). Bases de datos. McGraw-Hill.",
+              "url": null
+            },
+            {
+              "idBibliografia": 28,
+              "idSilabo": 4,
+              "referencia": "Silberschatz, A., Korth H., y Sudarshan S. (2013). Fundamentos de bases de datos. (6.ª ed.).  McGraw-Hill.",
+              "url": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

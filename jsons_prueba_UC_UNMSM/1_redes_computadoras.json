@@ -1,0 +1,190 @@
+{
+  "comparaciones": [
+    {
+      "cursoOrigen": {
+        "idCurso": 1,
+        "nombre": "Redes de Computadoras",
+        "silabo": {
+          "idSilabo": 1,
+          "idCurso": 1,
+          "sumilla": "El curso desarrolla los temas mencionados a continuación. Evolución de las redes de comunicación de datos y redes de computadoras. Análisis del nivel Red del Modelo de Referencia OSI y de la Arquitectura TCP/IP. Direcciones IP, subnetting y sumarización de direcciones IP. Protocolos ARP e ICMP. Principales algoritmos y protocolos de enrutamiento: RIP, OSPF y BGP. Seguridad en la red y administración de tráfico IP. Servicio NAT. Protocolos del nivel transporte: TCP y UDP. Tratamiento de errores y control de congestión. La capa de aplicación: encriptación, firmas digitales, servicio DNS. El servicio de correo electrónico: definición, arquitectura, confidencialidad, el protocolo SMTP. World Wide Web, el protocolo HTTP, evaluación de páginas Web en HTML. Sistema de Administración de Red: protocolo SNMP. Integración de audio, datos y vídeo en la red. Compresión de datos. Telefonía en Internet, la calidad del servicio.",
+          "aprendizaje_general": "Proporcionar a los estudiantes el marco teórico y práctico de las redes de computadoras, su arquitectura, estándares, protocolos y algoritmos.",
+          "unidades": [
+            {
+              "idUnidad": 1,
+              "idSilabo": 1,
+              "numero": 1,
+              "titulo": "Fundamentos de internetworking. Tecnologías de redes LAN y VLAN’s",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Fundamentos de internetworking. Tecnologías de redes LAN y VLAN’s",
+              "temas": "Fundamentos de internetworking. Tecnologías de redes LAN y VLAN’s"
+            },
+            {
+              "idUnidad": 2,
+              "idSilabo": 1,
+              "numero": 2,
+              "titulo": "Arquitectura TCP/IP: Nivel Red, direcciones y máscaras IP. Subnetting y sumarización de direcciones IP. Protocolos del Nivel Red IP: ARP, RARP, ICMP. EXAMEN PARCIAL",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Arquitectura TCP/IP: Nivel Red, direcciones y máscaras IP. Subnetting y sumarización de direcciones IP. Protocolos del Nivel Red IP: ARP, RARP, ICMP. EXAMEN PARCIAL",
+              "temas": "Arquitectura TCP/IP: Nivel Red, direcciones y máscaras IP. Subnetting y sumarización de direcciones IP. Protocolos del Nivel Red IP: ARP, RARP, ICMP. EXAMEN PARCIAL"
+            },
+            {
+              "idUnidad": 3,
+              "idSilabo": 1,
+              "numero": 3,
+              "titulo": "Protocolos de enrutamiento: RIP, OSPF y BGP. Seguridad en la red y administración de tráfico IP. Servicios NAT. Redes privadas virtuales IP/MPLS. Arquitectura TCP/IP: Nivel Transporte. Segmentos TCP y datagramas UDP. Direcciones lógicas de las aplicaciones (puertos). Gestión de Redes IP: Protocolo SNMP",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Protocolos de enrutamiento: RIP, OSPF y BGP. Seguridad en la red y administración de tráfico IP. Servicios NAT. Redes privadas virtuales IP/MPLS. Arquitectura TCP/IP: Nivel Transporte. Segmentos TCP y datagramas UDP. Direcciones lógicas de las aplicaciones (puertos). Gestión de Redes IP: Protocolo SNMP",
+              "temas": "Protocolos de enrutamiento: RIP, OSPF y BGP. Seguridad en la red y administración de tráfico IP. Servicios NAT. Redes privadas virtuales IP/MPLS. Arquitectura TCP/IP: Nivel Transporte. Segmentos TCP y datagramas UDP. Direcciones lógicas de las aplicaciones (puertos). Gestión de Redes IP: Protocolo SNMP"
+            },
+            {
+              "idUnidad": 4,
+              "idSilabo": 1,
+              "numero": 4,
+              "titulo": "Servicios de Red: DHCP, DNS, Correo, Web. Calidad de Servicio en Redes IP. Voz sobre IP (VoIP) y Telefonía IP. EXAMEN FINAL",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Servicios de Red: DHCP, DNS, Correo, Web. Calidad de Servicio en Redes IP. Voz sobre IP (VoIP) y Telefonía IP. EXAMEN FINAL",
+              "temas": "Servicios de Red: DHCP, DNS, Correo, Web. Calidad de Servicio en Redes IP. Voz sobre IP (VoIP) y Telefonía IP. EXAMEN FINAL"
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 1,
+              "idSilabo": 1,
+              "referencia": "Comunicaciones y Redes de Computadores. Wiliam Stallings. Quinta Edición 1997, Editorial Prentice Hall.",
+              "url": null
+            },
+            {
+              "idBibliografia": 2,
+              "idSilabo": 1,
+              "referencia": "Redes con Microsoft TCP/IP. Drew Heywood. Segunda Edición 1997, Editorial Prentice Hall.",
+              "url": null
+            },
+            {
+              "idBibliografia": 3,
+              "idSilabo": 1,
+              "referencia": "Redes de Computadoras. Andrew Tanembaum. Tercera Edición 1997, Editorial Prentice Hall.",
+              "url": null
+            },
+            {
+              "idBibliografia": 4,
+              "idSilabo": 1,
+              "referencia": "Comunicación de datos, redes de Computadoras y sistemas abiertos. Fred Halsall. Cuarta 1996, Editorial Addison Wesley",
+              "url": null
+            },
+            {
+              "idBibliografia": 5,
+              "idSilabo": 1,
+              "referencia": "Tecnologías de Interconectividad de Redes. Merilee Ford, H. Kim Lew, Steve Spanier, Tim Stevenson. Primera Edición 1997, Editorial Prentice Hall-Cisco Press.",
+              "url": null
+            },
+            {
+              "idBibliografia": 6,
+              "idSilabo": 1,
+              "referencia": "Aprendiendo TCP/IP en 14 días. Timothy Parker. Segunda Edición 1996, Editorial Prentice Hall.",
+              "url": null
+            },
+            {
+              "idBibliografia": 7,
+              "idSilabo": 1,
+              "referencia": "TCP/IP, Arquitectura, Protocolos, Implementación y Seguridad. Sidnie Feit. Segunda Edición 1998, Editorial McGraw Hill.",
+              "url": null
+            },
+            {
+              "idBibliografia": 8,
+              "idSilabo": 1,
+              "referencia": "Papers de las Páginas Web:",
+              "url": "http://www.cisco.com/univercd/cc/td/doc/cisintwk/ito_doc/index.htm"
+            }
+          ]
+        }
+      },
+      "cursoDestino": {
+        "idCurso": 2,
+        "nombre": "Redes de Computadores",
+        "silabo": {
+          "idSilabo": 2,
+          "idCurso": 2,
+          "sumilla": "Los contenidos generales que la asignatura desarrolla son los siguientes: conceptos básicos de redes, LAN, WAN e Internet. La red como plataforma. Configuración de un sistema operativo de red. Protocolos y comunicaciones de red. Modelo OSI. Modelo TCP/IP. Protocolos de capa física. Protocolos de capa de enlace de datos, control de acceso al medio. Ethernet. Protocolos de la capa de red, enrutamiento, routers, configuración de un router. Capa de transporte. Direccionamiento IP v4 e IPv6, división de redes IP en subredes. Protocolos de capa de aplicación, protocolos y servicio de capa de aplicación reconocidos. Seguridad de la red. Rendimiento básico de la red.",
+          "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de diseñar redes LAN empleando herramientas necesarias para gestionar topologías de red y esquemas de direccionamiento IP.",
+          "unidades": [
+            {
+              "idUnidad": 5,
+              "idSilabo": 2,
+              "numero": 1,
+              "titulo": "Protocolos y comunicaciones de red",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de realizar la configuración inicial de los dispositivos de red y de las terminales que, combinados con los protocolos permitan el acceso a la red local y remota.",
+              "temas": "Las Redes Hoy, Configuración Básica de Switches y terminales, Protocolos y Modelos"
+            },
+            {
+              "idUnidad": 6,
+              "idSilabo": 2,
+              "numero": 2,
+              "titulo": "Capa de acceso a la red y capa de Internet",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de implementar enrutamiento estático para enlazar redes remotas y explicar su funcionamiento.",
+              "temas": "Capa física, Sistemas numéricos, Capa de enlace de datos, Conmutación Ethernet, Capa de red, Resolución de redireccionamiento, Configuración básica de router"
+            },
+            {
+              "idUnidad": 7,
+              "idSilabo": 2,
+              "numero": 3,
+              "titulo": "La capa de transporte y el direccionamiento",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de diseñar el direccionamiento de redes empleando tanto ip4 e IPv6, considerado restricciones.",
+              "temas": "Direccionamiento IPv4, Direccionamiento IPv6, ICMP, Capa de transporte"
+            },
+            {
+              "idUnidad": 8,
+              "idSilabo": 2,
+              "numero": 4,
+              "titulo": "La capa de aplicación y solución de problemas",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de configurar redes Lan y wLan, empleando protocolos de la capa de aplicación.",
+              "temas": "Capa de aplicación, Fundamentos de seguridad en redes, Construir una red pequeña"
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 9,
+              "idSilabo": 2,
+              "referencia": "Stalling, W. (2016). Computer organization and architecture designing for performance. (10° ed.) Pearson.",
+              "url": "https://bit.ly/3SujHjw"
+            },
+            {
+              "idBibliografia": 10,
+              "idSilabo": 2,
+              "referencia": "Stalling, W. (2016). Computer organization and architecture designing for performance. (10th ed). Pearson. https://bit.ly/336HpJ3Castillo, J. (2019). Redes de datos. Contexto y evolución. (3.a ed.). Ciudad de México: Samsara Editorial.",
+              "url": null
+            },
+            {
+              "idBibliografia": 11,
+              "idSilabo": 2,
+              "referencia": "Davies, G. (2019). Networking Fundamentals. Birmingham, UK: Packt Publishing Ltd. Kurose, J. y Ross, K. (2017). Redes de computadoras. Un enfoque descendente. (7.a ed.). Madrid, España: Pearson Educación, S. A.",
+              "url": null
+            },
+            {
+              "idBibliografia": 12,
+              "idSilabo": 2,
+              "referencia": "NetWorking Academy Cisco (2019). Curso CCNA – Módulo 1.",
+              "url": "https://www.netacad.com"
+            },
+            {
+              "idBibliografia": 13,
+              "idSilabo": 2,
+              "referencia": "Oscar, G. (2018). Guía de preparación para el examen de certificación CCNA R&S 200-125. Buenos Aires: Edubooks.",
+              "url": null
+            },
+            {
+              "idBibliografia": 14,
+              "idSilabo": 2,
+              "referencia": "Tanenbaum, A. (2012). Redes de computadoras. México D. F.: Pearson Educación.",
+              "url": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

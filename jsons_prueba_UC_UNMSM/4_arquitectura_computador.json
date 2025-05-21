@@ -1,0 +1,160 @@
+{
+  "comparaciones": [
+    {
+      "cursoOrigen": {
+        "idCurso": 7,
+        "nombre": "Arquitectura de Computadoras",
+        "silabo": {
+          "idSilabo": 7,
+          "idCurso": 7,
+          "sumilla": "La asignatura comprende de los siguientes temas: Principios fundamentales de la organización, estructura y funcionalidad de las computadoras, microprocesadores básicos y avanzados, interacción procesador y memoria principal, direccionamiento, instrucciones del lenguaje ensamblador; gestión de interrupciones, área de video, sonido, unidades de entrada / salida de datos; interfaces programables, reconocimiento, configuración y funcionalidad de los diferentes componentes físicos y lógicos de un equipo microinformático.",
+          "aprendizaje_general": "Concluida la asignatura el alumno estará capacitado para las siguientes competencias: Pericia conceptual y operativa de la unidad del sistema. Pericia conceptual y operativa del hardware implícito a una computadora. Programación en modo real y modo protegido. Emplear en forma idónea los modos de acceso a los servicios, funciones e interrupciones del modo real o segmentado. Uso de software especifico de Arquitectura de Microcomputadoras a fin de comprender la interacción del hardware y el software. Control y programación de hardware (dispositivos, montajes, robots, etc)",
+          "unidades": [
+            {
+              "idUnidad": 25,
+              "idSilabo": 3,
+              "numero": 1,
+              "titulo": "ORGANIZACIÓN DE UNA COMPUTADORA. MICROPROCESADORES. FASE OPERATIVA. PROCESADOR Y MEMORIA (Modos de Direccionamiento). FASE OPERATIVA. LENGUAJE ENSAMBLADOR, Directivas e Instrucciones básicas. LENGUAJE ENSAMBLADOR, Instrucciones avanzadas. FASE OPERATIVA. INTERRUPCIONES. UNIDADES DE ENRADA / SALIDA (Dispositivos de E/S). FASE OPERATIVA",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Estructura, organización y funciones de una computadora. Procesador: Unidad de aritmética y lógica, Unidad de control y registros. Canales de Direcciones, Control y Datos. Evaluación Postsesión. Estructura, organización y funcionalidad de un microprocesador. Unidad de control, unidad de aritmética / lógica y registros. Terminales de interconexión con el exterior. Acceso a los recursos del microprocesador (DEBUG). Evaluación Postsesión. Desmontaje y montaje del PC Mantenimiento preventivo. Interconexión entre el procesador y memoria principal. Comunicación entre procesador y memoria principal. Acceso a datos en memoria principal por el procesador. Modos de direccionamiento: por registro, inmediato, directo, indirecto mediante registros base y/o índice. Evaluación Postsesión. Nuevas tecnologías de circuito Gestión y optimización de memoria. Directivas de definición de Datos Instrucción de gestión de transferencia de datos, aritméticas,  lógicas y de gestión de Salto. Evaluación Postsesión. Instrucciones de gestión sobre rotación y desplazamiento de bits, control, manejo de pila y procedimientos. Aplicación y uso de las instrucciones. Construcción de programas. Evaluación Postsesión. Dispositivos. Discos duros. Fuentes de alimentación y protección de potencia. Gestión Interrupciones, tipos. Vectores de interrupción, Interrupciones BIOS y DOS. Interrupciones de video, teclado y otros. Aplicación y uso de las interrupciones, Construcción de programas. Evaluación Postsesión. Mapa de direcciones de unidades de Entrada / Salida. Instrucciones de acceso a unidades de entrada / salida de datos out, in. Gestión de Puertos. Esquemas Básicos de Conexión de dispositivos con el Microprocesador. Evaluación Postsesión. Tecnologías de almacenamiento óptico DVD, CDROM, etc). Multimedia. Audio, Video",
+              "temas": "Estructura, organización y funciones de una computadora. Procesador: Unidad de aritmética y lógica, Unidad de control y registros. Canales de Direcciones, Control y Datos. Evaluación Postsesión. Estructura, organización y funcionalidad de un microprocesador. Unidad de control, unidad de aritmética / lógica y registros. Terminales de interconexión con el exterior. Acceso a los recursos del microprocesador (DEBUG). Evaluación Postsesión. Desmontaje y montaje del PC Mantenimiento preventivo. Interconexión entre el procesador y memoria principal. Comunicación entre procesador y memoria principal. Acceso a datos en memoria principal por el procesador. Modos de direccionamiento: por registro, inmediato, directo, indirecto mediante registros base y/o índice. Evaluación Postsesión. Nuevas tecnologías de circuito Gestión y optimización de memoria. Directivas de definición de Datos Instrucción de gestión de transferencia de datos, aritméticas,  lógicas y de gestión de Salto. Evaluación Postsesión. Instrucciones de gestión sobre rotación y desplazamiento de bits, control, manejo de pila y procedimientos. Aplicación y uso de las instrucciones. Construcción de programas. Evaluación Postsesión. Dispositivos. Discos duros. Fuentes de alimentación y protección de potencia. Gestión Interrupciones, tipos. Vectores de interrupción, Interrupciones BIOS y DOS. Interrupciones de video, teclado y otros. Aplicación y uso de las interrupciones, Construcción de programas. Evaluación Postsesión. Mapa de direcciones de unidades de Entrada / Salida. Instrucciones de acceso a unidades de entrada / salida de datos out, in. Gestión de Puertos. Esquemas Básicos de Conexión de dispositivos con el Microprocesador. Evaluación Postsesión. Tecnologías de almacenamiento óptico DVD, CDROM, etc). Multimedia. Audio, Video"
+            },
+            {
+              "idUnidad": 26,
+              "idSilabo": 3,
+              "numero": 2,
+              "titulo": "PROGRAMACIÓN EN MODO PROTEGIDO. SERVICIOS DE WINDOWS. FASE OPERATIVA. SERVICIOS DE LINUX. FASE OPERATIVA. 32 BITS EN DOS. FASE OPERATIVA. EXAMEN PARCIAL",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Fundamentos de Programación a 32Bits. Lenguaje High Level Assembler (HLA). Librerías de prototipo de funciones inherentes al Sistemas Operativo Windows. Funciones intrínsecas a las Librerías del Kernel32. Herramientas necesarias. Estructura básica de una aplicación. Uso de controles. Dibujar en una ventana. Redes. Dispositivos Móviles. Herramientas necesarias. Servicios del núcleo de Linux. Biblioteca de Funciones de Linux. Uso de Internet para el soporte de Hardware. Modems. El modo protegido. Software de apertura de puertos XP. DPMI. Extensores DOS. Administración de Hardware en Windows y Linux. Laptops y PalmTops. EXAMEN PARCIAL",
+              "temas": "Fundamentos de Programación a 32Bits. Lenguaje High Level Assembler (HLA). Librerías de prototipo de funciones inherentes al Sistemas Operativo Windows. Funciones intrínsecas a las Librerías del Kernel32. Herramientas necesarias. Estructura básica de una aplicación. Uso de controles. Dibujar en una ventana. Redes. Dispositivos Móviles. Herramientas necesarias. Servicios del núcleo de Linux. Biblioteca de Funciones de Linux. Uso de Internet para el soporte de Hardware. Modems. El modo protegido. Software de apertura de puertos XP. DPMI. Extensores DOS. Administración de Hardware en Windows y Linux. Laptops y PalmTops. EXAMEN PARCIAL"
+            },
+            {
+              "idUnidad": 27,
+              "idSilabo": 3,
+              "numero": 3,
+              "titulo": "EXPOSICIÓN DE PUBLICACIONES. INTERFACES TEMPORIZADORAS. INTERFACES PARALELAS y SERIALES. FASE OPERATIVA. INTERFACES DE VIDEO. CONTROLADOR DE MDA y CONTROLADOR DE INTERRUPCIONES. FASE OPERATIVA. PROCESADORES AVANZADOS. COMPUTADORAS COMERCIALES. FASE OPERATIVA.",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Publicación en una Web-Site reconocida y poseedora de un comité de evaluación de trabajos a fin de decidir si se inserta en la www). Organización y estructura de la interfaces temporizadoras. Modos de Operación. Programación de la interfaces temporizadoras. Aplicaciones. Evaluación Postsesión. Organización y estructura de las interfaces paralelas, Modos de Operación y Programación. Organización y estructura de la interfaces seriales, Modos de Operación y Programación. Aplicaciones. Evaluación Postsesión. Dispositivos ATA/SATA. Monitores: características. Tarjetas de video: características. Comparaciones comerciales. Evaluación Postsesión. Organización y estructura del controlador de acceso directo a memoria, Modos de Operación y Programación. Organización y estructura del controlador de interrupciones, Modos de Operación y Programación. Aplicaciones. Evaluación Postsesión. Dispositivos SCSI. PROCESADORES AVANZADOS. Procesadores RISC. Procesadores CISC. Comparaciones. Evaluación Postsesión. Modelos y tipos. Comparación y criterios de elección. Evaluación Postsesión. Particiones, Formateos y gestión de discos.",
+              "temas": "Publicación en una Web-Site reconocida y poseedora de un comité de evaluación de trabajos a fin de decidir si se inserta en la www). Organización y estructura de la interfaces temporizadoras. Modos de Operación. Programación de la interfaces temporizadoras. Aplicaciones. Evaluación Postsesión. Organización y estructura de las interfaces paralelas, Modos de Operación y Programación. Organización y estructura de la interfaces seriales, Modos de Operación y Programación. Aplicaciones. Evaluación Postsesión. Dispositivos ATA/SATA. Monitores: características. Tarjetas de video: características. Comparaciones comerciales. Evaluación Postsesión. Organización y estructura del controlador de acceso directo a memoria, Modos de Operación y Programación. Organización y estructura del controlador de interrupciones, Modos de Operación y Programación. Aplicaciones. Evaluación Postsesión. Dispositivos SCSI. PROCESADORES AVANZADOS. Procesadores RISC. Procesadores CISC. Comparaciones. Evaluación Postsesión. Modelos y tipos. Comparación y criterios de elección. Evaluación Postsesión. Particiones, Formateos y gestión de discos."
+            },
+            {
+              "idUnidad": 28,
+              "idSilabo": 3,
+              "numero": 4,
+              "titulo": "SERVIDORES, SISTEMAS DE ALTA CONFIABILIDAD Y PROTECCION. FASE OPERATIVA. Ponencia de Proyecto de Arquitectura. EXAMEN FINAL",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Principios, características principales y comerciales.Análisis Comparativo. Evaluación Postsesión. Impresoras de tinta y Láser Scanner Cámaras digitales. Proyecto de Arquitectura aplicando el software, lenguaje(s) y herramientas abordadas en el curso (Ejemplo. Control y Programación de Robots, Control de dispositivos hardware por interfaz paralela o USB, Sistemas centinelas, sistemas TSR’s , sistemas de funcionalidad autosuficiente). EXAMEN FINAL",
+              "temas": "Principios, características principales y comerciales. Análisis Comparativo. Evaluación Postsesión. Impresoras de tinta y Láser Scanner Cámaras digitales. Proyecto de Arquitectura aplicando el software, lenguaje(s) y herramientas abordadas en el curso (Ejemplo. Control y Programación de Robots, Control de dispositivos hardware por interfaz paralela o USB, Sistemas centinelas, sistemas TSR’s , sistemas de funcionalidad autosuficiente). EXAMEN FINAL"
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 39,
+              "idSilabo": 3,
+              "referencia": "FRANCISCO CHARTE. ASSEMBLER PARA WINDOWS Y LINUX. Editorial Anaya, Español, 2006",
+              "url": "null"
+            },
+            {
+              "idBibliografia": 40,
+              "idSilabo": 3,
+              "referencia": "MARK MINASI. PC 2006. Primera Edición, Español, 2006",
+              "url": "null"
+            },
+            {
+              "idBibliografia": 41,
+              "idSilabo": 3,
+              "referencia": "STALLINGS WILLIAM. Organización y arquitectura de computadoras. Cuarta Edición, Español",
+              "url": "null"
+            },
+            {
+              "idBibliografia": 42,
+              "idSilabo": 3,
+              "referencia": "ANDREW S. TANENBAUM. Organización de computadoras un enfoque estructurado. Editorial Pearson Educación. Cuarta Edición, Español, 2000",
+              "url": "null"
+            },
+            {
+              "idBibliografia": 43,
+              "idSilabo": 3,
+              "referencia": "FRANCISCO CHARTE. Programación ensamblador en modo protegido para DOS, Windows y Linux. Editorial Anaya. Primera Edición, Español, 2006",
+              "url": "null"
+            },
+            {
+              "idBibliografia": 44,
+              "idSilabo": 3,
+              "referencia": "PETER ABEL. Lenguaje ensamblador y programación para IBM PC y compatibles. Editorial Pearson Educación. Tercera Edición (Español)",
+              "url": "null"
+            }
+          ]
+        }
+      },
+      "cursoDestino": {
+        "idCurso": 8,
+        "nombre": "Arquitectura del Computador",
+        "silabo": {
+          "idSilabo": 8,
+          "idCurso": 8,
+          "sumilla": "Los contenidos generales que la asignatura desarrolla son los siguientes: Historia y evolución de las computadoras, Arquitectura de Jhon von Neuman, El procesador x86 y su organización, Arquitectura y organización de la memoria, Operaciones de entrada/salida, buses y placa principal, Programación en lenguaje ensamblador y El procesador AtMega y la plataforma Arduino, sensores y actuadores",
+          "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de dimensionar la estructura necesaria para sistemas basados en computador, utilizando estrategias que mejoren el rendimiento del sistema, a través del control y programación de hardware (dispositivos, montajes, robots, etc.).",
+          "unidades": [
+            {
+              "idUnidad": 29,
+              "idSilabo": 4,
+              "numero": 1,
+              "titulo": "Evolución y fundamentos de computadores",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de desarrollar soluciones a problemas que impliquen el uso de un computador sencillo.",
+              "temas": "Evolución de los computadores. Arquitectura de Jhon von Neuman. Registros, contadores y unidad de memoria. Lógica de transferencia de registros. Diseño de un computador sencillo"
+            },
+            {
+              "idUnidad": 30,
+              "idSilabo": 4,
+              "numero": 2,
+              "titulo": "Memoria y dispositivos de entrada y salida",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de desarrollar soluciones a problemas que impliquen el uso de un computador.",
+              "temas": "Diseño lógico de procesadores. Diseño de lógica de control. Diseño de computadores. Diseño del sistema del microcomputador. Programación en lenguaje ensamblador"
+            },
+            {
+              "idUnidad": 31,
+              "idSilabo": 4,
+              "numero": 3,
+              "titulo": "El procesador ATMega y el entorno de desarrollo arduino",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de implementar soluciones a problemas básicos que impliquen la utilización de la plataforma de desarrollo arduino.",
+              "temas": "Introducción al entorno de desarrollo arduino. Entradas y salidas analógicas y digitales. El monitor serial. Manejo de librerías y sensores básicos. Manejo de módulos LCD y Keypad. Manejo de funciones y módulo relay"
+            },
+            {
+              "idUnidad": 32,
+              "idSilabo": 4,
+              "numero": 4,
+              "titulo": "Sensores y actuadores con arduino",
+              "duracion_semanas": "13-16",
+              "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de dimensionar la implementación de soluciones a problemas complejos que impliquen la utilización de sensores y actuadores con la plataforma de desarrollo arduino.",
+              "temas": "Manejo de sensores complejos. Manejo de motores. Comunicación en arduino. Manejo de un módulo Bluetooth. Arduino y Android. Módulo WiFi con arduino"
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 45,
+              "idSilabo": 4,
+              "referencia": "Stalling, W. (2016). Computer organization and architecture designing for performance. (10.ª ed.). Pearson. https://acortar.link/T3CdSY",
+              "url": "https://acortar.link/T3CdSY"
+            },
+            {
+              "idBibliografia": 46,
+              "idSilabo": 4,
+              "referencia": "Tanembaum, A. (2000). Organización de computadoras: un enfoque estructurado (4.a ed.). Prentice Hall.",
+              "url": "null"
+            },
+            {
+              "idBibliografia": 47,
+              "idSilabo": 4,
+              "referencia": "Torrente Artero, O. (2013). Arduino: curso práctico de formación. RC Libros.",
+              "url": "null"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

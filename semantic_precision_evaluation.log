@@ -1,0 +1,453 @@
+2025-05-20 19:16:39,545 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:16:39,547 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:16:39,547 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:16:43,717 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:16:44,759 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:16:45,374 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:16:45,864 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:16:45,891 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:16:46,254 - semantic_evaluator - ERROR - Error en la ejecución principal: Shape of passed values is (1, 1), indices imply (2, 2)
+2025-05-20 19:18:02,141 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:18:02,143 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:18:02,143 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:18:07,365 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:18:07,902 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:18:08,682 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:18:09,287 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:18:09,308 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:18:10,256 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 19:18:10,257 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 19:20:57,422 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:20:57,424 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:20:57,425 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:21:01,608 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:21:03,016 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:21:04,796 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:21:04,982 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:21:05,000 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:21:05,691 - semantic_evaluator - ERROR - Error al guardar el archivo Excel: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-20 19:21:05,691 - semantic_evaluator - ERROR - Error al guardar el reporte: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-20 19:21:05,691 - semantic_evaluator - ERROR - Error en la ejecución principal: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-20 19:22:50,382 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:22:50,385 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:22:50,386 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:22:54,339 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:22:55,282 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:22:56,139 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:22:57,540 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:22:57,567 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:22:58,622 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 19:22:58,623 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 19:34:32,482 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:34:32,483 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:34:32,484 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:34:36,345 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:34:37,819 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:34:38,290 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:34:38,599 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:34:38,617 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:34:39,565 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 19:34:39,565 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 19:43:36,828 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:43:36,830 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:43:36,830 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:49:23,392 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:49:49,838 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:49:49,983 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:49:50,001 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:49:50,133 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:49:52,654 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 19:49:52,654 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 19:54:04,686 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:54:04,689 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:54:04,689 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:54:08,262 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:54:08,633 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:54:09,717 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:54:10,571 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:54:10,589 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:54:11,478 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 19:54:11,478 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 19:55:27,534 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 19:55:27,538 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 19:55:27,538 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 19:55:30,960 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 19:55:32,658 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 19:55:33,308 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 19:55:33,439 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 19:55:33,457 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 19:55:34,244 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 19:55:34,244 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 20:00:28,443 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 20:00:28,444 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 20:00:28,445 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 20:00:33,688 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 20:00:34,470 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 20:00:34,667 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 20:00:35,151 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 20:00:35,172 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 20:00:36,936 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 20:00:36,936 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 20:08:47,863 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 20:08:47,865 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 20:08:47,865 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 20:08:53,245 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 20:08:53,269 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 20:08:53,669 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 20:08:54,097 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 20:08:54,116 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 20:08:54,907 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 20:08:54,907 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 20:22:55,922 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 20:22:55,924 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 20:22:55,924 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 20:23:04,983 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 20:23:05,630 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 20:23:07,988 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 20:23:08,801 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 20:23:08,849 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 20:23:10,975 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 20:23:10,977 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 21:49:46,233 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 21:49:46,245 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 21:49:46,247 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 21:56:45,838 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 21:56:52,225 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 21:56:53,201 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 21:56:53,559 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 21:56:53,753 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 21:56:57,571 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 21:56:57,571 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:11:52,327 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:11:52,328 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:11:52,329 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:11:56,366 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:11:57,849 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:11:58,547 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:11:58,881 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:11:58,902 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:11:59,745 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:11:59,746 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:18:29,750 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:18:29,752 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:18:29,752 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:18:33,423 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:18:35,784 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:18:36,000 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:18:36,505 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:18:36,524 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:18:37,332 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:18:37,334 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:20:31,159 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:20:31,161 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:20:31,161 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:20:36,286 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:20:38,186 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:20:38,860 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:20:39,321 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:20:39,342 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:20:40,081 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:20:40,081 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:21:02,579 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:21:02,581 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:21:02,581 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:21:07,516 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:21:07,807 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:21:08,622 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:21:08,749 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:21:08,772 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:21:09,531 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:21:09,531 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:21:58,947 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:21:58,948 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:21:58,949 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:22:03,510 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:22:03,541 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:22:06,043 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:22:06,898 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:22:06,925 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:22:07,845 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:22:07,845 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:34:16,577 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:34:16,583 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:34:16,585 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:34:20,896 - semantic_evaluator - ERROR - Error procesando jsons_prueba_UC_UNMSM\1_redes_computadoras.json: 'sim_ponderada'
+2025-05-20 22:34:21,528 - semantic_evaluator - ERROR - Error procesando jsons_prueba_UC_UNMSM\3_auditoría_sistemas.json: 'sim_ponderada'
+2025-05-20 22:34:22,156 - semantic_evaluator - ERROR - Error procesando jsons_prueba_UC_UNMSM\2_base_de_datos.json: 'sim_ponderada'
+2025-05-20 22:34:22,583 - semantic_evaluator - ERROR - Error procesando jsons_prueba_UC_UNMSM\4_arquitectura_computador.json: 'sim_ponderada'
+2025-05-20 22:34:22,583 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:34:22,886 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:34:22,886 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:34:42,441 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:34:42,442 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:34:42,443 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:34:47,019 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:34:47,285 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:34:48,057 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:34:48,444 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:34:48,463 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:34:49,713 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:34:49,713 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:36:58,629 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:36:58,630 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:36:58,631 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:37:02,949 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:37:03,187 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:37:05,012 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:37:05,422 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:37:05,443 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:37:06,375 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:37:06,375 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:37:28,328 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:37:28,331 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:37:28,331 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:37:31,938 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:37:31,975 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:37:33,889 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:37:34,355 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:37:34,374 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:37:35,199 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:37:35,200 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:42:28,090 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:42:28,092 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:42:28,092 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:42:31,358 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:42:32,991 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+2025-05-20 22:42:32,992 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+2025-05-20 22:42:32,992 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+2025-05-20 22:42:33,004 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:42:33,873 - semantic_evaluator - ERROR - Error al guardar el archivo Excel: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-20 22:42:33,873 - semantic_evaluator - ERROR - Error al guardar el reporte: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-20 22:42:33,874 - semantic_evaluator - ERROR - Error en la ejecución principal: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-20 22:43:35,041 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:43:35,043 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:43:35,043 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:43:39,119 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002690B2105D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:43:39,119 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002690B1F2110>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:43:39,134 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002690B20F850>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:43:39,134 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002690B20E110>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:43:39,135 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:43:39,249 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:43:39,250 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:46:41,290 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:46:41,292 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:46:41,293 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:46:45,388 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FD2FD4610>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:46:45,389 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FD45AFA90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:46:45,404 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FD45AED90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:46:45,405 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FD45B0A50>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 22:46:45,427 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:46:45,786 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:46:45,917 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:49:14,544 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:49:14,553 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:49:14,553 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:55:46,456 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:56:00,824 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:56:05,657 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:56:09,364 - semantic_evaluator - ERROR - API respondió con código 500: {"error_message":"Already borrowed","stack_trace":"Traceback (most recent call last):\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 421, in comparar_cursos\n    resultado_unidades = unidades_future.result()\n                         ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 456, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 296, in calcular_similitud_unidades\n    resultados = list(executor.map(lambda pair: comparar_unidades(*pair), combinaciones))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 619, in result_iterator\n    yield _result_or_cancel(fs.pop())\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 317, in _result_or_cancel\n    return fut.result(timeout)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 296, in <lambda>\n    resultados = list(executor.map(lambda pair: comparar_unidades(*pair), combinaciones))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 236, in comparar_unidades\n    temas_comunes = temas_comunes_future.result()\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 190, in identificar_temas_comunes\n    temas1_emb = {tema: emb for tema, emb in zip(\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 190, in <dictcomp>\n    temas1_emb = {tema: emb for tema, emb in zip(\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 619, in result_iterator\n    yield _result_or_cancel(fs.pop())\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 317, in _result_or_cancel\n    return fut.result(timeout)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"C:\\Program Files\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\spacy_sklearn_bert.py\", line 116, in obtener_embeddings_bert\n    inputs = tokenizer(\n             ^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\venv\\Lib\\site-packages\\transformers\\tokenization_utils_base.py\", line 2887, in __call__\n    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\venv\\Lib\\site-packages\\transformers\\tokenization_utils_base.py\", line 2997, in _call_one\n    return self.encode_plus(\n           ^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\venv\\Lib\\site-packages\\transformers\\tokenization_utils_base.py\", line 3073, in encode_plus\n    return self._encode_plus(\n           ^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\venv\\Lib\\site-packages\\transformers\\tokenization_utils_fast.py\", line 613, in _encode_plus\n    batched_output = self._batch_encode_plus(\n                     ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\venv\\Lib\\site-packages\\transformers\\tokenization_utils_fast.py\", line 527, in _batch_encode_plus\n    self.set_truncation_and_padding(\n  File \"D:\\Programas propios\\Python\\API_CompararTextos\\venv\\Lib\\site-packages\\transformers\\tokenization_utils_fast.py\", line 496, in set_truncation_and_padding\n    self._tokenizer.enable_padding(**target)\nRuntimeError: Already borrowed\n","status":"error"}
+
+2025-05-20 22:56:09,484 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:56:12,930 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:56:12,930 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 22:57:39,738 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 22:57:39,741 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 22:57:39,741 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 22:57:45,659 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 22:57:45,737 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 22:57:46,075 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 22:57:46,346 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 22:57:46,386 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 22:57:48,792 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 22:57:48,792 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:04:43,933 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:04:43,935 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:04:43,935 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:04:48,146 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:04:48,224 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:04:49,928 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:04:50,490 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:04:50,511 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:04:51,780 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:04:51,780 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:16:14,529 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:16:14,531 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:16:14,531 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:16:18,644 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E8C85F590>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 23:16:18,644 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E8B5A2410>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 23:16:18,644 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E8C85E890>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 23:16:18,644 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023E8C860550>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-20 23:16:18,647 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:16:18,849 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:16:18,849 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:17:59,424 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:17:59,427 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:17:59,427 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:22:24,856 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:22:44,961 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:23:04,593 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:23:07,139 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:23:07,190 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:23:12,099 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:23:12,100 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:28:50,144 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:28:50,146 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:28:50,146 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:28:54,497 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:28:55,036 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:28:55,850 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:28:56,107 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:28:56,125 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:28:58,193 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:28:58,193 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:38:20,293 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:38:20,295 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:38:20,295 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:38:24,496 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:38:24,682 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:38:25,829 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:38:26,228 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:38:26,249 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:38:27,153 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:38:27,153 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:39:21,383 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:39:21,385 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:39:21,386 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:39:26,377 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:39:27,038 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:39:27,375 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:39:27,781 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:39:27,803 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:39:28,632 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:39:28,632 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:45:56,128 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:45:56,131 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:45:56,131 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:46:00,387 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:46:00,795 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:46:01,489 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:46:02,255 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:46:02,275 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:46:03,200 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:46:03,201 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:52:54,066 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:52:54,067 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:52:54,068 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:52:58,716 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:52:58,817 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:52:59,989 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:53:00,846 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:53:00,883 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:53:01,959 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:53:01,959 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-20 23:55:32,183 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-20 23:55:32,184 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-20 23:55:32,185 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-20 23:55:35,431 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-20 23:55:36,865 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-20 23:55:37,905 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-20 23:55:38,123 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-20 23:55:38,143 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-20 23:55:39,018 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-20 23:55:39,018 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 00:44:26,252 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 00:44:26,254 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 00:44:26,254 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 00:49:32,986 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 00:49:35,110 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 00:49:38,496 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 00:49:40,345 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 00:49:40,549 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 00:49:45,276 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 00:49:45,276 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 00:54:57,003 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 00:54:57,006 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 00:54:57,006 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 00:55:01,221 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 00:55:02,318 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 00:55:02,968 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 00:55:03,056 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 00:55:03,080 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 00:55:04,678 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 00:55:04,678 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 00:55:47,970 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 00:55:47,971 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 00:55:47,972 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 00:55:52,507 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 00:55:52,590 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 00:55:53,523 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 00:55:53,723 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 00:55:53,744 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 00:55:54,569 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 00:55:54,569 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 00:56:55,600 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 00:56:55,602 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 00:56:55,602 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 00:57:00,855 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 00:57:00,950 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 00:57:01,213 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 00:57:01,357 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 00:57:01,380 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 00:57:02,179 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 00:57:02,180 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 00:59:18,269 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 00:59:18,270 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 00:59:18,271 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 00:59:22,454 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 00:59:22,897 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 00:59:23,899 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 00:59:24,300 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 00:59:24,323 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 00:59:25,305 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 00:59:25,305 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 01:02:02,567 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 01:02:02,569 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 01:02:02,569 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 01:02:07,027 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 01:02:07,396 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 01:02:08,335 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 01:02:08,901 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 01:02:08,921 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 01:02:09,709 - semantic_evaluator - ERROR - Error al guardar el archivo Excel: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-21 01:02:09,709 - semantic_evaluator - ERROR - Error al guardar el reporte: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-21 01:02:09,709 - semantic_evaluator - ERROR - Error en la ejecución principal: [Errno 13] Permission denied: 'resultados_evaluacion\\reporte_evaluacion.xlsx'
+2025-05-21 01:02:19,579 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 01:02:19,581 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 01:02:19,581 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 01:02:24,111 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 01:02:24,438 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 01:02:25,102 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 01:02:25,406 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 01:02:25,426 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 01:02:26,247 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 01:02:26,247 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 01:02:44,708 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 01:02:44,710 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 01:02:44,711 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 01:02:49,531 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 01:02:50,472 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 01:02:50,961 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 01:02:51,059 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 01:02:51,081 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 01:02:51,970 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 01:02:51,970 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 01:05:14,709 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 01:05:14,711 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 01:05:14,712 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 01:05:18,830 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 01:05:20,182 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 01:05:20,722 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 01:05:20,837 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 01:05:20,862 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 01:05:21,731 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 01:05:21,731 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 01:06:43,282 - semantic_evaluator - INFO - Golden standard cargado con 16 claves de búsqueda
+2025-05-21 01:06:43,284 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 01:06:43,284 - semantic_evaluator - INFO - Procesando 4 archivos JSON...
+2025-05-21 01:06:48,231 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 01:06:48,748 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 01:06:48,960 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 01:06:49,068 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 01:06:49,087 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 01:06:49,911 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 01:06:49,912 - semantic_evaluator - INFO - Evaluación completada.
