@@ -25,11 +25,11 @@ app = Flask(__name__)
 
 # Pesos para el cálculo de similitud de unidades
 PESO_TITULO_UNIDAD = 0.20
-PESO_APRENDIZAJE_UNIDAD = 0.30
-PESO_TEMAS_UNIDAD = 0.50
+PESO_APRENDIZAJE_UNIDAD = 0.10
+PESO_TEMAS_UNIDAD = 0.70
 
 # Umbrales
-UMBRAL_TEMAS_COMUNES = 0.50  # Mínima similitud para considerar temas comunes
+UMBRAL_TEMAS_COMUNES = 0.40  # Mínima similitud para considerar temas comunes
 UMBRAL_EMPAREJAMIENTO_UNIDADES = 0.50  # Mínima similitud para emparejar unidades
 
 tiempo_inicio_script = time.perf_counter()
