@@ -1,0 +1,184 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 9,
+          "nombre": "ESTRUCTURA DE DATOS",
+          "silabo": {
+            "idSilabo": 9,
+            "idCurso": 9,
+            "sumilla": "Archivos secuenciales. Arreglos. Listas enlazadas. Pilas. Colas. Árboles. Grafos.",
+            "aprendizaje_general": "Proveer conceptos matemáticos e informáticos que son fundamento teórico para el avance de la ciencia de la computación, informática y sistemas. Como materia teórica práctica pretende formar y ejercitar a los estudiantes en las técnica y métodos para diseñar estructuras para almacenar y recuperar datos, así como describir algorítmicamente las operaciones para manejar dichas estructuras.",
+            "unidades": [
+              {
+                "idUnidad": 33,
+                "idSilabo": 9,
+                "numero": 1,
+                "titulo": "Introducción. Definición de estructura de datos. Clasificación de estructura de datos. Operaciones sobre Estructura de Datos. Definición de lenguaje de pseudocódigo. Formalismo y abstracción de problemas y soluciones. Análisis de precondiciones (entrada) y post condiciones (salida). Complejidad de algoritmos. Archivos secuenciales. Noción de archivo secuencial. Definición formal de archivo secuencial- Acciones primitivas de acceso. Algoritmos básicos. Aplicación y ejemplos. Arreglos Unidimensionales. Noción de arreglo unidimensional. Definición formal de arreglo unidimensional. Características. Acciones Primitivas. Algoritmos básicos. Aplicación y ejemplos. Arreglos multidimensionales. Noción de arreglo multidimensional. Definición formal de arreglo multidimensional. Matrices. Características. Acciones primitivas. Algoritmos básicos. Aplicación y ejemplos. Ordenación y búsqueda. Búsqueda secuencial. búsqueda binaria, ordenación por selección, heapsort, mergesort, quicksort.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Introducción. Definición de estructura de datos... Complejidad de algoritmos. Archivos secuenciales... Aplicación y ejemplos. Arreglos Unidimensionales... Aplicación y ejemplos. Arreglos multidimensionales... quicksort.",
+                "temas": "Introducción. Definición de estructura de datos... Complejidad de algoritmos. Archivos secuenciales... Aplicación y ejemplos. Arreglos Unidimensionales... Aplicación y ejemplos. Arreglos multidimensionales... quicksort."
+              },
+              {
+                "idUnidad": 34,
+                "idSilabo": 9,
+                "numero": 2,
+                "titulo": "Listas enlazadas simples. Noción de lista enlazada. Definición formal de lista enlazada. Características. Representación de listas enlazadas mediante arreglos, mediante cursores y mediante apuntadores. Aplicación y ejemplos. Listas enlazadas particulares. Noción de lista doblemente enlazada y listas circulares. Definición formal de lista doblemente enlazada y listas circulares. Características. Representación de listas enlazadas. Operaciones básicas. Aplicación y ejemplos. Pilas y colas. Noción de pila. Definición formal de pila. Características. Acciones primitivas. Representación de pilas. Operaciones básicas. Aplicación y ejemplos. Noción de cola. Definición formal de cola. Características. Acciones Primitivas. Representación de colas. Tipos de colas. Operaciones Básicas. Aplicaciones y ejemplos. Examen Parcial.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Listas enlazadas simples... Aplicación y ejemplos. Listas enlazadas particulares... Aplicación y ejemplos. Pilas y colas... Aplicaciones y ejemplos. Examen Parcial.",
+                "temas": "Listas enlazadas simples... Aplicación y ejemplos. Listas enlazadas particulares... Aplicación y ejemplos. Pilas y colas... Aplicaciones y ejemplos. Examen Parcial."
+              },
+              {
+                "idUnidad": 35,
+                "idSilabo": 9,
+                "numero": 3,
+                "titulo": "Árboles. Noción de árbol. Definición de árbol. Características. Acciones primitivas. Representación de Árboles mediante arreglos y mediante apuntadores. Tipos de árboles. Operaciones básicas. Aplicaciones y ejemplos. Árboles binarios. Definición formal de árbol binario características. Acciones primitivas. Representación de árboles binarios. Ordenamiento, Búsqueda, Inserción y Eliminación. Aplicaciones y ejemplos. Arboles. Noción de árbol extendido, árbol balanceado. Árboles isomorfos. Árboles semejantes. Árboles enhebrados. Árboles. Árboles de Montón. Ordenamiento por montón. Árbol de Huffman. Algoritmo y Código de Huffman. Árbol desplegado. Dispersión. Aplicaciones y ejemplos.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Árboles... Aplicaciones y ejemplos. Árboles binarios... Aplicaciones y ejemplos. Arboles... Aplicaciones y ejemplos. Árboles... Aplicaciones y ejemplos.",
+                "temas": "Árboles... Aplicaciones y ejemplos. Árboles binarios... Aplicaciones y ejemplos. Arboles... Aplicaciones y ejemplos. Árboles... Aplicaciones y ejemplos."
+              },
+              {
+                "idUnidad": 36,
+                "idSilabo": 9,
+                "numero": 4,
+                "titulo": "Grafos. Noción de grafo. Tipos: Grafos no dirigidos, Gafos dirigidos. Definición Formal de grafos no dirigidos. Representación. Operaciones básicas. Aplicaciones y ejemplos. Grafos. Recorrido de grafos. Matriz de adyacencia, Matriz de caminos. Caminos mínimos. Aplicaciones y Ejemplos. Grafos dirigidos. Definición Formal de Grafos dirigidos. Búsqueda en Profundidad. Árboles de recubrimiento. Camino Hamiltoniano. Paseo Euleriano. Aplicaciones. Ejemplos. Algoritmo de Dijkstra. Algoritmo de Warshall. Grafos acíclicos. Ordenamiento Topológico. Aplicaciones y Ejemplos. Examen Final. Examen Sustitutorio.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Grafos... Aplicaciones y Ejemplos. Grafos dirigidos... Aplicaciones y Ejemplos. Examen Final. Examen Sustitutorio.",
+                "temas": "Grafos... Aplicaciones y Ejemplos. Grafos dirigidos... Aplicaciones y Ejemplos. Examen Final. Examen Sustitutorio."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 48,
+                "idSilabo": 9,
+                "referencia": "[AHO 1988] Aho A., Hopcroft J., Ulman J., ”Estructura de Datos y Algoritmos” Adisson Wesley 1988 Wilmington Delaware EUA Cap1.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 49,
+                "idSilabo": 9,
+                "referencia": "[CORTEZ 2002] Cortez Vásquez Augusto, “Estructura y Algoritmos”, 2002.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 50,
+                "idSilabo": 9,
+                "referencia": "[GALLARDO 1994] Gallardo M. Pérez T., “Estructura de Datos “ UNMSM - FCM, 1994.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 51,
+                "idSilabo": 9,
+                "referencia": "[PEÑA 1998] Peña Mori Ricardo, “diseño de Programas- Formalismo Abstracción” Editorial Prentice Hall 1998. Madrid.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 52,
+                "idSilabo": 9,
+                "referencia": "[JAIME 2002] Jaime Alberto, “Estructura de Datos y Algoritmos”. Prentice hall 2002, Bogotá D.C.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 53,
+                "idSilabo": 9,
+                "referencia": "[WEISS 2000] Weiss, Mark Allenn, “Estructura de Datos y Algoritmos”. Adisson Wesley 1995. Madrid.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 54,
+                "idSilabo": 9,
+                "referencia": "[HERNÁNDEZ 2000] Hernández R., Lázaro J.C., y otros, “Estructura de Datos y Algoritmos. Editorial Prentice Hall 2000. Madrid",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 55,
+                "idSilabo": 9,
+                "referencia": "[TANENBAUM 1993] Tanembaum A.., Langsam Y. Y otros “Estructura de Datos en C”, Prentice Halll 1993. Madrid. Cap 2 - 4.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 56,
+                "idSilabo": 9,
+                "referencia": "[GRASMAN] Grasman, “Matemática Discreta y Lógica”. Cap. 7",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 57,
+                "idSilabo": 9,
+                "referencia": "[KOLMAN 1986] Kolman Bernard y Busby R., “Estructuras de Matemáticas Discretas para la Computación”. Editorial Prentice Hall Hispanoamericana S.A., 1986, México. Cap. 4.",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 10,
+          "nombre": "Estructura de Datos",
+          "silabo": {
+            "idSilabo": 10,
+            "idCurso": 10,
+            "sumilla": "representación de datos. Estructura de datos estática: arreglo unidimensional (vector) y arreglo unidimensional (matriz). Estructura de datos dinámica: punteros a direcciones de memoria. Listas. Pilas. Colas. Árbol y árbol binario. Grafos. Tablas hash. Modelo de datos relacional: conceptos y representación.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de identificar las estructuras de datos adecuadas para implementar programas para computadora, de acuerdo con la problemática planteada.",
+            "unidades": [
+              {
+                "idUnidad": 37,
+                "idSilabo": 10,
+                "numero": 1,
+                "titulo": "Funciones y paso de parámetros. Representación de datos numéricos. Manipulación de Bits. Arreglos Unidimensionales. Vectores. Operaciones. Arreglos Bidimensionales. Matrices.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Funciones y paso de parámetros. Representación de datos numéricos. Manipulación de Bits. Arreglos Unidimensionales. Vectores. Operaciones. Arreglos Bidimensionales. Matrices.",
+                "temas": "Funciones y paso de parámetros. Representación de datos numéricos. Manipulación de Bits. Arreglos Unidimensionales. Vectores. Operaciones. Arreglos Bidimensionales. Matrices."
+              },
+              {
+                "idUnidad": 38,
+                "idSilabo": 10,
+                "numero": 2,
+                "titulo": "Registros. Estructuras. Cadenas de caracteres. Punteros y referencias.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Registros. Estructuras. Cadenas de caracteres. Punteros y referencias.",
+                "temas": "Registros. Estructuras. Cadenas de caracteres. Punteros y referencias."
+              },
+              {
+                "idUnidad": 39,
+                "idSilabo": 10,
+                "numero": 3,
+                "titulo": "Estructuras enlazadas. Listas. Operaciones fundamentales. Pilas. Operaciones fundamentales. Colas. Operaciones fundamentales.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Estructuras enlazadas. Listas. Operaciones fundamentales. Pilas. Operaciones fundamentales. Colas. Operaciones fundamentales.",
+                "temas": "Estructuras enlazadas. Listas. Operaciones fundamentales. Pilas. Operaciones fundamentales. Colas. Operaciones fundamentales."
+              },
+              {
+                "idUnidad": 40,
+                "idSilabo": 10,
+                "numero": 4,
+                "titulo": "Recursión. Árboles. Operaciones fundamentales. Árboles binarios de búsquedas ABB. Grafos. Representación. Recorrido y operaciones.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Recursión. Árboles. Operaciones fundamentales. Árboles binarios de búsquedas ABB. Grafos. Representación. Recorrido y operaciones.",
+                "temas": "Recursión. Árboles. Operaciones fundamentales. Árboles binarios de búsquedas ABB. Grafos. Representación. Recorrido y operaciones."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 58,
+                "idSilabo": 10,
+                "referencia": "Allen, M. (2013). Estructuras de datos en java. (4.a ed.). Pearson. https://bit.ly/3Hf1GBX",
+                "url": "https://bit.ly/3Hf1GBX"
+              },
+              {
+                "idBibliografia": 59,
+                "idSilabo": 10,
+                "referencia": "Henry, T. & Carrano, F. (2015). Data Structures and Abstractions with Java. 4ª ed. England: Pearson.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 60,
+                "idSilabo": 10,
+                "referencia": "Chawdhuri, D. (2017). Java 9 Stuctures and Algorithms. [Consulta: 25 de enero 2019]. Recuperado de: https://proquest.safaribooksonline.com/book/programming/java/9781785889349",
+                "url": "https://proquest.safaribooksonline.com/book/programming/java/9781785889349"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

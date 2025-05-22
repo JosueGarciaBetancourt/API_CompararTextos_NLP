@@ -1,0 +1,196 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 11,
+          "nombre": "Matemática Discreta",
+          "silabo": {
+            "idSilabo": 11,
+            "idCurso": 11,
+            "sumilla": "Lógica matemática, álgebra de Boole, teoría de conjuntos, análisis combinatorio, inducción, recursividad, relaciones, funciones, teoría de grafos, árboles, teoría de lenguajes, estructuras discretas, teoría de codificación.",
+            "aprendizaje_general": "Proveer conceptos de Matemática Discreta es dar el fundamento teórico para generar modelos discretos en donde los estudiantes tienen la posibilidad de desarrollar sus propios diseños. Como materia practica pretende informar y ejercitar en ciertos métodos de aprehensión y comprensión de los conceptos utilizados en matemática discreta.",
+            "unidades": [
+              {
+                "idUnidad": 41,
+                "idSilabo": 11,
+                "numero": 1,
+                "titulo": "Lógica matemática. Proposiciones. Compuerta lógica. Principios lógicos. Principio de Lewis. Dualidad. Inferencias. Reglas de inferencia. Modus Ponens. Modus Tollens. Literales. Cláusulas. Formal Normal Prenexa, Función de Skolen. Resolventes. Métodos de Demostración directo, indirecto, por contradicción. Aplicaciones. Cálculo de Predicado. Sustitución de formas normales. Lógica de predicados con Cuantificadores. Reglas de particularización y Generalización. Aplicaciones en la deducción inferencial de cuantificadores. Teoría de Conjunto: Conjuntos. Diagrama sagital, de Hasse, de Veitch y diagrama de Karnaught. Conjuntos equipotentes. Leyes de equivalencias. Principio de inclusión - exclusión. Conjunto potencia. Recubrimiento. Conjunto bien ordenado. Partición. Aplicación.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Lógica matemática... Aplicaciones. Cálculo de Predicado... Aplicación.",
+                "temas": "Lógica matemática... Aplicaciones. Cálculo de Predicado... Aplicación."
+              },
+              {
+                "idUnidad": 42,
+                "idSilabo": 11,
+                "numero": 2,
+                "titulo": "Análisis Combinatorio. Reglas de conteo. Principio del palomar. Factorial permutación. Permutación circular y lineal. Principio de potencia. Combinaciones. Permutación con objetos indistinguibles. Desarrollo binomial. Aplicaciones. Inducción Matemática. Sumatoria, propiedad telescópica. Principio de inducción. Demostraciones por inducción. Segmento de algoritmo. Propiedad del buen orden. Aplicaciones. Recursividad. Relación Recursiva. Generación de funciones recursivas. Algoritmos de funciones recursivas. Ventajas y desventajas. Movimiento de la torre de Hanoi de la forma H (n, A, B, C). Verificación formal de programas. Aplicaciones.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Análisis Combinatorio... Aplicaciones. Inducción Matemática... Aplicaciones. Recursividad... Aplicaciones.",
+                "temas": "Análisis Combinatorio... Aplicaciones. Inducción Matemática... Aplicaciones. Recursividad... Aplicaciones."
+              },
+              {
+                "idUnidad": 43,
+                "idSilabo": 11,
+                "numero": 3,
+                "titulo": "Relaciones. Relaciones en un conjunto. Propiedades. Relaciones n-arias. Base de datos y relaciones. SQL. Representación de relaciones usando matrices. Projección, Unión (U): Intersección (∩),Diferencia (-),Producto cartesiano(join), ejemplos. Funciones. Definiciones. Funciones inyectivas y sobreyectivas. Funciones inversas y composición de funciones. Grafica de funciones. Algunas funciones importantes: Signoidea. Función Gaussiana. Aplicación. Examen Parcial. Teoría de Grafos. Concepto de Grafo. Tipos de grafos. Modelos de grafo. Familias de grafos simples. Grafos bipartidos. Grafos definidos a partir de otros. Producto de grafos. Matriz de adyacencia, incidencia. Grafos isomorfos. Caminos.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Relaciones... ejemplos. Funciones... Aplicación. Examen Parcial. Teoría de Grafos... Caminos.",
+                "temas": "Relaciones... ejemplos. Funciones... Aplicación. Examen Parcial. Teoría de Grafos... Caminos."
+              },
+              {
+                "idUnidad": 44,
+                "idSilabo": 11,
+                "numero": 4,
+                "titulo": "Caminos Eulerianos y Hamiltonianos. Circuitos hamiltonianos. Algoritmos de camino mínimos de Warschall, Dijkstra El teorema de Kuratowski. Coloreado de grafos. Representación en memoria de un grafo. Aplicaciones. Árboles. Definiciones de Árbol. Árbol enraizado. Árbol binario. Árboles como modelo. Propiedades. Elementos. Longitud. Profundidad. Altura. Árbol extendido. Longitudes. Árbol lleno. Árbol Completo. Árbol de Búsqueda Binaria. Árbol AVL. Árbol de Huffmann. Representación en memoria. Árbol de montículos [Heaps]. Algoritmo de ffiltración. Búsqueda en profundidad y anchura. Árboles generadores mínimos. Algoritmo Prim, Kruskal. Recorridos. Representación en memoria del árbol enhebrado Bi direccional inorden. Cadena Polaca de Lukasiewicz. Recorridos. Evaluación de expresiones por pila (snack) y manual. Transformación de Infija a postfija por pilas. Aplicación. Teoría de Lenguajes Concepto general de gramática. Tipos de gramática según Nohan Chomsky. Árbol de derivación. Lenguaje generado por una gramática. Reglas de producción. Análisis Sintáctico. Árbol sintáctico. La forma de Backus Naur máquina de estado finito deterministico con salida y sin salida, algoritmos, autómatas no dertminísticos, conversiones afn a dfa, aplicaciones. Autómatas Finitos. Reconocimiento de lenguajes. Teorema de Kleene. Uso de la maquina de Turing, autómatas de pila. Examen Final. Examen Sustitutorio.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Caminos Eulerianos y Hamiltonianos... Aplicaciones. Árboles... inorden. Cadena Polaca de Lukasiewicz... Aplicación. Teoría de Lenguajes... aplicaciones. Autómatas Finitos... autómatas de pila. Examen Final. Examen Sustitutorio.",
+                "temas": "Caminos Eulerianos y Hamiltonianos... Aplicaciones. Árboles... inorden. Cadena Polaca de Lukasiewicz... Aplicación. Teoría de Lenguajes... aplicaciones. Autómatas Finitos... autómatas de pila. Examen Final. Examen Sustitutorio."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 61,
+                "idSilabo": 11,
+                "referencia": "Matemática Discreta y sus Aplicaciones: Kenneth N. Rosen - Quinta edición. Mc Graw Hill.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 62,
+                "idSilabo": 11,
+                "referencia": "Matemática Discreta y Combinatoria-Ralph Grimaldi Addison Wesley Longman",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 63,
+                "idSilabo": 11,
+                "referencia": "Matemáticas Discretas con teoria de graficas y combinatorial T. Veerarajan-McGraw Hill",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 64,
+                "idSilabo": 11,
+                "referencia": "Matemáticas Discreta: Johnsonbaugh, Richard - Grupo Editorial Iberoamericana.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 65,
+                "idSilabo": 11,
+                "referencia": "Matemáticas Discretas y Lógica: Grassmann W. K. Trenblay - Ed. Prentice Hall Hispanoamericana.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 66,
+                "idSilabo": 11,
+                "referencia": "Matemáticas Discretas y Combinatorias: Grimaldi Ralph P. - Ed. Addison – Wesley.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 67,
+                "idSilabo": 11,
+                "referencia": "Estructura de Matemáticas Discretas para la Computación: Kolman, Bernardo B. - Ed. Prentice Hall.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 68,
+                "idSilabo": 11,
+                "referencia": "Matemática Discretas: Kenneth A. Ross - Ed. Prentice may.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 69,
+                "idSilabo": 11,
+                "referencia": "Elementos de Matemáticas Discretas: C. L. Liu. - Ed. Mc Graw Hill.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 70,
+                "idSilabo": 11,
+                "referencia": "Matemáticas Discretas Seymour Lipschutz –Marc Lipson-Mc Graw Hill",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 12,
+          "nombre": "Matemática Discreta",
+          "silabo": {
+            "idSilabo": 12,
+            "idCurso": 12,
+            "sumilla": "Fundamentos de lógica proposicional y lógica cuantificacional. Teoría de conjuntos. Inducción matemática. Principios fundamentales de conteo. Teoría de grafos. Árboles. Máquinas de estados finitos.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de aplicar estructuras discretas elementales para el planteamiento y solución de problemas de ingeniería.",
+            "unidades": [
+              {
+                "idUnidad": 45,
+                "idSilabo": 12,
+                "numero": 1,
+                "titulo": "Proposiciones. Formulación de inferencias. Leyes lógicas. Deducción general. Uso de cuantificadores. Intercambio de cuantificadores. Silogismo categórico. Clases de conjuntos. El conjunto potencia. Operaciones con conjuntos. El conjunto especial sigma.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Proposiciones... El conjunto especial sigma.",
+                "temas": "Proposiciones... El conjunto especial sigma."
+              },
+              {
+                "idUnidad": 46,
+                "idSilabo": 12,
+                "numero": 2,
+                "titulo": "Principio de inducción matemática. Demostraciones de proposiciones matemáticas mediante la inducción matemática. Definiciones recursivas. Relaciones de recurrencia de primer orden. Relaciones de recurrencia de segundo orden. Resolución de relaciones de recurrencia. Primer y segundo principio de conteo. Permutaciones. Combinaciones.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Principio de inducción matemática... Combinaciones.",
+                "temas": "Principio de inducción matemática... Combinaciones."
+              },
+              {
+                "idUnidad": 47,
+                "idSilabo": 12,
+                "numero": 3,
+                "titulo": "Teoría de grafos y árboles: Definiciones de grafos. Subgrafos, complemento de un grafo. Grado de un vértice, grafos planos, caminos y ciclos Hamiltonianos. Definiciones, propiedades. Árboles. Definiciones de árboles. Árboles con raíz. Árboles y ordenaciones. Árboles ponderados. Algoritmo del camino más corto de Dijkstra. Árboles recubridores minimales. Redes de transportes.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Teoría de grafos y árboles... Redes de transportes.",
+                "temas": "Teoría de grafos y árboles... Redes de transportes."
+              },
+              {
+                "idUnidad": 48,
+                "idSilabo": 12,
+                "numero": 4,
+                "titulo": "Aspectos genéricos de la teoría de sistemas. Introducción a las máquinas de estados. Clasificación de las máquinas de estados. Diagrama de estados. Circuitos secuenciales y máquinas de estado finito. El proceso de minimización. Lenguajes y gramáticas. Autómatas de estado finito no determinístico.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Aspectos genéricos de la teoría de sistemas... Autómatas de estado finito no determinístico.",
+                "temas": "Aspectos genéricos de la teoría de sistemas... Autómatas de estado finito no determinístico."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 71,
+                "idSilabo": 12,
+                "referencia": "García, M. (2015). Matemática discreta para la computación: nociones teóricas y problemas resueltos. (2.a ed.). Universidad de Jaén. https://cutt.ly/R0AkpFl",
+                "url": "https://cutt.ly/R0AkpFl"
+              },
+              {
+                "idBibliografia": 72,
+                "idSilabo": 12,
+                "referencia": "Epp, S. (2015). Matemáticas discretas con aplicaciones. (4.a ed.). Cengage Learning. https://bit.ly/3EuPDOC",
+                "url": "https://bit.ly/3EuPDOC"
+              },
+              {
+                "idBibliografia": 73,
+                "idSilabo": 12,
+                "referencia": "Malva, A., Schwer, I., Cámara, V. y Fumero, Y. (2005). Matemática discreta: con aplicaciones a las ciencias de la programación y de la computación. Argentina: Universidad Nacional Del Litoral.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 74,
+                "idSilabo": 12,
+                "referencia": "Matousek, J. y Nesetril, J. (2008). Invitación a la matemática discreta. España: Reverté.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 75,
+                "idSilabo": 12,
+                "referencia": "Ralph, G. (1998). Matemáticas Discreta y Combinatoria. (3a ed.). México: Addison Wesley Iberoamericana S.A.",
+                "url": "null"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

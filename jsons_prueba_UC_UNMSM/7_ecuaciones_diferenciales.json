@@ -1,0 +1,172 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 13,
+          "nombre": "Ecuaciones Diferenciales",
+          "silabo": {
+            "idSilabo": 13,
+            "idCurso": 13,
+            "sumilla": "Ecuaciones Diferenciales Ordinarias. Tipos de ecuaciones lineales con coeficientes constantes. Ecuaciones lineales con coeficientes variables. Transformada de Laplace. Series de potencias.",
+            "aprendizaje_general": "Al finalizar el curso. el alumno deberá ser capaz de conocer y comprender los conceptos principales impartidos, de saber manipular las técnicas y métodos de las ecuaciones diferenciales y poder aplicarlos a problemas concretos. Entender el uso de las series de potencias en la solución de ecuaciones lineales de segundo orden con coeficientes variables.",
+            "unidades": [
+              {
+                "idUnidad": 49,
+                "idSilabo": 13,
+                "numero": 1,
+                "titulo": "Introducción a las ecuaciones diferenciales. Orden y grado. Solución general y solución particular. Problemas de valor inicial. Campo de pendientes. Ecuaciones en variables separables. Ecuaciones homogéneas y reducibles a ellas. Ecuaciones exactas. Factor integrante. Ecuaciones Lineales de primer orden. Problemas de Valor Inicial. Aplicaciones de las ecuaciones diferenciales de primer orden. Intercambio de temperaturas Crecimiento. Desintegración de sustancias radioactivas. Mezclas químicas. Circuitos R-L y R-C. La Ecuación de Bernoulli. Aplicación; Modelos de Población.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Introducción a las ecuaciones diferenciales... Aplicación; Modelos de Población.",
+                "temas": "Introducción a las ecuaciones diferenciales... Aplicación; Modelos de Población."
+              },
+              {
+                "idUnidad": 50,
+                "idSilabo": 13,
+                "numero": 2,
+                "titulo": "Ecuaciones Homogéneas de Segundo Orden. Solución general y Problema de Valor Inicial. Wornskiano y construcción de la base real-valorada. Aplicaciones: Oscilaciones liebres de un resorte, Circuito LC bajo fuerza electromotriz constante, Oscilaciones amortiguadas de un resorte, Circuito RLC impulsado por una fuerza electromotriz constante. Ecuaciones Lineales No Homogéneas de orden dos. Solución general. Método de Variación de Parámetros. Problema de Valor Inicial. Método de Coeficientes indeterminados. Aplicaciones: Circuitos LC y RLC bajo fuerza electromotriz alterna. El fenómeno de resonancia para circuitos eléctricos y sistema masa-resorte. Breve discusión del caso n-esimo. Problemas de Valor Frontera. PRIMERA PRÁCTICA CALIFICADA. Aplicaciones: Circuitos LC y RLC bajo fuerza electromotriz alterna. El fenómeno de resonancia para circuitos eléctricos y sistema masa-resorte. Breve discusión del caso n-esimo. Problemas de Valor Frontera.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Ecuaciones Homogéneas de Segundo Orden... Problemas de Valor Frontera. PRIMERA PRÁCTICA CALIFICADA. Aplicaciones... Problemas de Valor Frontera.",
+                "temas": "Ecuaciones Homogéneas de Segundo Orden... Problemas de Valor Frontera. PRIMERA PRÁCTICA CALIFICADA. Aplicaciones... Problemas de Valor Frontera."
+              },
+              {
+                "idUnidad": 51,
+                "idSilabo": 13,
+                "numero": 3,
+                "titulo": "La Transformada de Laplace: Definición, ejemplos y principales propiedades. PRIMER EXAMEN PARCIAL. La transformada inversa de Laplace: Fracciones Parciales y convolución. Aplicaciones: Circuitos Eléctricos. Uso de la Transformada para la solución de ecuaciones diferenciales con funciones de fuerza seccionalmente continúas. Funciones Periódicas. SEGUNDA PRACTICA CALIFICADA. Ecuaciones Lineales con coeficientes Variables. Ecuaciones de Cauchy-Euler. Método de Reducción de Orden. Ecuaciones No-Homogéneas. Uso de transformaciones para la solución de ecuaciones diferenciales.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "La Transformada de Laplace... Uso de transformaciones para la solución de ecuaciones diferenciales.",
+                "temas": "La Transformada de Laplace... Uso de transformaciones para la solución de ecuaciones diferenciales."
+              },
+              {
+                "idUnidad": 52,
+                "idSilabo": 13,
+                "numero": 4,
+                "titulo": "Series de potencias. Serie de TAYLOR. El método de las series de potencia para resolver ecuaciones diferenciales lineales con coeficientes variables. La ecuación de Riccati. La Ecuación de Hermite. Funciones Analíticas. Ecuación de Legendre. La Ecuación de Hermite. Funciones Analíticas. Ecuación de Legendre. Puntos singulares .Método de Frobenius. Estudio de la Ecuación de Bessel a partir de un problema de transmisión del calor. Principales propiedades. Enfriamiento de un cilindro circular de gran longitud y ecuaciones reducibles a Bessel mediante transformaciones. TERCERA PRÁCTICA CALIFICADA. EXAMEN FINAL. EXAMEN SUSTITUTORIO.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Series de potencias... EXAMEN SUSTITUTORIO.",
+                "temas": "Series de potencias... EXAMEN SUSTITUTORIO."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 76,
+                "idSilabo": 13,
+                "referencia": "Helfgott M.; Vera E..; Introducción a las ecuaciones diferenciales, Lima, Amaru Editores, 1982",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 77,
+                "idSilabo": 13,
+                "referencia": "Dennis Zill \"Ecuaciones Diferenciales con Aplicaciones\". Internacional Thomson Editores. 1998.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 78,
+                "idSilabo": 13,
+                "referencia": "Edwards Penney : \"Ecuaciones Diferenciales Elementales con Aplicaciones\".",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 79,
+                "idSilabo": 13,
+                "referencia": "Edwin Kreyszig.: \"Matemática Avanzada para ingeniería\" Edit. Limusa. Méx1991",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 80,
+                "idSilabo": 13,
+                "referencia": "W. Óbice y R. Diprima : \" Introducción a las Ecuaciones Diferenciales\" Edit. Limusa. 1986.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 81,
+                "idSilabo": 13,
+                "referencia": "Simmons G. : \"Ecuaciones Diferenciales\" EDit. Mc. Graw-Hill.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 82,
+                "idSilabo": 13,
+                "referencia": "P. Blachard, Devaney, Hall : \" Ecuaciones Diferenciales \" Edit. Internacional Thomson Editores.",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 14,
+          "nombre": "Ecuaciones Diferenciales",
+          "silabo": {
+            "idSilabo": 14,
+            "idCurso": 14,
+            "sumilla": "Ecuaciones diferenciales ordinarias, Sistemas de ecuaciones diferenciales, Ecuaciones diferenciales parciales lineales, Ecuaciones diferenciales ordinarias lineales de segundo orden con coeficientes constantes y variables, Series de Fourier, Transformada de Laplace.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de aplicar las herramientas de las ecuaciones diferenciales para resolver ejercicios y problemas del entorno real.",
+            "unidades": [
+              {
+                "idUnidad": 53,
+                "idSilabo": 14,
+                "numero": 1,
+                "titulo": "Introducción a las ecuaciones diferenciales. Ecuaciones diferenciales de primer orden. Modelado con ecuaciones diferenciales de primer orden.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Introducción a las ecuaciones diferenciales. Ecuaciones diferenciales de primer orden. Modelado con ecuaciones diferenciales de primer orden.",
+                "temas": "Introducción a las ecuaciones diferenciales. Ecuaciones diferenciales de primer orden. Modelado con ecuaciones diferenciales de primer orden."
+              },
+              {
+                "idUnidad": 54,
+                "idSilabo": 14,
+                "numero": 2,
+                "titulo": "Ecuaciones diferenciales de orden superior. Modelado con ecuaciones diferenciales de segundo orden. Sistema de ecuaciones diferenciales lineales. Solución de ecuaciones diferenciales lineales con series de potencia.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Ecuaciones diferenciales de orden superior. Modelado con ecuaciones diferenciales de segundo orden. Sistema de ecuaciones diferenciales lineales. Solución de ecuaciones diferenciales lineales con series de potencia.",
+                "temas": "Ecuaciones diferenciales de orden superior. Modelado con ecuaciones diferenciales de segundo orden. Sistema de ecuaciones diferenciales lineales. Solución de ecuaciones diferenciales lineales con series de potencia."
+              },
+              {
+                "idUnidad": 55,
+                "idSilabo": 14,
+                "numero": 3,
+                "titulo": "Propiedad de linealidad. funciones elementales. Transformada Inversa. Propiedades. Transformada de la derivada. Transformada de la integral. Traslación de la transformada. Forma Inversa. Transformada de Laplace de una función trasladada. Función escalón unitario. Forma inversa. Convolución. Teorema de convolución y forma inversa. Derivada de una transformada.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Propiedad de linealidad... Derivada de una transformada.",
+                "temas": "Propiedad de linealidad... Derivada de una transformada."
+              },
+              {
+                "idUnidad": 56,
+                "idSilabo": 14,
+                "numero": 4,
+                "titulo": "Series de Fourier. Ecuaciones Diferenciales Parciales.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Series de Fourier. Ecuaciones Diferenciales Parciales.",
+                "temas": "Series de Fourier. Ecuaciones Diferenciales Parciales."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 83,
+                "idSilabo": 14,
+                "referencia": "Larson, R., Hostetler, R., y Edwards, B. (2007). Cálculo. Cengage Learning. https://bit.ly/3jres76",
+                "url": "https://bit.ly/3jres76"
+              },
+              {
+                "idBibliografia": 84,
+                "idSilabo": 14,
+                "referencia": "Cengel, Y., Palma, W. (2014). Ecuaciones diferenciales para ingeniería y ciencias. 1ª ed. México: Mc Graw Hill.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 85,
+                "idSilabo": 14,
+                "referencia": "Espinoza, E. (2014). Análisis matemático IV. Perú: Editorial Servicios Gráficos J.J.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 86,
+                "idSilabo": 14,
+                "referencia": "Larson, R., Edward, B. (2012). Cálculo de una variable. 9ª ed. México.: Mc Graw Hill. Código Biblioteca UC. 515.L26.",
+                "url": "null"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

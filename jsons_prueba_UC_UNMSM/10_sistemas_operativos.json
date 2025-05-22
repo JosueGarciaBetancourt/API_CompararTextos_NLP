@@ -1,0 +1,136 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 19,
+          "nombre": "Sistemas Operativos",
+          "silabo": {
+            "idSilabo": 19,
+            "idCurso": 19,
+            "sumilla": "El curso consta de Teoría y Laboratorio. La parte teórica está orientada a brindar al estudiante una idea clara de los fundamentos de la operación de los Sistemas Informáticos y de la forma en la que los Sistemas operativos llevan a cabo la administración de los recursos del sistema. Asimismo se ocupa de afirmar los conocimientos teóricos con la presentación de casos hipotéticos y/o reales en los que se vea la aplicación de las diferentes técnicas estudiadas. Dentro del Laboratorio se desarrollará programas que simulen el funcionamiento de un SO.",
+            "aprendizaje_general": "Al finalizar el curso el alumno conocerá las características comunes más importantes de los Sistemas Operativos lo que le permitirá, junto a un análisis critico y creativo, realizar diseños y evaluaciones de performance, costos y tecnología para entornos de computación empresariales modernos",
+            "unidades": [
+              {
+                "idUnidad": 73,
+                "idSilabo": 19,
+                "numero": 1,
+                "titulo": "INTRODUCCION Y CONCEPTOS BASICOS. Niveles de un Sistema Computacional. Arquitectura de Computadoras. Modelo Von Neuman. Definiciones previas. ¿Qué es un SO? Evolución de los SO. Arquitectura de los S.O. Sistemas Operativos Modernos. Características principales.",
+                "duracion_semanas": "1-1",
+                "aprendizajes": "INTRODUCCION Y CONCEPTOS BASICOS... Características principales.",
+                "temas": "INTRODUCCION Y CONCEPTOS BASICOS... Características principales."
+              },
+              {
+                "idUnidad": 74,
+                "idSilabo": 19,
+                "numero": 2,
+                "titulo": "ADMINISTRACION DEL PROCESADOR. Procesos. Definiciones. Estados. Threads. Definiciones. Sincronización entre Procesos. Acceso a Recursos Compartidos. Mecanismos de control de Acceso a Recursos. Planificación de los Procesos. Mecanismos de Planificación de Procesos. Planificación en UNIX. EXAMEN PARCIAL",
+                "duracion_semanas": "2-7",
+                "aprendizajes": "ADMINISTRACION DEL PROCESADOR... EXAMEN PARCIAL",
+                "temas": "ADMINISTRACION DEL PROCESADOR... EXAMEN PARCIAL"
+              },
+              {
+                "idUnidad": 75,
+                "idSilabo": 19,
+                "numero": 3,
+                "titulo": "ADMINISTRACION DE LA MEMORIA (Primera Parte). Estructura de la memoria. Memoria Principal. Memoria Virtual. Uso de la Memoria Principal. En Monoprogramación. En Multiprogramación. Estrategias de Administración: Fija y Variable. ADMINISTRACION DE LA MEMORIA (Segunda Parte). Uso de la Memoria Virtual. Definiciones. Técnica Paginada. Técnica Segmentada. Técnica Paginada + Segmentada. Mecanismos de Sustitución de Páginas. Factores involucrados en las técnicas. Hiperpaginación.",
+                "duracion_semanas": "8-13",
+                "aprendizajes": "ADMINISTRACION DE LA MEMORIA (Primera Parte)... Hiperpaginación.",
+                "temas": "ADMINISTRACION DE LA MEMORIA (Primera Parte)... Hiperpaginación."
+              },
+              {
+                "idUnidad": 76,
+                "idSilabo": 19,
+                "numero": 4,
+                "titulo": "SISTEMA DE ARCHIVOS. Archivos. Estructura y Nombres. Tipos de Archivo y Acceso. Directorios. Sistema Jerárquico de Directorios. Nombres y Operaciones de Directorios. Sistemas de Archivos Modernos. Sistemas de Archivos de Intercambio. SISTEMA DE ENTRADA / SALIDA. Hardware de E/S. Dispositivo de E/S. Controladores de Dispositivos. Software de E/S. Del usuario. Independiente del dispositivo. Manejador de dispositivo. Manejador de Interrupciones. Discos. Estructura de los discos. Consideraciones de los discos. SEGURIDAD. Facetas de la Seguridad. Proceso de autenticación. Medidas preventivas. Mecanismos y dominios de Protección. Amenazas a los Sos. Principios básicos del diseño de seguridad. Evaluación de SO modernos. EXAMEN FINAL",
+                "duracion_semanas": "14-16",
+                "aprendizajes": "SISTEMA DE ARCHIVOS... EXAMEN FINAL",
+                "temas": "SISTEMA DE ARCHIVOS... EXAMEN FINAL"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 119,
+                "idSilabo": 19,
+                "referencia": "TANENBAUM, Andrew. Sistemas Operativos. Mac Graw Hill",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 120,
+                "idSilabo": 19,
+                "referencia": "Abraham Silverschatz. \"Sistemas Operativos-Conceptos Fundamentales\", J. Peterson, P. Galvin, 3ra. Ed, 1994.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 121,
+                "idSilabo": 19,
+                "referencia": "STALLING, William. Sistemas Operativos. Prentice Hall",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 20,
+          "nombre": "Sistemas Operativos",
+          "silabo": {
+            "idSilabo": 20,
+            "idCurso": 20,
+            "sumilla": "Introducción a los sistemas operativos; Procesos; Administración de entrada/salida, administración de memoria; Sistema de archivos; Instalación, configuración, mantenimiento de sistemas operativos comerciales y sistemas operativos libres.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de implementar configuraciones de trabajo del sistema operativo considerando aspectos de eficiencia, efectividad y licenciamiento.",
+            "unidades": [
+              {
+                "idUnidad": 77,
+                "idSilabo": 20,
+                "numero": 1,
+                "titulo": "Objetivos, funciones y clasificación de los sistemas operativos. Gestión del Procesador: estados, descripción y control de procesos. Concurrencia. Problemas clásicos de interbloqueo, principios, prevención, detección y evasión",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Objetivos, funciones y clasificación de los sistemas operativos... Problemas clásicos de interbloqueo, principios, prevención, detección y evasión",
+                "temas": "Objetivos, funciones y clasificación de los sistemas operativos... Problemas clásicos de interbloqueo, principios, prevención, detección y evasión"
+              },
+              {
+                "idUnidad": 78,
+                "idSilabo": 14,
+                "numero": 2,
+                "titulo": "Requisitos de la gestión de memoria. Carga de Programas en la memoria principal. Paginación – Segmentación. Memoria virtual. Planificación monoprocesador",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Requisitos de la gestión de memoria... Planificación monoprocesador",
+                "temas": "Requisitos de la gestión de memoria... Planificación monoprocesador"
+              },
+              {
+                "idUnidad": 79,
+                "idSilabo": 20,
+                "numero": 3,
+                "titulo": "Gestión de la entrada salida. Gestión de la memoria secundaria. Almacenamiento intermedio. Sistemas de archivos",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Gestión de la entrada salida... Sistemas de archivos",
+                "temas": "Gestión de la entrada salida... Sistemas de archivos"
+              },
+              {
+                "idUnidad": 80,
+                "idSilabo": 20,
+                "numero": 4,
+                "titulo": "Seguridad: amenazas a la seguridad, protección. Sistemas de confianza. Malware: virus y amenazas afines. Archivo SAM de Windows. Sistemas operativos comerciales: definición, características, tipos de licenciamiento. Sistemas operativos libres: características, tipos de licenciamiento e Instalación",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Seguridad: amenazas a la seguridad... Sistemas operativos libres: características, tipos de licenciamiento e Instalación",
+                "temas": "Seguridad: amenazas a la seguridad... Sistemas operativos libres: características, tipos de licenciamiento e Instalación"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 122,
+                "idSilabo": 20,
+                "referencia": "Wolf, G., Ruiz, E., Bergero, F., y Meza, E. (2015). Fundamentos de sistemas operativos. Universidad Nacional Autónoma de México. https://bit.ly/41kBDkl",
+                "url": "https://bit.ly/41kBDkl"
+              },
+              {
+                "idBibliografia": 123,
+                "idSilabo": 20,
+                "referencia": "Tanembaum, A. (2009). Sistemas operativos modernos. (3.a ed.). Pearson Educación.",
+                "url": "null"
+              }
+            ]
+          }
+        }
+      }
+    ]
+}

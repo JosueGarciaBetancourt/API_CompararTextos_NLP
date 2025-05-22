@@ -532,3 +532,162 @@
 2025-05-21 01:25:37,947 - semantic_evaluator - INFO - Generando reporte en Excel...
 2025-05-21 01:25:38,915 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
 2025-05-21 01:25:38,915 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 16:18:26,326 - semantic_evaluator - INFO - Golden standard cargado con 52 claves de búsqueda
+2025-05-21 16:18:26,351 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 16:18:26,352 - semantic_evaluator - INFO - Procesando 13 archivos JSON...
+2025-05-21 16:20:36,814 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 19_20
+2025-05-21 16:20:37,822 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 25_26
+2025-05-21 16:20:38,995 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 23_24
+2025-05-21 16:20:38,997 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 21_22
+2025-05-21 16:25:40,776 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 16:25:59,658 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 16:26:21,608 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 16:26:40,021 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 16:27:27,562 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 9_10
+2025-05-21 16:27:39,491 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 13_14
+2025-05-21 16:27:40,057 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 11_12
+2025-05-21 16:27:43,320 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 15_16
+2025-05-21 16:27:52,998 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 17_18
+2025-05-21 16:27:53,829 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 16:28:30,472 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 16:28:30,472 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 22:37:01,060 - semantic_evaluator - INFO - Golden standard cargado con 52 claves de búsqueda
+2025-05-21 22:37:01,073 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 22:37:01,083 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 22:38:07,632 - semantic_evaluator - WARNING - No se encontró referencia en golden standard para: 7-1 o introducción a la programación-introducción a la programación
+2025-05-21 22:38:22,251 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 21_22
+2025-05-21 22:38:31,380 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 23_24
+2025-05-21 22:38:32,492 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 19_20
+2025-05-21 22:42:27,176 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 25_26
+2025-05-21 22:43:38,809 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 22:43:49,182 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 22:45:45,979 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 22:46:11,150 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 11_12
+2025-05-21 22:46:11,324 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 22:46:26,973 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 9_10
+2025-05-21 22:47:07,946 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 13_14
+2025-05-21 22:47:10,133 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 15_16
+2025-05-21 22:47:11,991 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 17_18
+2025-05-21 22:47:13,770 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 22:49:01,038 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 22:49:01,185 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 22:54:23,886 - semantic_evaluator - INFO - Golden standard cargado con 52 claves de búsqueda
+2025-05-21 22:54:23,889 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 22:54:23,890 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 22:54:26,714 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 21_22
+2025-05-21 22:54:26,726 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 23_24
+2025-05-21 22:54:26,782 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 19_20
+2025-05-21 22:54:26,787 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 25_26
+2025-05-21 22:54:30,138 - semantic_evaluator - WARNING - No se encontró referencia en golden standard para: 7-1 o introducción a la programación-introducción a la programación
+2025-05-21 22:54:31,357 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 22:54:31,722 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 22:54:31,858 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 22:54:34,242 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 22:54:34,820 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 9_10
+2025-05-21 22:54:34,949 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 13_14
+2025-05-21 22:54:34,964 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 11_12
+2025-05-21 22:54:36,463 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 15_16
+2025-05-21 22:54:37,031 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 17_18
+2025-05-21 22:54:37,043 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 22:54:37,899 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 22:54:37,899 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 22:56:31,779 - semantic_evaluator - INFO - Golden standard cargado con 56 claves de búsqueda
+2025-05-21 22:56:31,781 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 22:56:31,782 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 22:56:35,875 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A10D10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:35,875 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A11A10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:35,876 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021210762410>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:35,921 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A0F4D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:39,970 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A119D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:39,970 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000212119F5ED0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:39,971 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000212119D9D90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:40,015 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021210448050>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:44,050 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021210443D10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:44,065 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000212119F6590>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:44,066 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021210115D50>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:44,112 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A11450>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:48,132 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A249D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:48,150 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021211A37C90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:56:48,152 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 22:56:48,299 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 22:56:48,299 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 22:57:48,155 - semantic_evaluator - INFO - Golden standard cargado con 56 claves de búsqueda
+2025-05-21 22:57:48,156 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 22:57:48,156 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 22:57:52,216 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D651E10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:52,231 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D6510D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:52,231 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593C3AB750>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:52,246 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D63B8D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:56,323 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D661550>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:56,338 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D663510>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:56,338 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D663D10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:57:56,353 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D66F350>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:00,405 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D635210>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:00,405 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D6765D0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:00,421 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D653890>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:00,421 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593C3A0610>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:04,495 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D68A450>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:04,495 - semantic_evaluator - ERROR - Error al enviar solicitud a la API: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /comparar_cursos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001593D689990>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2025-05-21 22:58:04,496 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 22:58:04,586 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 22:58:04,586 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 23:00:18,541 - semantic_evaluator - INFO - Golden standard cargado con 56 claves de búsqueda
+2025-05-21 23:00:18,544 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 23:00:18,544 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 23:01:14,580 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 100_101
+2025-05-21 23:02:03,115 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 23_24
+2025-05-21 23:02:03,119 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 19_20
+2025-05-21 23:02:03,615 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 21_22
+2025-05-21 23:04:33,917 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 25_26
+2025-05-21 23:05:09,535 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 23:07:35,163 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 23:07:50,360 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 23:07:59,546 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 23:08:27,271 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 9_10
+2025-05-21 23:09:28,583 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 13_14
+2025-05-21 23:09:28,898 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 15_16
+2025-05-21 23:09:28,899 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 11_12
+2025-05-21 23:09:31,733 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 17_18
+2025-05-21 23:09:33,913 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 23:10:02,842 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 23:10:02,843 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 23:17:37,544 - semantic_evaluator - INFO - Golden standard cargado con 56 claves de búsqueda
+2025-05-21 23:17:37,547 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 23:17:37,547 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 23:17:39,922 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 100_101
+2025-05-21 23:17:40,187 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 19_20
+2025-05-21 23:17:40,246 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 21_22
+2025-05-21 23:17:40,259 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 23_24
+2025-05-21 23:17:42,270 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 25_26
+2025-05-21 23:17:43,413 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 23:17:43,737 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 23:17:44,468 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 23:17:46,445 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 23:17:46,899 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 9_10
+2025-05-21 23:17:46,991 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 11_12
+2025-05-21 23:17:47,049 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 13_14
+2025-05-21 23:17:48,640 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 15_16
+2025-05-21 23:17:49,082 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 17_18
+2025-05-21 23:17:49,101 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 23:17:49,984 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 23:17:49,984 - semantic_evaluator - INFO - Evaluación completada.
+2025-05-21 23:19:33,585 - semantic_evaluator - INFO - Golden standard cargado con 56 claves de búsqueda
+2025-05-21 23:19:33,587 - semantic_evaluator - INFO - Iniciando evaluación de precisión semántica...
+2025-05-21 23:19:33,587 - semantic_evaluator - INFO - Procesando 14 archivos JSON...
+2025-05-21 23:19:36,187 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 19_20
+2025-05-21 23:19:36,192 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 100_101
+2025-05-21 23:19:36,192 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 21_22
+2025-05-21 23:19:36,194 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 23_24
+2025-05-21 23:19:40,060 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 5_6
+2025-05-21 23:19:40,215 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 25_26
+2025-05-21 23:19:40,261 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 1_2
+2025-05-21 23:19:40,310 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 3_4
+2025-05-21 23:19:44,187 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 13_14
+2025-05-21 23:19:44,243 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 9_10
+2025-05-21 23:19:44,258 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 11_12
+2025-05-21 23:19:44,381 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 7_8
+2025-05-21 23:19:46,492 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 17_18
+2025-05-21 23:19:46,493 - semantic_evaluator - INFO - Encontrada referencia en golden standard con clave: 15_16
+2025-05-21 23:19:46,522 - semantic_evaluator - INFO - Generando reporte en Excel...
+2025-05-21 23:19:47,296 - semantic_evaluator - INFO - Reporte guardado en: resultados_evaluacion\reporte_evaluacion.xlsx
+2025-05-21 23:19:47,296 - semantic_evaluator - INFO - Evaluación completada.

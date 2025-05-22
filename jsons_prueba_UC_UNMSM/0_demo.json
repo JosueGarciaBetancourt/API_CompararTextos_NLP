@@ -1,0 +1,124 @@
+{
+  "comparaciones": [
+    {
+      "cursoOrigen": {
+        "idCurso": 100,
+        "nombre": "Introducción a la Programación",
+        "silabo": {
+          "idSilabo": 7,
+          "idCurso": 7,
+          "sumilla": "Este curso se enfoca en la lógica de programación, desarrollando habilidades de resolución de problemas mediante estructuras de control y datos.",
+          "aprendizaje_general": "El estudiante desarrollará algoritmos y programas básicos utilizando un lenguaje de programación estructurado.",
+          "unidades": [
+            {
+              "idUnidad": 25,
+              "idSilabo": 7,
+              "numero": 1,
+              "titulo": "Algoritmos y pensamiento lógico",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Desarrollar la capacidad de resolución de problemas mediante algoritmos.",
+              "temas": "Metodología de solución de problemas, algoritmos, pseudocódigo."
+            },
+            {
+              "idUnidad": 26,
+              "idSilabo": 7,
+              "numero": 2,
+              "titulo": "Tipos de datos y expresiones",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Utilizar correctamente tipos de datos y operadores.",
+              "temas": "Variables, constantes, operadores aritméticos y lógicos."
+            },
+            {
+              "idUnidad": 27,
+              "idSilabo": 7,
+              "numero": 3,
+              "titulo": "Problemas condicionales y bucles",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Solucionar problemas usando decisiones y repeticiones.",
+              "temas": "if-else, for, while."
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 24,
+              "idSilabo": 7,
+              "referencia": "Cairo, O. (2013). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.",
+              "url": "https://www.alfaomega.com.mx/metodologia-programacion"
+            },
+            {
+              "idBibliografia": 22,
+              "idSilabo": 7,
+              "referencia": "Joyanes Aguilar, L. (2016). Algoritmos y Estructuras de Datos: Una perspectiva en C. McGraw-Hill.",
+              "url": "https://www.mheducation.es/algoritmos-estructuras-datos"
+            },
+            {
+              "idBibliografia": 23,
+              "idSilabo": 7,
+              "referencia": "Sedgewick, R., & Wayne, K. (2015). Algorithms (4th ed.). Addison-Wesley.",
+              "url": "https://algs4.cs.princeton.edu/home/"
+            }
+          ]
+        }
+      },
+      "cursoDestino": {
+        "idCurso": 101,
+        "nombre": "Introducción a la Programación",
+        "silabo": {
+          "idSilabo": 1,
+          "idCurso": 1,
+          "sumilla": "Este curso se enfoca en la lógica de programación, desarrollando habilidades de resolución de problemas mediante estructuras de control y datos.",
+          "aprendizaje_general": "El estudiante desarrollará algoritmos y programas básicos utilizando un lenguaje de programación estructurado.",
+          "unidades": [
+            {
+              "idUnidad": 1,
+              "idSilabo": 1,
+              "numero": 1,
+              "titulo": "Algoritmos y pensamiento lógico",
+              "duracion_semanas": "1-4",
+              "aprendizajes": "Desarrollar la capacidad de resolución de problemas mediante algoritmos.",
+              "temas": "Metodología de solución de problemas, algoritmos, pseudocódigo."
+            },
+            {
+              "idUnidad": 2,
+              "idSilabo": 1,
+              "numero": 2,
+              "titulo": "Tipos de datos y expresiones",
+              "duracion_semanas": "5-8",
+              "aprendizajes": "Utilizar correctamente tipos de datos y operadores.",
+              "temas": "Variables, constantes, operadores aritméticos y lógicos."
+            },
+            {
+              "idUnidad": 3,
+              "idSilabo": 1,
+              "numero": 3,
+              "titulo": "Problemas condicionales y bucles",
+              "duracion_semanas": "9-12",
+              "aprendizajes": "Solucionar problemas usando decisiones y repeticiones.",
+              "temas": "if-else, for, while."
+            }
+          ],
+          "bibliografias": [
+            {
+              "idBibliografia": 1,
+              "idSilabo": 1,
+              "referencia": "Cairo, O. (2013). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.",
+              "url": "https://www.alfaomega.com.mx/metodologia-programacion"
+            },
+            {
+              "idBibliografia": 3,
+              "idSilabo": 1,
+              "referencia": "Joyanes Aguilar, L. (2016). Algoritmos y Estructuras de Datos: Una perspectiva en C. McGraw-Hill.",
+              "url": "https://www.mheducation.es/algoritmos-estructuras-datos"
+            },
+            {
+              "idBibliografia": 2,
+              "idSilabo": 1,
+              "referencia": "Sedgewick, R., & Wayne, K. (2015). Algorithms (4th ed.). Addison-Wesley.",
+              "url": "https://algs4.cs.princeton.edu/home/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

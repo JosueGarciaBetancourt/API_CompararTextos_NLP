@@ -1,0 +1,145 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 25,
+          "nombre": "TALLER DE PROYECTOS II",
+          "silabo": {
+            "idSilabo": 25,
+            "idCurso": 25,
+            "sumilla": "Consolidar la formación recibida por los alumnos en los diferentes cursos de la carrera de Ingeniería de Sistemas, mediante el desarrollo de Proyectos de Sistemas de Información reales, de empresas u organizaciones, utilizando como estándar metodológico el Proceso Unificado Rational (RUP) y las mejores técnicas de modelamiento proporcionadas por el Lenguaje de Modelamiento Unificado (UML), que permitan el dominio del ciclo completo de desarrollo de aplicaciones.",
+            "aprendizaje_general": "Aplicar técnicas, para el modelamiento del negocio, definición de requerimientos, análisis, diseño, construcción y pruebas de aplicaciones; apoyándose en el uso de herramienta Rational Rose. Poner en práctica técnicas para la formulación, gestión y control de proyectos, la elaboración de planes y cronogramas acertados de los proyectos a desarrollar, por actividad, roles y recursos, teniendo como guía el PMI, y el uso de la herramienta MS: PROJECT. Diseñar soluciones basadas en arquitectura basada en componentes y n-capas, integrando soluciones ofrecidas por proveedores líderes en el mercado mundial informático.",
+            "unidades": [
+              {
+                "idUnidad": 97,
+                "idSilabo": 25,
+                "numero": 1,
+                "titulo": "Fase de Iniciación y Elaboración-1 (Iteración l): Organización de los equipos de trabajo. Asignación de Roles (responsabilidades), dirección y control del equipo de trabajo. Propuestas de identificación de los proyectos a desarrollar, elaboración del perfil del proyecto por cada equipo. Elaboración del cronograma general del proyecto, incluyendo los hitos de control del taller. Uso MS-Project. Cronograma de la 1era. Etapa. Elaboración del Modelo del Negocio, identificando los procesos de la organización o empresa beneficiaria. Entregables importantes podrán ser: Actores y Casos de Uso de Negocio, Diagramas de Actividad, Reglas de Negocio y Diagrama de Clases (Objetos) del Negocio. Identificación de los requerimientos del Sistema y de los Casos de Uso del sistema por paquetes, culminación de la Visión del Proyecto y Estudio de Factibilidad, entregables adicionales serán: Informe de Entrevistas, Matriz de Actividades vs. Requerimientos, C.U. del Sistema priorizados, Diagrama de C.U. del Sistema, Especificación de alto nivel de C.U. del Sistema (al 100%), Construcción del prototipo de la aplicación (al 70%). Presentación documentada e impresa del 1er. Entregable – 1er. Control, con exposición: Incluir: Actas de Reuniones, Actas de Aceptación Usuarios, Evaluación de Riesgos.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Revisión de las fases del ciclo de vida de un proyecto informático de desarrollo de aplicaciones usando el RUP y UML Difundir la dinámica del curso – taller, mediante la constitución de los equipos de trabajo, a través de sesiones de trabajo conjunto, la identificación del (los) proyecto(s) a desarrollar por grupo, así como la evaluación del curso mediante el cumplimiento de entregables por etapas del ciclo de vida de sistemas, con una exposición final. Modelar el negocio donde el proyecto será implementado Identificar los requerimientos funcionales que deberá cumplir el sistema o solución de informática propuesto.",
+                "temas": "Organización de los equipos de trabajo. Asignación de Roles (responsabilidades), dirección y control del equipo de trabajo. Propuestas de identificación de los proyectos a desarrollar, elaboración del perfil del proyecto por cada equipo. Elaboración del cronograma general del proyecto, incluyendo los hitos de control del taller. Uso MS-Project. Cronograma de la 1era. Etapa. Elaboración del Modelo del Negocio, identificando los procesos de la organización o empresa beneficiaria. Entregables importantes podrán ser: Actores y Casos de Uso de Negocio, Diagramas de Actividad, Reglas de Negocio y Diagrama de Clases (Objetos) del Negocio. Identificación de los requerimientos del Sistema y de los Casos de Uso del sistema por paquetes, culminación de la Visión del Proyecto y Estudio de Factibilidad, entregables adicionales serán: Informe de Entrevistas, Matriz de Actividades vs. Requerimientos, C.U. del Sistema priorizados, Diagrama de C.U. del Sistema, Especificación de alto nivel de C.U. del Sistema (al 100%), Construcción del prototipo de la aplicación (al 70%)."
+              },
+              {
+                "idUnidad": 98,
+                "idSilabo": 25,
+                "numero": 2,
+                "titulo": "Fase de Elaboracion-2 (Iteración 2) y Construcción-1 (Iteración 1): Ajustes al Cronograma general y elaboración del cronograma detallado de la 2da. Etapa, Asignación de Roles (responsabilidades). Corrección a los entregables del 1er. Control (la corrección del primer entregable deberá ser efectuada por quien elaboró dicho entregable, registrando la evidencia en el historial de cambios de cada entregable, incluyendo el Revisor). Culminar los prototipos al 100%. Elaborar Benchmarking (Cuadro de Discusión de alternativas de software disponible en el mercado). Especificación esencial de los Casos de Uso de Sistemas del núcleo central, Diagramas de transición de estados (para clases altamente transaccionales), Diagrama de Clases de Diseño para el 50% de los C. U. de Sistema, Diagrama de interacción de diseño para el 50% de la C. U. de sistema, Documento de la Arquitectura del Sistema a implementar (completo con diagrama de componentes y distribución) Diseño de la Base de Datos (Modelo Lógico y Físico de Datos). Elaboración del Plan de Pruebas. Efectuar la Programación del 20% de los C. U. de Sistema, preferentemente del núcleo central (transformación de los diseños en código). Presentación documentada e impresa del 2do. Entregable – 2do. Control, con exposición.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Efectuar el Análisis y Diseño de la aplicación, asegurando la elaboración de los entregables de mayor importancia de dichos procesos (análisis y diseño). Asegurar una primera iteración de la construcción del producto de software al 20% Desarrollar habilidades que permita a los alumnos presentar y proponer soluciones de informática a desarrollar, que satisfagan las necesidades del área usuaria involucrada, cuya capacidad ganada pueda retroalimentarse hasta lograr un producto que satisfaga al usuario con los beneficios planeados.",
+                "temas": "Ajustes al Cronograma general y elaboración del cronograma detallado de la 2da. Etapa, Asignación de Roles (responsabilidades). Corrección a los entregables del 1er. Control (la corrección del primer entregable deberá ser efectuada por quien elaboró dicho entregable, registrando la evidencia en el historial de cambios de cada entregable, incluyendo el Revisor). Culminar los prototipos al 100%. Elaborar Benchmarking (Cuadro de Discusión de alternativas de software disponible en el mercado). Especificación esencial de los Casos de Uso de Sistemas del núcleo central, Diagramas de transición de estados (para clases altamente transaccionales), Diagrama de Clases de Diseño para el 50% de los C. U. de Sistema, Diagrama de interacción de diseño para el 50% de la C. U. de sistema, Documento de la Arquitectura del Sistema a implementar (completo con diagrama de componentes y distribución) Diseño de la Base de Datos (Modelo Lógico y Físico de Datos). Elaboración del Plan de Pruebas. Efectuar la Programación del 20% de los C. U. de Sistema, preferentemente del núcleo central (transformación de los diseños en código)."
+              },
+              {
+                "idUnidad": 99,
+                "idSilabo": 25,
+                "numero": 3,
+                "titulo": "Fase de Construcción-2 (Iteración 2): Ajustes al Cronograma general y elaboración del cronograma detallado de la 3era. Etapa. Asignación de Roles (responsabilidades). Corrección y ajustes a los entregables del 2do Control (la corrección del segundo entregable deberá ser efectuada por quien elaboró dicho entregable, registrando la evidencia en el historial de cambios incluyendo la del Revisor). Culminación de los Diagramas de Clases de Diseño para el 100% de los C. U. de Sistema y de los Diagrama de interacción de diseño para el 100% de la C. U. de sistema. Programación del 100% de los casos de uso (asegurando totalmente los C.U. del núcleo central obligatoriamente). Informe de la ejecución del plan de pruebas (unitarias) testeado por el grupo oponente. Elaboración del manual del usuario, del manual de instalación y configuración. Informe de las pruebas de integración testeado por el grupo oponente (incluyendo de estrés y consistencia de Base de Datos) Documento de Arquitectura afinado y definitivo (diagramas de componentes y distribución) Presentación documentada e impresa del 3er. Entregable – 3er. Control. Exposición - sustentación Final del Proyecto, con demostración del producto funcionando. Y entrega de manuales.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Culminar la construcción del producto, que asegure su implementación total, incluyendo la entrega final de los entregables necesarios y de los manuales de uso requeridos. Desarrollar habilidades que permita a los alumnos construir soluciones de informática en forma metodológica, basada en planes de prueba suficientes y sometidos a chequeos del usuario y Q&A, que permitan alcanzar los beneficios esperados por las áreas usuarias. Lograr la puesta en práctica de habilidades que permitan a los alumnos exponer y convencer acerca de la aceptación de sus trabajos o productos logrados, para de ese modo obtener las conformidades necesarias. En otras palabras generar capacidades para poder vender el resultado de sus esfuerzos.",
+                "temas": "Ajustes al Cronograma general y elaboración del cronograma detallado de la 3era. Etapa. Asignación de Roles (responsabilidades). Corrección y ajustes a los entregables del 2do Control (la corrección del segundo entregable deberá ser efectuada por quien elaboró dicho entregable, registrando la evidencia en el historial de cambios incluyendo la del Revisor). Culminación de los Diagramas de Clases de Diseño para el 100% de los C. U. de Sistema y de los Diagrama de interacción de diseño para el 100% de la C. U. de sistema. Programación del 100% de los casos de uso (asegurando totalmente los C.U. del núcleo central obligatoriamente). Informe de la ejecución del plan de pruebas (unitarias) testeado por el grupo oponente. Elaboración del manual del usuario, del manual de instalación y configuración. Informe de las pruebas de integración testeado por el grupo oponente (incluyendo de estrés y consistencia de Base de Datos) Documento de Arquitectura afinado y definitivo (diagramas de componentes y distribución)"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 148,
+                "idSilabo": 25,
+                "referencia": "Kruchten, Philippe. The Rational Unified Process An Introduction, Second Edition, Publisher: Addison Wesley, Second Edition March 14, 2000",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 149,
+                "idSilabo": 25,
+                "referencia": "Applying UML and Patterns : An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition) by Craig Larman (Hardcover -- October 20, 2004); Publisher: Prentice Hall PTR; 3 edition (October 20, 2004);",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 150,
+                "idSilabo": 25,
+                "referencia": "UML Distilled: A Brief Guide to the Standard Object Modeling Language, Third Edition by Martin Fowler (Paperback -- September 19, 2003); Publisher: Addison-Wesley Professional; 3 edition (September 19, 2003);",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 151,
+                "idSilabo": 25,
+                "referencia": "Steve Mc Connell – Desarrollo y Gestión de Proyectos Informáticos Mc Graw Hill",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 26,
+          "nombre": "Taller de Proyectos 2 - Ingeniería de Sistemas e Informática",
+          "silabo": {
+            "idSilabo": 26,
+            "idCurso": 26,
+            "sumilla": "Taller de Proyectos 2 - Ingeniería de Sistemas e Informática es una asignatura obligatoria de especialidad, se ubica en el décimo periodo de la Escuela Académico Profesional de Ingeniería de Sistemas e Informática. Tiene como requisito haber aprobado la asignatura Taller de Proyectos 1 - Ingeniería de Sistemas e Informática. Desarrolla, en un nivel logrado, las competencias generales Aprendizaje Experiencial y Colaborativo, Ciudadanía Glocal, y Comunicación Efectiva; las competencias transversales Experimentación, Medioambiente y Sostenibilidad y Gestión de Proyectos; y la competencia específica Diseño y Desarrollo de Soluciones. La relevancia de la asignatura reside en preparar al estudiante para gestionar satisfactoriamente el desarrollo de un proyecto de software, con énfasis en la implementación exitosa, realización de pruebas, la demostración del diseño terminado y la escritura técnica del informe final del proyecto.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de gestionar un proyecto de software de web moderno considerando factores de calidad y aceptación del producto obtenido, además de la elaboración del informe final del proyecto.",
+            "unidades": [
+              {
+                "idUnidad": 100,
+                "idSilabo": 26,
+                "numero": 1,
+                "titulo": "Planificación y diseño del Proyecto: Introducción a la administración de proyectos Roles equipo de desarrollo Inicio del proyecto Arquitectura de software Diseño de la Base de datos Wireframes Planificación del proyecto Implementación del proyecto",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de diseñar proyectos de software, estableciendo roles, definiendo la arquitectura, diseñando bases de datos, y desarrollando wireframes y cronogramas para proyectos efectivos.",
+                "temas": "Introducción a la administración de proyectos Roles equipo de desarrollo Inicio del proyecto Arquitectura de software Diseño de la Base de datos Wireframes Planificación del proyecto Implementación del proyecto"
+              },
+              {
+                "idUnidad": 101,
+                "idSilabo": 26,
+                "numero": 2,
+                "titulo": "Gestión técnica y aseguramiento de calidad: Configuración del entorno desarrollo Métricas para proyectos adaptativos Herramientas de pruebas de software",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Al finalizar la unidad, el estudiante será capaz de configurar entornos de desarrollo, aplicando métricas para proyectos adaptativos, utilizando herramientas de pruebas de software y desarrollando unidades de software confiables.",
+                "temas": "Configuración del entorno desarrollo Métricas para proyectos adaptativos Herramientas de pruebas de software"
+              },
+              {
+                "idUnidad": 102,
+                "idSilabo": 26,
+                "numero": 3,
+                "titulo": "Evaluación y métricas de calidad: Evaluación de la usabilidad Evaluación del software Métricas de rendimiento",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de evaluar la usabilidad, midiendo el rendimiento del software y analizando las métricas clave para garantizar la calidad y satisfacción del usuario final.",
+                "temas": "Evaluación de la usabilidad Evaluación del software Métricas de rendimiento"
+              },
+              {
+                "idUnidad": 103,
+                "idSilabo": 26,
+                "numero": 4,
+                "titulo": "Cierre y documentación del proyecto: Revisión y retrospectiva del proyecto Lanzamiento del proyecto Cierre del proyecto Informe final del proyecto",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de realizar revisiones, retrospectivas, gestionando el lanzamiento del proyecto, y elaborará un informe final que documente todo el ciclo de vida del proyecto.",
+                "temas": "Revisión y retrospectiva del proyecto Lanzamiento del proyecto Cierre del proyecto Informe final del proyecto"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 152,
+                "idSilabo": 26,
+                "referencia": "Project Management Institute (PMI). (2021). A guide to the project management body of knowledge (PMBOK GUIDE) (7.a ed.). https://at1z.short.gy/mzrdai",
+                "url": "https://at1z.short.gy/mzrdai"
+              },
+              {
+                "idBibliografia": 153,
+                "idSilabo": 26,
+                "referencia": "Sommerville, L. (2011). Ingeniería de software. Pearson Educación. (9.a ed.). https://at1z.short.gy/8utNHB",
+                "url": "https://at1z.short.gy/8utNHB"
+              },
+              {
+                "idBibliografia": 154,
+                "idSilabo": 26,
+                "referencia": "Project Management Institute. (2017). Guide to the project management body of knowledge (PMBOK) (6.ª ed.).",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 155,
+                "idSilabo": 26,
+                "referencia": "Sommerville, I. (2016). Software engineering, global edition (10th ed.). Pearson. https://cutt.ly/aJ5q5J8",
+                "url": "https://cutt.ly/aJ5q5J8"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

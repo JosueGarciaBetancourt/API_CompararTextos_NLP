@@ -1,0 +1,208 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 15,
+          "nombre": "Investigación Operativa I",
+          "silabo": {
+            "idSilabo": 15,
+            "idCurso": 15,
+            "sumilla": "Alcance de la Investigación de Operaciones. Estructura de un Programa Matemático Lineal (P.M.L.): Formulación de diferentes situaciones, utilizando esta estructura. Análisis Convexo. Solución del P.P.L. por el método gráfico. El Método Simplex. Técnica de las variables artificiales. El problema dual. Simplex Dual. Análisis de Sensibilidad. Uso del Software: Superlindo. Los Modelos de: Transporte y Asignación y Aplicaciones practicas. Modelos de Programación Lineal Entera",
+            "aprendizaje_general": "Proporcionar al alumno métodos cuantitativos necesarios para la toma de decisiones en los problemas que tienen que ver con la forma de conducir y coordinar óptimamente las operaciones o actividades dentro de una organización, básicamente en este caso con el empleo de modelos matemáticos lineales.",
+            "unidades": [
+              {
+                "idUnidad": 57,
+                "idSilabo": 15,
+                "numero": 1,
+                "titulo": "Introducción de la Investigación Operativa, Clasificación de los problemas de Investigación Operativa. Metodología de Investigación Operativa. Fases de un estudio de Investigación Operativa. Formulación de Modelos Matemáticos. Identificación de variables de decisión, datos del problema, identificación de la función objetivo e identificación de las restricciones. Problemas variados. Análisis Convexo. Programación Lineal. Modelos de Programación Lineal. Solución grafica de un PL de 2 variables. Programas lineales con solución: Optima finita única, Optima alternativa no limitada, Optima limitada. Región de factibilidad. Formas Canónica y Estándar de un P.P.L.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Introducción de la Investigación Operativa... Formas Canónica y Estándar de un P.P.L.",
+                "temas": "Introducción de la Investigación Operativa... Formas Canónica y Estándar de un P.P.L."
+              },
+              {
+                "idUnidad": 58,
+                "idSilabo": 15,
+                "numero": 2,
+                "titulo": "El Método Simplex. Método algebraico, Algoritmo del simplex. Condiciones de optimalidad y factibilidad. Método Simplex en tabla. Solución optima del programa lineal, con restricciones de tipo ≤. Aplicaciones. Uso de variables Artificiales. Técnica de la M. Aplicaciones. Método de las 2 fases. Ejercicios y Problemas. Examen Parcial",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "El Método Simplex... Examen Parcial",
+                "temas": "El Método Simplex... Examen Parcial"
+              },
+              {
+                "idUnidad": 59,
+                "idSilabo": 15,
+                "numero": 3,
+                "titulo": "El problema dual. Interpretación económica del dual. Algoritmo simplex dual. Relación primal-dual. Análisis de sensibilidad: Cambio en el coeficiente de la función objetivo. Cambio en el nivel de recursos. Adición de nuevas variables de decisión. Adición de nuevas restricciones. Uso del software superlindo. El problema de transporte. Formulación del modelo. Problema de transporte balanceados. Problema de transporte no balanceados. Aplicaciones.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "El problema dual... Aplicaciones.",
+                "temas": "El problema dual... Aplicaciones."
+              },
+              {
+                "idUnidad": 60,
+                "idSilabo": 15,
+                "numero": 4,
+                "titulo": "Solución inicial básica factible. Métodos: Esquina nor-oeste, costo mínimo, vogel. Aplicaciones. Algoritmos de prueba de optimalidad para problemas de transporte: Método Stopping Stone. Método Modi. Aplicaciones. El problema de asignación. Formulación del modelo. Método de solución, algoritmo húngaro. Aplicaciones. Modelos de Programación Lineal Entera: Tipos. Algoritmo de Ramificación y Acotación (Branch and Bound). Aplicaciones. Uso de software Lingo. Examen Final",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Solución inicial básica factible... Examen Final",
+                "temas": "Solución inicial básica factible... Examen Final"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 87,
+                "idSilabo": 15,
+                "referencia": "Investigación de Operaciones. Wayne L. Winston. Editorial Iberoamericana, México, 1994.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 88,
+                "idSilabo": 15,
+                "referencia": "Introducción a la Investigación de Operaciones. Hillier y Lieberman, Editorial Mc Graw Hill, México, 1996.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 89,
+                "idSilabo": 15,
+                "referencia": "Investigación de Operaciones. Taha, Editorial Representaciones y Servicios, México, 1996.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 90,
+                "idSilabo": 15,
+                "referencia": "Investigación de Operaciones. Mathur – Solow, Editorial Prentice Hall, New York, 1996.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 91,
+                "idSilabo": 15,
+                "referencia": "Introducción a la investigación de Operaciones. Moskowics, Editorial Prentice Hall, México, 1996.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 92,
+                "idSilabo": 15,
+                "referencia": "Programación Lineal y flujo en redes. Bazaraa, Mokhtar, Editorial Limusa, México, 1994.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 93,
+                "idSilabo": 15,
+                "referencia": "Métodos y Modelos de Investigación de Operaciones. Vol. 1 Modelos Deterministicos. Prawda, Juan, Editorial Limusa, México, 1997.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 94,
+                "idSilabo": 15,
+                "referencia": "Programación Lineal. Saul, Gass. Editorial C.E.C.S.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 95,
+                "idSilabo": 15,
+                "referencia": "Investigación de Operaciones en ciencia de la Administración. Eppen Goulsd Schmidt, Editorial Prentice Hall.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 96,
+                "idSilabo": 15,
+                "referencia": "Investigación de Operaciones. Kamlesh, Mathur. Solon Daniel, Prentice Hall Hispanoamericana, México, 1996.",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 16,
+          "nombre": "Investigación Operativa",
+          "silabo": {
+            "idSilabo": 16,
+            "idCurso": 16,
+            "sumilla": "Programación lineal; Problema de transporte y asignación; Algoritmo simplex; Teoría de la dualidad. PERT/CPM; Teoría de colas, teoría de decisiones, cadenas de Markov; Simulación.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de analizar problemas, formulando modelos matemáticos de optimización e interpretando los resultados, que le permitan apoyar la toma de decisiones para un mejor funcionamiento de una organización",
+            "unidades": [
+              {
+                "idUnidad": 61,
+                "idSilabo": 16,
+                "numero": 1,
+                "titulo": "Introducción. Introducción a la investigación de operaciones. Modelos de Programación Lineal - MPL. Programación lineal. Solución óptima de MPL. Análisis posóptimo de MPL. Aplicaciones en la industria de MPL",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Introducción... Aplicaciones en la industria de MPL",
+                "temas": "Introducción... Aplicaciones en la industria de MPL"
+              },
+              {
+                "idUnidad": 62,
+                "idSilabo": 16,
+                "numero": 2,
+                "titulo": "Modelo de transporte. Modelo de asignación",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Modelo de transporte. Modelo de asignación",
+                "temas": "Modelo de transporte. Modelo de asignación"
+              },
+              {
+                "idUnidad": 63,
+                "idSilabo": 16,
+                "numero": 3,
+                "titulo": "Gestión de proyectos. Modelo PERT/CPM. PERT costos. Aceleración del proyecto",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Gestión de proyectos... Aceleración del proyecto",
+                "temas": "Gestión de proyectos... Aceleración del proyecto"
+              },
+              {
+                "idUnidad": 64,
+                "idSilabo": 16,
+                "numero": 4,
+                "titulo": "Teoría de colas. Cadenas de Markov. Toma de decisiones en condiciones de riesgo. Toma de decisiones en condiciones de incertidumbre",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Teoría de colas... Toma de decisiones en condiciones de incertidumbre",
+                "temas": "Teoría de colas... Toma de decisiones en condiciones de incertidumbre"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 97,
+                "idSilabo": 16,
+                "referencia": "Taha, H. (2017). Investigación de operaciones (10.ª ed.). Pearson. https://bit.ly/3JPTSrB",
+                "url": "https://bit.ly/3JPTSrB"
+              },
+              {
+                "idBibliografia": 98,
+                "idSilabo": 16,
+                "referencia": "Anderson, D., Sweeney, D., Williams, T., Camm, J., Cochran, J., Fry, M., y Ohlmann, J. (2016). Métodos cuantitativos para los negocios (13.a ed.). Cengage Learning.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 99,
+                "idSilabo": 16,
+                "referencia": "Hiller, F. y Lieberman, G. (2015). Introducción a la investigación de operaciones (10.ª ed.). McGraw-Hill Interamericana.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 100,
+                "idSilabo": 16,
+                "referencia": "Hiller, F. y Lieberman, G. (2010). Introducción a la investigación de operaciones (9.a ed.). McGraw-Hill Interamericana.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 101,
+                "idSilabo": 16,
+                "referencia": "Kong, M. (2010). Investigación de operaciones: programación lineal, problemas de transporte, análisis de redes. PUCP Fondo Editorial.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 102,
+                "idSilabo": 16,
+                "referencia": "Render, B., Stair, R., Hanna, M., y Hale, T. (2016). Métodos cuantitativos para los negocios (12.ª ed.). Pearson Educación. https://hubinformacion.continental.edu.pe/recursos/libros-digitales/",
+                "url": "https://hubinformacion.continental.edu.pe/recursos/libros-digitales/"
+              },
+              {
+                "idBibliografia": 103,
+                "idSilabo": 16,
+                "referencia": "Taha, H. (2012). Investigación de Operaciones (9.a ed.). Pearson Educación.",
+                "url": "null"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

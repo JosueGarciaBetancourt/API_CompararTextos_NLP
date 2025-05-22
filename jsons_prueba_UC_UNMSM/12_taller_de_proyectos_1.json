@@ -1,0 +1,190 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 23,
+          "nombre": "Taller de Proyectos I",
+          "silabo": {
+            "idSilabo": 23,
+            "idCurso": 23,
+            "sumilla": "Consolidar la formación profesional del estudiante, mediante el Desarrollo e Implementación de proyectos de sistemas informáticos de empresas u organizaciones utilizando herramientas modernas de desarrollo de aplicaciones o software y manejadores de bases de datos, utilizando metodologías y técnicas derivadas de las mejores practicas. Implementar técnicas para la documentación de sistemas, programas y usuarios.",
+            "aprendizaje_general": "Generar habilidades en los estudiantes a través del desarrollo de proyectos de sistemas informáticos reales, de acuerdo al nivel de aprendizaje logrado en los cursos recibidos, aplicando. Metodologías y técnicas emergentes de desarrollo de software como son el RUP y UML respectivamente.",
+            "unidades": [
+              {
+                "idUnidad": 89,
+                "idSilabo": 23,
+                "numero": 1,
+                "titulo": "Organización del proyecto y especificaciones para su desarrollo (6 horas): Formación de Equipos de Trabajo; Asignación de Roles Elección de un Caso de Estudio basado en una Organización Estudio Preliminar del Caso en Estudio Elaboración del Perfil del Proyecto",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Práctica - Laboratorio 01: Formación de Equipos de Trabajo; Asignación de Roles Elección de un Caso de Estudio basado en una Organización Estudio Preliminar del Caso en Estudio Elaboración del Perfil del Proyecto",
+                "temas": "Práctica - Laboratorio 01: Formación de Equipos de Trabajo; Asignación de Roles Elección de un Caso de Estudio basado en una Organización Estudio Preliminar del Caso en Estudio Elaboración del Perfil del Proyecto"
+              },
+              {
+                "idUnidad": 90,
+                "idSilabo": 23,
+                "numero": 2,
+                "titulo": "Fase Inicio(12horas): Modelado del Negocio Especificación de Casos de Uso del Negocio Realización de Casos de Uso del Negocio Diagrama de Actividades por cada C.U. de Negocio Identificación de Entidades de Negocio (descripción) Plan de Desarrollo del Sistema (Preliminar) Cronograma del Proyecto: por fase, actividades, recursos y tiempo Plan del Proyecto, Lista y Priorización preliminar de Riesgos Glosario Preliminar Visión del Proyecto y Estudio de Factibilidad Presentación del Entregable Nº 1",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Práctica - Laboratorio 02-03: Modelado del Negocio Especificación de Casos de Uso del Negocio Realización de Casos de Uso del Negocio Diagrama de Actividades por cada C.U. de Negocio Identificación de Entidades de Negocio (descripción) Plan de Desarrollo del Sistema (Preliminar) Cronograma del Proyecto: por fase, actividades, recursos y tiempo Plan del Proyecto, Lista y Priorización preliminar de Riesgos Glosario Preliminar Visión del Proyecto y Estudio de Factibilidad Presentación del Entregable Nº 1",
+                "temas": "Práctica - Laboratorio 02-03: Modelado del Negocio Especificación de Casos de Uso del Negocio Realización de Casos de Uso del Negocio Diagrama de Actividades por cada C.U. de Negocio Identificación de Entidades de Negocio (descripción) Plan de Desarrollo del Sistema (Preliminar) Cronograma del Proyecto: por fase, actividades, recursos y tiempo Plan del Proyecto, Lista y Priorización preliminar de Riesgos Glosario Preliminar Visión del Proyecto y Estudio de Factibilidad Presentación del Entregable Nº 1"
+              },
+              {
+                "idUnidad": 91,
+                "idSilabo": 23,
+                "numero": 3,
+                "titulo": "Fase Inicio(12horas): Requerimientos del Sistema Informe de Entrevistas Diagrama de Actividades versus Requerimientos Casos de Uso del Sistema Benchmarking Diagramas de Casos de Uso del Sistema Priorización Casos de Uso del Sistema Especificaciones Complementarias Plan de Iteración Nº1 Plan de Desarrollo del Sistema (Refinado) Diagrama de Paquetes, Primer nivel de arquitectura del Sistema Informe final de evaluación de riesgos",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Práctica - Laboratorio 04-05: Requerimientos del Sistema Informe de Entrevistas Diagrama de Actividades versus Requerimientos Casos de Uso del Sistema Benchmarking Diagramas de Casos de Uso del Sistema Priorización Casos de Uso del Sistema Especificaciones Complementarias Plan de Iteración Nº1 Plan de Desarrollo del Sistema (Refinado) Diagrama de Paquetes, Primer nivel de arquitectura del Sistema Informe final de evaluación de riesgos",
+                "temas": "Práctica - Laboratorio 04-05: Requerimientos del Sistema Informe de Entrevistas Diagrama de Actividades versus Requerimientos Casos de Uso del Sistema Benchmarking Diagramas de Casos de Uso del Sistema Priorización Casos de Uso del Sistema Especificaciones Complementarias Plan de Iteración Nº1 Plan de Desarrollo del Sistema (Refinado) Diagrama de Paquetes, Primer nivel de arquitectura del Sistema Informe final de evaluación de riesgos"
+              },
+              {
+                "idUnidad": 92,
+                "idSilabo": 23,
+                "numero": 4,
+                "titulo": "Fase Elaboración-Iteración Nº1(12horas): Especificación de Casos de Uso del Sistema (100%) Diagrama de Secuencia del Sistema Especificación de Contratos Elaboración de los Prototipos al 60% de los C.U. de Sistema Diagrama de Clases de Análisis por Caso de Uso Presentación del Entregable Nº 2",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Práctica - Laboratorio 06-07: Especificación de Casos de Uso del Sistema (100%) Diagrama de Secuencia del Sistema Especificación de Contratos Elaboración de los Prototipos al 60% de los C.U. de Sistema Diagrama de Clases de Análisis por Caso de Uso",
+                "temas": "Práctica - Laboratorio 06-07: Especificación de Casos de Uso del Sistema (100%) Diagrama de Secuencia del Sistema Especificación de Contratos Elaboración de los Prototipos al 60% de los C.U. de Sistema Diagrama de Clases de Análisis por Caso de Uso"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 134,
+                "idSilabo": 23,
+                "referencia": "UML y Patrones 2º Edición CRAIG LARMAN",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 135,
+                "idSilabo": 23,
+                "referencia": "The Rational Unified Process; A Practitioner´s Guide to the RUP. BOOCH, JACOBSON, RUMBAUGH",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 136,
+                "idSilabo": 23,
+                "referencia": "UML with Rational Rose 2002; WENDY BOGGS,MICHAEL BOGGS",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 137,
+                "idSilabo": 23,
+                "referencia": "El Lenguaje Unificado de Modelado; Manual de Referencia BOOCH, JACOBSON, RUMBAUGH",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 138,
+                "idSilabo": 23,
+                "referencia": "El Proceso Unificado de Desarrollo de Software BOOCH, JACOBSON, RUMBAUGH. Addison Wesley 2000.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 139,
+                "idSilabo": 23,
+                "referencia": "\"UML Gota a Gota\", Martin Fowler, Kendall Scott, Addison-Wesley-Longman, 1999.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 140,
+                "idSilabo": 23,
+                "referencia": "www.usecases.org",
+                "url": "http://www.usecases.org"
+              },
+              {
+                "idBibliografia": 141,
+                "idSilabo": 23,
+                "referencia": "Writting Effective use cases Alistair Cockburn",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 142,
+                "idSilabo": 23,
+                "referencia": "Structuring use case with goals",
+                "url": "null"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 24,
+          "nombre": "Taller de Proyectos 1 - Ingeniería de Sistemas e Informática",
+          "silabo": {
+            "idSilabo": 24,
+            "idCurso": 24,
+            "sumilla": "Taller de Proyectos 1 - Ingeniería de Sistemas e Informática es una asignatura obligatoria de especialidad, que se ubica en el noveno período de la Escuela Académico Profesional de Ingeniería de Sistemas e Informática. Tiene como requisito haber aprobado las asignaturas Pruebas y Calidad de Software y Dirección de proyectos. Desarrolla, a nivel logrado las siguientes competencias generales: Aprendizaje Autónomo, Aprendizaje Experiencial y Colaborativo, Ciudadanía Glocal, Comunicación Efectiva, y las siguientes: competencias transversales: Conocimientos de Ingeniería, Medioambiente y Sostenibilidad, El Ingeniero y la Sociedad, y Gestión de Proyectos; y las competencias específicas: Diseño y Desarrollo de Soluciones, Análisis de Problemas y Uso de Herramientas Modernas. La relevancia de la asignatura reside en utilizar los principios, técnicas, metodologías y herramientas de la ingeniería de software, trabajando como parte de un equipo responsable del desarrollo de un proyecto de software de calidad.",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de identificar un problema u oportunidad, diseñar la solución, plantear el proyecto relacionado y llevar a cabo el proceso de gestión y construcción respectivo.",
+            "unidades": [
+              {
+                "idUnidad": 93,
+                "idSilabo": 24,
+                "numero": 1,
+                "titulo": "Gestión del proyecto: iniciación y planificación. Concepción de la idea del proyecto y alcance Evaluación del Impacto e importancia Antecedentes del problema Obtención y especificación de requisitos de software Arquitectura de la solución Producto mínimo viable Planificación inicial",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de planificar soluciones, mediante enfoques ágiles, a problemas que requieran el uso de tecnologías de la información.",
+                "temas": "Concepción de la idea del proyecto y alcance Evaluación del Impacto e importancia Antecedentes del problema Obtención y especificación de requisitos de software Arquitectura de la solución Producto mínimo viable Planificación inicial"
+              },
+              {
+                "idUnidad": 94,
+                "idSilabo": 24,
+                "numero": 2,
+                "titulo": "Diseño y construcción. Diseño de interfaces y base de datos Estimación de costos, esfuerzo, prioridad y validación de datos Planificación final con asignación de responsabilidades e hitos Construcción, preparación y trabajo en equipo Control de hitos Primer Producto mínimo viable (PMV)",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de construir el producto mínimo viable bajo la guía del plan y el diseño elaborado.",
+                "temas": "Diseño de interfaces y base de datos Estimación de costos, esfuerzo, prioridad y validación de datos Planificación final con asignación de responsabilidades e hitos Construcción, preparación y trabajo en equipo Control de hitos Primer Producto mínimo viable (PMV)"
+              },
+              {
+                "idUnidad": 95,
+                "idSilabo": 24,
+                "numero": 3,
+                "titulo": "Gestión del proyecto. Control de hitos y línea base Gestión de cambios Segundo PMV",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de gestionar la ejecución del proyecto, considerando los cambios que se presentan.",
+                "temas": "Control de hitos y línea base Gestión de cambios Segundo PMV"
+              },
+              {
+                "idUnidad": 96,
+                "idSilabo": 24,
+                "numero": 4,
+                "titulo": "Pruebas y planes de aseguramiento de la calidad. Criterios de calidad de software Selección de los criterios de calidad Definición de las pruebas Resultados e interpretación de las pruebas Tercer PMV",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Al finalizar la Unidad, el estudiante será capaz de aplicar planes de calidad de software.",
+                "temas": "Criterios de calidad de software Selección de los criterios de calidad Definición de las pruebas Resultados e interpretación de las pruebas Tercer PMV"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 143,
+                "idSilabo": 24,
+                "referencia": "Sommerville, I. (2011). Ingeniería de software. (9.a ed.). Pearson Educación. https://at1z.short.gy/uxa1Zx",
+                "url": "https://at1z.short.gy/uxa1Zx"
+              },
+              {
+                "idBibliografia": 144,
+                "idSilabo": 24,
+                "referencia": "Schwaber, K. y Sutherland, J. (2020). La Guía Scrum.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 145,
+                "idSilabo": 24,
+                "referencia": "Sutherland, J. (2020) Scrum. Manual de campo. Editorial Océano",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 146,
+                "idSilabo": 24,
+                "referencia": "Yang, Y., Zeng, B. & Gao, J. RM4ML: requirements model for machine learning-enabled software systems. Requirements Eng (2024). https://doi.org/10.1007/s00766-024-00431-4",
+                "url": "https://doi.org/10.1007/s00766-024-00431-4"
+              },
+              {
+                "idBibliografia": 147,
+                "idSilabo": 24,
+                "referencia": "Muddana, A.L., Vinayakam, S. (2024). Basic Python. In: Python for Data Science. Springer, Cham. https://doi.org/10.1007/978-3-031-52473-8_1",
+                "url": "https://doi.org/10.1007/978-3-031-52473-8_1"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

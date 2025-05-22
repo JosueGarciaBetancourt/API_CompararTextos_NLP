@@ -1,0 +1,196 @@
+{
+    "comparaciones": [
+      {
+        "cursoOrigen": {
+          "idCurso": 17,
+          "nombre": "Sistemas Digitales",
+          "silabo": {
+            "idSilabo": 17,
+            "idCurso": 17,
+            "sumilla": "Lógica Programable, Memorias Semiconductoras, Mapeo de Memorias Semiconductoras, Diseño de Circuitos de Decodificación de memorias semiconductoras, Memoria Cache, Módulos de Memorias, Memoria externa, Transferencias Entre Registros y Ruta de Datos basado en Multiplexores, Transferencias entre Registros y Ruta de Datos basado en bus Tri-state. ALU, Operaciones en Transferencias entre Registros y Ruta de Datos, Diseño del Computador simple. Estudio de la Arquitectura del Microprocesador, Arquitectura de microprocesadores Intel, Arquitectura de microprocesadores Motorola: Fundamentos, set de instrucciones, sistema de entrada/salida",
+            "aprendizaje_general": "El estudiante al terminar el curso será capaz de hacer uso adecuadamente de los PLD, o de las Memorias en General y efectuar el mapeo correspondiente de un sistema digital con Microprocesador, Analizar adecuadamente la Arquitectura del Microprocesador, Diseñar un Microcomputador simple, Aplicar y utilizar adecuadamente el set de instrucciones del assembler del Microprocesador Motorola. Conocerá en consecuencia los componentes hardware y el assembler de la computadora personal (PC).",
+            "unidades": [
+              {
+                "idUnidad": 65,
+                "idSilabo": 17,
+                "numero": 1,
+                "titulo": "Lógica programable: PLDS, CPLDS Y FPGAs. Arquitectura de los PLD: PLA, PAL, ROM. Análisis diseño e implementación. Arquitectura de CPLDS Y FPGAs fundamentos. MEMORIAS SEMICONDUCTORAS. Memoria interna: introducción. Tipos de memoria RAM, ROM, EPROM, EEPROM, Memorias Secuenciales, un marco común para la jerarquía de memoria, arquitectura interna de memoria DRAM y SRAM, operaciones de lectura y escritura. MAPEO DE MEMORIAS SEMICONDUCTORAS. Mapeo de Memorias. Análisis de direcciones de circuitos con memorias semiconductoras.",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Lógica programable... Análisis de direcciones de circuitos con memorias semiconductoras.",
+                "temas": "Lógica programable... Análisis de direcciones de circuitos con memorias semiconductoras."
+              },
+              {
+                "idUnidad": 66,
+                "idSilabo": 17,
+                "numero": 2,
+                "titulo": "DISEÑO DE CIRCUITOS DE DECODIFICACION DE MEMORIAS SEMICONDUCTORAS. Metodología del Diseño de Circuitos de Decodificación de memorias. MEMORIA CACHÉ, MÓDULOS DE MEMORIAS, MEMORIA EXTERNA. Principios básicos de la memoria caché, el rendimiento de la caché. Memoria virtual paginada por demanda y segmentada. Descripción del sistema de memoria de un computador. Memoria principal semiconductora. Bancos de memoria con tecnología contemporánea DDR, DDR2, Memoria externa: Discos magnéticos; organizaciones RAID. Memoria óptica. Cintas magnéticas. TRANSFERENCIAS ENTRE REGISTROS Y RUTA DE DATOS BASADO EN MULTIPLEXORES. Organización del Computador - Ruta de datos y operaciones,- Operaciones de transferencias entre registros,- Micro-operaciones aritméticas y lógicas, - Transferencias basadas en multiplexores.",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "DISEÑO DE CIRCUITOS DE DECODIFICACION DE MEMORIAS SEMICONDUCTORAS... Transferencias basadas en multiplexores.",
+                "temas": "DISEÑO DE CIRCUITOS DE DECODIFICACION DE MEMORIAS SEMICONDUCTORAS... Transferencias basadas en multiplexores."
+              },
+              {
+                "idUnidad": 67,
+                "idSilabo": 17,
+                "numero": 3,
+                "titulo": "TRANSFERENCIAS ENTRE REGISTROS Y RUTA DE DATOS BASADO EN BUS TRI-STATE. ALU. Transferencias basadas en bus, Transferencias basadas en bus Tri state, ruta de datos, diagrama de ruta sencilla de datos Análisis y diseño de la Unidad Aritmético Lógica (ALU). EXAMEN PARCIAL. TRANSFERENCIAS ENTRE REGISTROS Y RUTA DE DATOS: OPERACIONES. Desplazador, Multiplicación, División, Representación de rutas de datos, Palabras de control, Ruta de datos en canalización o segmentada.(T4-RTL y ruta de datos). DISEÑO DE UNA COMPUTADORA SIMPLE. Visión general de la implementación. Construcción del camino de datos. Unidad de control. Características y fases de diseño de un computador simple.",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "TRANSFERENCIAS ENTRE REGISTROS Y RUTA DE DATOS BASADO EN BUS TRI-STATE... Características y fases de diseño de un computador simple.",
+                "temas": "TRANSFERENCIAS ENTRE REGISTROS Y RUTA DE DATOS BASADO EN BUS TRI-STATE... Características y fases de diseño de un computador simple."
+              },
+              {
+                "idUnidad": 68,
+                "idSilabo": 17,
+                "numero": 4,
+                "titulo": "MICROPROCESADORES. Estructura básica de un Procesador, Modelos Von Newmann y Harvard, Procesadores CISC versus RISC. Tecnologías de microprocesadores, Escalar, Superescalar, Paralelo, Pipelining, doble núcleo. ARQUITECTURA DE MICROPROCESADORES INTEL. Arquitectura de Microprocesador INTEL 8086-88, Instrucciones y modos de direccionamiento, Caso de estudio: el ensamblador de los i80x86. Conjunto de registros y segmentación de la memoria. Directivas, repertorio de instrucciones, construcciones. Rutinas, paso de parámetros y variables locales. Evolución de la arquitectura 80x86. ARQUITECTURA DE MICROPROCESADORES MOTOROLA: FUNDAMENTOS. Arquitectura de Microprocesador MOTOROLA 68000, Pines ,encapsulado, registros internos, ciclo de Instrucción, interfaz hardware de una PC, ciclos de memoria e instrucción, segmentación (pipelinig), organización de la memoria en el 68000, Set de Instrucciones y modos de direccionamiento, sistemas de entrada/salida. ARQUITECTURA DE MICROPROCESADORES MOTOROLA: SET DE INSTRUCCIONES. Set de Instrucciones y modos de direccionamiento, Modos de Direccionamiento, Instrucciones De Transferencia Y Manipulación De Datos. ARQUITECTURA DE MICROPROCESADORES MOTOROLA: SISTEMAS DE ENTRADA Y SALIDA. Entradas/ Salidas, Interrupciones, Excepciones. EXAMEN FINAL. EXAMEN SUSTITUTORIO.",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "MICROPROCESADORES... EXAMEN SUSTITUTORIO.",
+                "temas": "MICROPROCESADORES... EXAMEN SUSTITUTORIO."
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 104,
+                "idSilabo": 17,
+                "referencia": "Fundamentos de Los Sistemas Digitales. Thomas Floyd. Ed. Prentice Hall 2000",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 105,
+                "idSilabo": 17,
+                "referencia": "Diseño Digital. Principios y Prácticas. Wakerly, JF. Prentice Hall. 2001",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 106,
+                "idSilabo": 17,
+                "referencia": "Problemas de Circuitos y Sistemas Digitales. Carmen Baena – Manuel Bellido – Albertho Molina – María del Pilar Parra – Manuel Valencia. Mc -Graw Hill. 1997.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 107,
+                "idSilabo": 17,
+                "referencia": "Análisis y Diseño de Circuitos Lógicos Digitales. Nelson, Troy, Carroll, Irwin. Prentice Hall.1996",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 108,
+                "idSilabo": 17,
+                "referencia": "Los microprocesadores INTEL. Arquitectura, programación e interfaz de los procesadores 8086/8088, 80186/80188, 80286, 80386, 80486, Pentium, Pentium Pro y Pentium II. BARRY B. Brey. Pearson Educación, México 2001",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 109,
+                "idSilabo": 17,
+                "referencia": "Ingeniería Computacional. Diseño del Hardware. MORRIS MANO, M. Prentice – Hall, 1995",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 110,
+                "idSilabo": 17,
+                "referencia": "Sistemas Electrónicos Digitales http://www.die.upm.es/andres/sedg/. Andrés Santos",
+                "url": "http://www.die.upm.es/andres/sedg/"
+              },
+              {
+                "idBibliografia": 111,
+                "idSilabo": 17,
+                "referencia": "WEBS PARA INFORMACIÓN DEL MICROPROCESADOR 68000. http://www.die.upm.es/andres/sedg/",
+                "url": "http://www.die.upm.es/andres/sedg/"
+              },
+              {
+                "idBibliografia": 112,
+                "idSilabo": 17,
+                "referencia": "WEBS PARA INFORMACIÓN DEL MICROPROCESADOR 68000. http://www.upv.es/amiga/56.htm",
+                "url": "http://www.upv.es/amiga/56.htm"
+              },
+              {
+                "idBibliografia": 113,
+                "idSilabo": 17,
+                "referencia": "WEBS PARA INFORMACIÓN DEL MICROPROCESADOR 68000. http://www.depeca.uah.es/docencia/itt-st-tm/sed/",
+                "url": "http://www.depeca.uah.es/docencia/itt-st-tm/sed/"
+              }
+            ]
+          }
+        },
+        "cursoDestino": {
+          "idCurso": 18,
+          "nombre": "Sistemas Digitales",
+          "silabo": {
+            "idSilabo": 18,
+            "idCurso": 18,
+            "sumilla": "Conceptos introductorios. Sistemas de representación y códigos. Álgebra de Booleana. Compuertas lógicas. Circuitos combinacionales. Circuitos secuenciales. Registros y contadores. Circuitos MSI. Circuitos aritméticos. Dispositivos de memorias",
+            "aprendizaje_general": "Al finalizar la asignatura, el estudiante será capaz de diseñar e implementar circuitos y proyectos de sistemas digitales utilizando la lógica combinacional, lógica secuencial, contadores, registros, circuitos MSI y memorias aplicados a la ingeniería.",
+            "unidades": [
+              {
+                "idUnidad": 69,
+                "idSilabo": 18,
+                "numero": 1,
+                "titulo": "Introducción, sistemas y códigos numéricos. Descripción de los circuitos lógicos. Algebra de Boole. Compuertas lógicas",
+                "duracion_semanas": "1-4",
+                "aprendizajes": "Introducción... Compuertas lógicas",
+                "temas": "Introducción... Compuertas lógicas"
+              },
+              {
+                "idUnidad": 70,
+                "idSilabo": 18,
+                "numero": 2,
+                "titulo": "Circuitos combinacionales, suma de productos, simplificación de circuitos, agrupamientos. Circuitos secuenciales, síncronos, asíncronos, latch y flip-flops",
+                "duracion_semanas": "5-8",
+                "aprendizajes": "Circuitos combinacionales... latch y flip-flops",
+                "temas": "Circuitos combinacionales... latch y flip-flops"
+              },
+              {
+                "idUnidad": 71,
+                "idSilabo": 18,
+                "numero": 3,
+                "titulo": "Contadores síncronos, asíncronos, con números MOD<2N, preajustables, análisis y diseño. Registros de circuito integrado, entrada y salida en paralelo y serie, entrada en paralelo y salida en serie y viceversa. Circuitos lógicos MSI, decodificadores, codificadores, multiplexores y demultiplexores",
+                "duracion_semanas": "9-12",
+                "aprendizajes": "Contadores síncronos... multiplexores y demultiplexores",
+                "temas": "Contadores síncronos... multiplexores y demultiplexores"
+              },
+              {
+                "idUnidad": 72,
+                "idSilabo": 18,
+                "numero": 4,
+                "titulo": "Dispositivos de memoria, terminología, memoria RAM, flash, SRAM, DRAM, ROM. Proyecto 1. Proyecto 2. Proyecto 3",
+                "duracion_semanas": "13-16",
+                "aprendizajes": "Dispositivos de memoria... Proyecto 3",
+                "temas": "Dispositivos de memoria... Proyecto 3"
+              }
+            ],
+            "bibliografias": [
+              {
+                "idBibliografia": 114,
+                "idSilabo": 18,
+                "referencia": "Abarca, G., Corona, L. y Mares, J. (2018). Diseño digital con aplicaciones. Grupo Editorial Patria. https://bit.ly/3Xaj3s0",
+                "url": "https://bit.ly/3Xaj3s0"
+              },
+              {
+                "idBibliografia": 115,
+                "idSilabo": 18,
+                "referencia": "Thomas L. Floyd (2016). Fundamentos de sistemas digitales. 11ª ed. Madrid España: Pearson Educación.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 116,
+                "idSilabo": 18,
+                "referencia": "García Z. & Angulo M. &Angulo U. (2007). Sistemas digitales y tecnología de computadores. 2ª ed. España: Thomson.",
+                "url": "null"
+              },
+              {
+                "idBibliografia": 117,
+                "idSilabo": 18,
+                "referencia": "James, W. (2012). Electrónica digital. Consulta: 20 de mayo de 2019. Disponible en: https://loslibrosquenecesitogratis.com/electronica-digital",
+                "url": "https://loslibrosquenecesitogratis.com/electronica-digital"
+              },
+              {
+                "idBibliografia": 118,
+                "idSilabo": 18,
+                "referencia": "Manual de electrónica. (2015). Electrónica digital. Consulta: 20 de mayo de 2019. Disponible en: https://tecnicaslaureanogomez.jimdo.com/libros-y-normas-para descargar",
+                "url": "https://tecnicaslaureanogomez.jimdo.com/libros-y-normas-para descargar"
+              }
+            ]
+          }
+        }
+      }
+    ]
+}
