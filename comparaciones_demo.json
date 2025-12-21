@@ -1,66 +1,7 @@
 {
-    "comparaciones": [
+	"comparaciones": [
 		{
-            "cursoOrigen": {
-				"idCurso": 7,
-				"nombre": "Introducción a la Programación",
-				"silabo": {
-					"idSilabo": 7,
-					"idCurso": 7,
-					"sumilla": "Este curso se enfoca en la lógica de programación, desarrollando habilidades de resolución de problemas mediante estructuras de control y datos.",
-					"aprendizaje_general": "El estudiante desarrollará algoritmos y programas básicos utilizando un lenguaje de programación estructurado.",
-					"unidades": [
-						{
-							"idUnidad": 25,
-							"idSilabo": 7,
-							"numero": 1,
-							"titulo": "Algoritmos y pensamiento lógico",
-							"duracion_semanas": "1-4",
-							"aprendizajes": "Desarrollar la capacidad de resolución de problemas mediante algoritmos.",
-							"temas": "Metodología de solución de problemas, algoritmos, pseudocódigo."
-						},
-						{
-							"idUnidad": 26,
-							"idSilabo": 7,
-							"numero": 2,
-							"titulo": "Tipos de datos y expresiones",
-							"duracion_semanas": "5-8",
-							"aprendizajes": "Utilizar correctamente tipos de datos y operadores.",
-							"temas": "Variables, constantes, operadores aritméticos y lógicos."
-						},
-						{
-							"idUnidad": 27,
-							"idSilabo": 7,
-							"numero": 3,
-							"titulo": "Problemas condicionales y bucles",
-							"duracion_semanas": "9-12",
-							"aprendizajes": "Solucionar problemas usando decisiones y repeticiones.",
-							"temas": "if-else, for, while."
-						}
-					],
-					"bibliografias": [
-						{
-							"idBibliografia": 24,
-							"idSilabo": 7,
-							"referencia": "Cairo, O. (2013). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.",
-							"url": "https://www.alfaomega.com.mx/metodologia-programacion"
-						},
-						{
-							"idBibliografia": 22,
-							"idSilabo": 7,
-							"referencia": "Joyanes Aguilar, L. (2016). Algoritmos y Estructuras de Datos: Una perspectiva en C. McGraw-Hill.",
-							"url": "https://www.mheducation.es/algoritmos-estructuras-datos"
-						},
-						{
-							"idBibliografia": 23,
-							"idSilabo": 7,
-							"referencia": "Sedgewick, R., & Wayne, K. (2015). Algorithms (4th ed.). Addison-Wesley.",
-							"url": "https://algs4.cs.princeton.edu/home/"
-						}
-					]
-				}
-			},
-			"cursoDestino": {
+			"cursoOrigen": {
 				"idCurso": 1,
 				"nombre": "Programación I",
 				"silabo": {
@@ -127,144 +68,215 @@
 						}
 					]
 				}
-			}
-		},
-		{
-			"cursoOrigen": {
-				"idCurso": 8,
-				"nombre": "Programación Web",
+			},
+			"cursoDestino": {
+				"idCurso": 4,
+				"nombre": "Introducción a la Programación",
 				"silabo": {
-					"idSilabo": 8,
-					"idCurso": 8,
-					"sumilla": "Curso que permite al estudiante desarrollar aplicaciones web completas utilizando tecnologías como HTML5, CSS3, JavaScript y PHP.",
-					"aprendizaje_general": "El estudiante será capaz de diseñar, implementar y mantener sitios web dinámicos y seguros.",
+					"idSilabo": 4,
+					"idCurso": 4,
+					"sumilla": "Se introduce al estudiante en los conceptos básicos de programación, centrándose en el desarrollo de habilidades de lógica computacional y resolución de problemas.",
+					"aprendizaje_general": "El estudiante desarrollará algoritmos y los implementará en un lenguaje de programación para resolver problemas básicos.",
 					"unidades": [
 						{
-							"idUnidad": 29,
-							"idSilabo": 8,
+							"idUnidad": 13,
+							"idSilabo": 4,
 							"numero": 1,
-							"titulo": "Fundamentos de desarrollo web full-stack",
+							"titulo": "Introducción a la programación",
 							"duracion_semanas": "1-4",
-							"aprendizajes": "Establecer ambiente de desarrollo y comprender arquitecturas web.",
-							"temas": "Frontend vs Backend, herramientas de desarrollo, git."
+							"aprendizajes": "Comprender los fundamentos de algoritmos y lógica de programación.",
+							"temas": "Pensamiento computacional, algoritmos, diagramas de flujo."
 						},
 						{
-							"idUnidad": 30,
-							"idSilabo": 8,
+							"idUnidad": 14,
+							"idSilabo": 4,
 							"numero": 2,
-							"titulo": "Programación del lado servidor",
+							"titulo": "Estructuras de control",
 							"duracion_semanas": "5-8",
-							"aprendizajes": "Desarrollar lógica de negocio en el servidor.",
-							"temas": "PHP, manejo de peticiones, persistencia de datos."
+							"aprendizajes": "Implementar decisiones y repeticiones en programas.",
+							"temas": "Condicionales, bucles, estructuras de selección."
 						},
 						{
-							"idUnidad": 31,
-							"idSilabo": 8,
+							"idUnidad": 15,
+							"idSilabo": 4,
 							"numero": 3,
-							"titulo": "Autenticación de usuarios",
+							"titulo": "Manejo de funciones",
 							"duracion_semanas": "9-12",
-							"aprendizajes": "Implementar sistemas de login y registro.",
-							"temas": "Manejo de sesiones, cookies, login seguro."
+							"aprendizajes": "Crear funciones para modularizar soluciones.",
+							"temas": "Definición de funciones, recursividad."
 						},
 						{
-							"idUnidad": 32,
-							"idSilabo": 8,
+							"idUnidad": 16,
+							"idSilabo": 4,
 							"numero": 4,
-							"titulo": "Despliegue de aplicaciones web",
+							"titulo": "Estructuras de datos básicas",
 							"duracion_semanas": "13-16",
-							"aprendizajes": "Publicar aplicaciones en servidores web.",
-							"temas": "FTP, configuraciones básicas, hosting."
+							"aprendizajes": "Utilizar arreglos y estructuras para almacenar datos.",
+							"temas": "Arreglos unidimensionales y bidimensionales, registros."
 						}
 					],
 					"bibliografias": [
 						{
-							"idBibliografia": 26,
-							"idSilabo": 8,
-							"referencia": "Freeman, A. (2020). Pro Angular 9: Build Powerful and Dynamic Web Apps. Apress.",
-							"url": "https://www.apress.com/pro-angular-9"
+							"idBibliografia": 14,
+							"idSilabo": 4,
+							"referencia": "Cormen, T. H., et al. (2014). Introduction to Algorithms (3rd ed.). MIT Press.",
+							"url": "https://mitpress.mit.edu/books/introduction-algorithms-third-edition"
 						},
 						{
-							"idBibliografia": 27,
-							"idSilabo": 8,
-							"referencia": "Krug, S. (2018). Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd ed.). New Riders.",
-							"url": "https://www.nngroup.com/books/dont-make-me-think/"
+							"idBibliografia": 13,
+							"idSilabo": 4,
+							"referencia": "Deitel, P. J., & Deitel, H. M. (2015). C++ How to Program (10th ed.). Pearson.",
+							"url": "https://www.pearson.com/cpp-how-to-program"
 						},
 						{
-							"idBibliografia": 25,
-							"idSilabo": 8,
-							"referencia": "Lockhart, J. (2020). Modern PHP: New Features and Good Practices (2nd ed.). O'Reilly Media.",
-							"url": "https://www.oreilly.com/library/view/modern-php/9781491905173/"
+							"idBibliografia": 12,
+							"idSilabo": 4,
+							"referencia": "Joyanes Aguilar, L. (2014). Fundamentos de Programación (4ta ed.). McGraw-Hill.",
+							"url": "https://www.mheducation.es/fundamentos-programacion"
+						}
+					]
+				}
+			}
+		},
+		{
+			"cursoOrigen": {
+				"idCurso": 3,
+				"nombre": "Redes de computadoras",
+				"silabo": {
+					"idSilabo": 3,
+					"idCurso": 3,
+					"sumilla": "Curso que aborda el diseño, configuración y administración de redes de computadoras, cubriendo modelos de referencia como OSI y TCP/IP.",
+					"aprendizaje_general": "El estudiante será capaz de identificar, implementar y gestionar componentes de una red de computadoras en diversos entornos.",
+					"unidades": [
+						{
+							"idUnidad": 9,
+							"idSilabo": 3,
+							"numero": 1,
+							"titulo": "Fundamentos de redes de computadoras",
+							"duracion_semanas": "1-4",
+							"aprendizajes": "Comprender los conceptos básicos de las redes de computadoras.",
+							"temas": "Modelos OSI y TCP/IP, topologías, medios de transmisión."
 						},
 						{
-							"idBibliografia": 28,
-							"idSilabo": 8,
-							"referencia": "Stauffer, M. (2019). Laravel: Up & Running (2nd ed.). O'Reilly Media.",
-							"url": "https://www.oreilly.com/library/view/laravel-up/9781492041207/"
+							"idUnidad": 10,
+							"idSilabo": 3,
+							"numero": 2,
+							"titulo": "Direccionamiento IP",
+							"duracion_semanas": "5-8",
+							"aprendizajes": "Diseñar esquemas de direccionamiento IP para redes locales.",
+							"temas": "IPv4, IPv6, subnetting, VLSM."
+						},
+						{
+							"idUnidad": 11,
+							"idSilabo": 3,
+							"numero": 3,
+							"titulo": "Protocolos de red",
+							"duracion_semanas": "9-12",
+							"aprendizajes": "Comprender el funcionamiento de protocolos clave.",
+							"temas": "TCP, UDP, HTTP, FTP, DNS."
+						},
+						{
+							"idUnidad": 12,
+							"idSilabo": 3,
+							"numero": 4,
+							"titulo": "Seguridad en redes",
+							"duracion_semanas": "13-16",
+							"aprendizajes": "Implementar mecanismos básicos de seguridad en redes.",
+							"temas": "Firewalls, VPNs, criptografía, detección de intrusiones."
+						}
+					],
+					"bibliografias": [
+						{
+							"idBibliografia": 11,
+							"idSilabo": 3,
+							"referencia": "Cisco Networking Academy (2023). Introduction to Networks Companion Guide.",
+							"url": "https://www.ciscopress.com/introduction-to-networks"
+						},
+						{
+							"idBibliografia": 8,
+							"idSilabo": 3,
+							"referencia": "Kurose, J. F., & Ross, K. W. (2023). Computer Networking: A Top-Down Approach (8th ed.). Pearson.",
+							"url": "https://www.pearson.com/computer-networking"
+						},
+						{
+							"idBibliografia": 10,
+							"idSilabo": 3,
+							"referencia": "Stallings, W. (2022). Data and Computer Communications (11th ed.). Pearson.",
+							"url": "https://www.pearson.com/data-and-computer-communications"
+						},
+						{
+							"idBibliografia": 9,
+							"idSilabo": 3,
+							"referencia": "Tanenbaum, A. S., & Wetherall, D. J. (2021). Computer Networks (6th ed.). Pearson.",
+							"url": "https://www.pearson.com/computer-networks"
 						}
 					]
 				}
 			},
 			"cursoDestino": {
-				"idCurso": 2,
-				"nombre": "Ingeniería web",
+				"idCurso": 6,
+				"nombre": "Redes de computadoras 1",
 				"silabo": {
-					"idSilabo": 2,
-					"idCurso": 2,
-					"sumilla": "El curso brinda los conceptos y herramientas fundamentales para el desarrollo de aplicaciones web dinámicas, utilizando tecnologías del lado cliente y servidor.",
-					"aprendizaje_general": "El estudiante será capaz de diseñar e implementar sitios web dinámicos aplicando tecnologías modernas y buenas prácticas de desarrollo web.",
+					"idSilabo": 6,
+					"idCurso": 6,
+					"sumilla": "Los contenidos generales que la asignatura desarrolla son los siguientes: conceptos básicos de redes, LAN, WAN e Internet. La red como plataforma. Configuración de un sistema operativo de red.",
+					"aprendizaje_general": "El estudiante podrá instalar, configurar y administrar redes de pequeña y mediana escala usando protocolos estándar.",
 					"unidades": [
 						{
-							"idUnidad": 5,
-							"idSilabo": 2,
+							"idUnidad": 21,
+							"idSilabo": 6,
 							"numero": 1,
-							"titulo": "Fundamentos de desarrollo web",
+							"titulo": "Principios fundamentales de networking",
 							"duracion_semanas": "1-4",
-							"aprendizajes": "Comprender la arquitectura y componentes de aplicaciones web.",
-							"temas": "HTML5, CSS3, arquitectura cliente-servidor, HTTP."
+							"aprendizajes": "Comprender los fundamentos de la comunicación en redes.",
+							"temas": "Capas de red, encapsulamiento, protocolos básicos."
 						},
 						{
-							"idUnidad": 6,
-							"idSilabo": 2,
+							"idUnidad": 22,
+							"idSilabo": 6,
 							"numero": 2,
-							"titulo": "JavaScript y programación del lado cliente",
+							"titulo": "Configuración de switches y VLANs",
 							"duracion_semanas": "5-8",
-							"aprendizajes": "Implementar interactividad en páginas web mediante JavaScript.",
-							"temas": "Sintaxis JavaScript, DOM, eventos, AJAX."
+							"aprendizajes": "Implementar redes conmutadas y segmentación lógica.",
+							"temas": "Funcionamiento de switches, VLANs, trunking."
 						},
 						{
-							"idUnidad": 7,
-							"idSilabo": 2,
+							"idUnidad": 23,
+							"idSilabo": 6,
 							"numero": 3,
-							"titulo": "Gestión de formularios web",
+							"titulo": "Protocolos de enrutamiento",
 							"duracion_semanas": "9-12",
-							"aprendizajes": "Procesar formularios y validar entradas.",
-							"temas": "Formularios HTML, validación, métodos GET y POST."
+							"aprendizajes": "Explicar los fundamentos del enrutamiento dinámico.",
+							"temas": "RIP, OSPF, EIGRP."
+						},
+						{
+							"idUnidad": 24,
+							"idSilabo": 6,
+							"numero": 4,
+							"titulo": "Redes inalámbricas",
+							"duracion_semanas": "13-16",
+							"aprendizajes": "Configurar y asegurar redes WiFi.",
+							"temas": "Estándares 802.11, seguridad inalámbrica, troubleshooting."
 						}
 					],
 					"bibliografias": [
 						{
-							"idBibliografia": 4,
-							"idSilabo": 2,
-							"referencia": "Duckett, J. (2014). HTML and CSS: Design and Build Websites. Wiley.",
-							"url": "https://www.htmlandcssbook.com/"
+							"idBibliografia": 19,
+							"idSilabo": 6,
+							"referencia": "Cisco Networking Academy (2022). Switching, Routing, and Wireless Essentials Companion Guide.",
+							"url": "https://www.ciscopress.com/switching-routing-wireless-essentials"
 						},
 						{
-							"idBibliografia": 6,
-							"idSilabo": 2,
-							"referencia": "Flanagan, D. (2016). JavaScript: The Definitive Guide (6th ed.). O'Reilly Media.",
-							"url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781449393854/"
+							"idBibliografia": 21,
+							"idSilabo": 6,
+							"referencia": "Forouzan, B. A. (2022). Data Communications and Networking (5th ed.). McGraw-Hill.",
+							"url": "https://www.mheducation.com/data-communications-networking"
 						},
 						{
-							"idBibliografia": 7,
-							"idSilabo": 2,
-							"referencia": "MDN Web Docs (2018). HTML, CSS, y JavaScript referencia.",
-							"url": "https://developer.mozilla.org/es/"
-						},
-						{
-							"idBibliografia": 5,
-							"idSilabo": 2,
-							"referencia": "Nixon, R. (2018). Learning PHP, MySQL & JavaScript (5th ed.). O'Reilly Media.",
-							"url": "https://www.oreilly.com/library/view/learning-php-mysql/9781491979075/"
+							"idBibliografia": 20,
+							"idSilabo": 6,
+							"referencia": "Hucaby, D. (2021). CCNA 200-301 Official Cert Guide. Cisco Press.",
+							"url": "https://www.ciscopress.com/ccna-200-301"
 						}
 					]
 				}

@@ -29,7 +29,7 @@ PESO_APRENDIZAJE_UNIDAD = 0.10
 PESO_TEMAS_UNIDAD = 0.70
 
 # Umbrales
-UMBRAL_TEMAS_COMUNES = 0.40  # Mínima similitud para considerar temas comunes
+UMBRAL_TEMAS_COMUNES = 0.45  # Mínima similitud para considerar temas comunes
 UMBRAL_EMPAREJAMIENTO_UNIDADES = 0.50  # Mínima similitud para emparejar unidades
 
 tiempo_inicio_script = time.perf_counter()
@@ -484,6 +484,7 @@ def comparar_cursos():
             "stack_trace": traceback.format_exc()
         })), 500
 
+
 @app.route('/busqueda_semantica', methods=['POST'])
 def busqueda_semantica():
     try:
@@ -531,7 +532,7 @@ def busqueda_semantica():
                 terminos_result
             )
 
-            if similitud_contextual < 0.4:
+            if similitud_contextual < 0.6:
                 continue
 
             tiempo_comparacion = float(round(time.perf_counter() - tiempo_comparacion_inicio, 2))

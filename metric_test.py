@@ -40,7 +40,7 @@ API_URL = "http://localhost:5000/comparar_cursos"
 TEST_JSONS_DIR = "jsons_prueba_UC_UNMSM"
 RESULTS_DIR = "resultados_evaluacion"
 GOLDEN_STANDARD_FILE = "golden_standard/golden_standard_convalidaciones.json"
-THRESHOLD_SIMILITUD_PONDERADA = 0.70
+THRESHOLD_SIMILITUD_PONDERADA = 0.75
 THRESHOLD_HIGH_SIMILARITY = 0.85
 THRESHOLD_MEDIUM_SIMILARITY = 0.75
 NUM_THREADS = 4
@@ -49,8 +49,8 @@ NUM_THREADS = 4
 PESOS_SIMILITUD = {
     "similitud_sumilla": 0.25,
     "similitud_aprendizajes": 0.10,
-    "similitud_unidades": 0.60,
-    "similitud_bibliografia": 0.05
+    "similitud_unidades": 0.65,
+    "similitud_bibliografia": 0.00
 }
 
 # Crear directorio de resultados si no existe

@@ -4,7 +4,7 @@
 import requests
 import json
 
-API_URL = "http://127.0.0.1:5001/comparar_cursos"
+API_URL = "http://127.0.0.1:5000/comparar_cursos"
 
 def enviar_comparacion(comparaciones):
     """
