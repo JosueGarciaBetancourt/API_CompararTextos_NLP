@@ -1,4 +1,4 @@
-# PRIMERO EJECUTAR EN TERMINAL: python spacy_sklearn_bert.py
+# PRIMERO EJECUTAR EN TERMINAL: python spacy_sklearn_bert_OLD.py
 # SEGUNDO EJECUTAR EN OTRA TERMINAL: python test_api.py
 
 import time
@@ -29,13 +29,8 @@ PESO_APRENDIZAJE_UNIDAD = 0.20
 PESO_TEMAS_UNIDAD = 0.70
 
 # Umbrales
-UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_BERT = 0.80
-UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_JACCARD = 0.20
-UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA = 0.50
-
 UMBRAL_TEMAS_COMUNES = 0.45  # Mínima similitud para considerar temas comunes
 UMBRAL_EMPAREJAMIENTO_UNIDADES = 0.50  # Mínima similitud para emparejar unidades
-
 
 tiempo_inicio_script = time.perf_counter()
 
@@ -54,7 +49,6 @@ model.eval()
 
 tiempo_fin_config = time.perf_counter()
 print(f"\n⏱ Tiempo configuración inicial: {tiempo_fin_config - tiempo_inicio_config:.4f} segundos")
-print(f"🖥️  Dispositivo de inferencia: {device}")
 
 # Cachés y bloqueos
 embedding_cache = {}
@@ -72,9 +66,8 @@ stopwords_personalizadas = {
     "de", "en", "a", "que", "con", "por", "para", "se", "su", "al", "es", "del"
 }
 
-
 # ===============================================
-# 📌 Funciones de Utilidad y Caché
+# 📌 Funciones optimizadas
 # ===============================================
 
 def convert_floats(obj):
@@ -91,10 +84,13 @@ def convert_floats(obj):
         return [convert_floats(item) for item in obj]
     return obj
 
-
 @lru_cache(maxsize=5000)
 def normalizar_texto(texto):
+    tiempo_inicio = time.perf_counter()
+
     if not texto:
+        tiempo_fin = time.perf_counter()
+        print(f"⏱ [normalizar_texto] Texto vacío: {tiempo_fin - tiempo_inicio:.6f} segundos")
         return ""
 
     texto = str(texto).lower()
@@ -103,17 +99,18 @@ def normalizar_texto(texto):
     texto = clean_pattern.sub('', texto)
     resultado = space_pattern.sub(' ', texto).strip()
 
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [normalizar_texto] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+
     return resultado
 
-
-# ===============================================
-# 📌 Funciones de Embeddings (Individual y Batch)
-# ===============================================
-
 def obtener_embeddings_bert(texto):
-    """Obtiene el embedding de un solo texto (usado en /comparar_cursos)"""
+    tiempo_inicio = time.perf_counter()
+
     with cache_lock:
         if texto in embedding_cache:
+            tiempo_fin = time.perf_counter()
+            print(f"⏱ [obtener_embeddings_bert] Embedding desde caché: {tiempo_fin - tiempo_inicio:.6f} segundos")
             return embedding_cache[texto]
 
     inputs = tokenizer(
@@ -134,91 +131,26 @@ def obtener_embeddings_bert(texto):
     with cache_lock:
         embedding_cache[texto] = embeddings
 
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [obtener_embeddings_bert] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+
     return embeddings
 
-
-def obtener_embeddings_batch(textos):
-    """
-    Verdadero Tensor Batching: Procesa un array de textos simultáneamente en PyTorch.
-    (Usado para búsquedas masivas en /busqueda_semantica)
-    """
-    if not textos:
-        return {}
-
-    resultados = {}
-    textos_a_procesar = []
-
-    # 1. Revisar qué textos ya están en la memoria caché
-    with cache_lock:
-        for texto in textos:
-            if texto in embedding_cache:
-                resultados[texto] = embedding_cache[texto]
-            else:
-                textos_a_procesar.append(texto)
-
-    if not textos_a_procesar:
-        return resultados
-
-    # 2. Procesar los faltantes en lotes de 32 para no saturar la RAM/VRAM
-    batch_size = 32
-    for i in range(0, len(textos_a_procesar), batch_size):
-        batch_textos = textos_a_procesar[i:i + batch_size]
-
-        inputs = tokenizer(
-            batch_textos,
-            return_tensors="pt",
-            padding=True,
-            truncation=True,
-            max_length=512,
-            add_special_tokens=True
-        )
-        inputs = {k: v.to(device) for k, v in inputs.items()}
-
-        with torch.no_grad():
-            outputs = model(**inputs)
-
-        # Extraer token CLS de todo el lote de una vez
-        batch_embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
-
-        # Guardar en caché y en el diccionario de resultados
-        with cache_lock:
-            for texto, emb in zip(batch_textos, batch_embeddings):
-                embedding_cache[texto] = emb
-                resultados[texto] = emb
-
-    return resultados
-
-
-def extraer_terminos_clave_avanzado(texto1, texto2):
-    """Extracción rápida de términos en común basada en conjuntos (Jaccard)"""
-    palabras1 = set(re.findall(r'\w+', str(texto1).lower()))
-    palabras2 = set(re.findall(r'\w+', str(texto2).lower()))
-
-    palabras1 = {p for p in palabras1 if p not in stopwords_personalizadas and len(p) > 3}
-    palabras2 = {p for p in palabras2 if p not in stopwords_personalizadas and len(p) > 3}
-
-    terminos_comunes = list(palabras1 & palabras2)
-    ponderacion_contextual = len(terminos_comunes) / max(len(palabras1), len(palabras2)) if max(len(palabras1),
-                                                                                                len(palabras2)) > 0 else 0
-
-    return {
-        "terminos_comunes": terminos_comunes[:15],
-        "ponderacion_contextual": float(ponderacion_contextual)
-    }
-
-
-# ===============================================
-# 📌 Funciones para Evaluación Detallada (/comparar_cursos)
-# ===============================================
-
 def calcular_similitud(vector1, vector2):
-    return float(cosine_similarity([vector1], [vector2])[0][0])
-
+    tiempo_inicio = time.perf_counter()
+    resultado = float(cosine_similarity([vector1], [vector2])[0][0])
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [calcular_similitud] Tiempo cálculo: {tiempo_fin - tiempo_inicio:.6f} segundos")
+    return resultado
 
 def procesar_texto(texto):
+    tiempo_inicio = time.perf_counter()
     cache_key = hash(texto)
+
     with cache_lock:
         if cache_key in text_processing_cache:
+            tiempo_fin = time.perf_counter()
+            print(f"⏱ [procesar_texto] Procesamiento desde caché: {tiempo_fin - tiempo_inicio:.6f} segundos")
             return text_processing_cache[cache_key]
 
     texto_norm = normalizar_texto(texto)
@@ -233,19 +165,36 @@ def procesar_texto(texto):
     result = (texto_norm, tokens)
     with cache_lock:
         text_processing_cache[cache_key] = result
+
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [procesar_texto] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+
     return result
 
+# ===============================================
+# 📌 Funciones principales mejoradas
+# ===============================================
 
 def identificar_temas_comunes(texto1, texto2, umbral=UMBRAL_TEMAS_COMUNES):
+    tiempo_inicio = time.perf_counter()
+
     temas1 = [tema.strip() for tema in split_pattern.split(texto1) if tema.strip()]
     temas2 = [tema.strip() for tema in split_pattern.split(texto2) if tema.strip()]
 
     if not temas1 or not temas2:
+        tiempo_fin = time.perf_counter()
+        print(f"⏱ [identificar_temas_comunes] Sin temas para comparar: {tiempo_fin - tiempo_inicio:.6f} segundos")
         return []
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        temas1_emb = {tema: emb for tema, emb in zip(temas1, executor.map(obtener_embeddings_bert, temas1))}
-        temas2_emb = {tema: emb for tema, emb in zip(temas2, executor.map(obtener_embeddings_bert, temas2))}
+        temas1_emb = {tema: emb for tema, emb in zip(
+            temas1,
+            executor.map(obtener_embeddings_bert, temas1)
+        )}
+        temas2_emb = {tema: emb for tema, emb in zip(
+            temas2,
+            executor.map(obtener_embeddings_bert, temas2)
+        )}
 
     temas_comunes = []
     for tema1, emb1 in temas1_emb.items():
@@ -258,20 +207,16 @@ def identificar_temas_comunes(texto1, texto2, umbral=UMBRAL_TEMAS_COMUNES):
                     "tema_comun": f"{tema1} / {tema2}",
                     "similitud": float(sim)
                 })
+
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [identificar_temas_comunes] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+    print(f"  - Temas encontrados: {len(temas_comunes)}")
+
     return temas_comunes
 
-
-def calcular_similitud_seccion(texto1, texto2):
-    if not texto1 or not texto2:
-        return 0.0
-    texto1_norm, _ = procesar_texto(texto1)
-    texto2_norm, _ = procesar_texto(texto2)
-    emb1 = obtener_embeddings_bert(texto1_norm)
-    emb2 = obtener_embeddings_bert(texto2_norm)
-    return float(calcular_similitud(emb1, emb2))
-
-
 def comparar_unidades(unidad_origen, unidad_destino):
+    tiempo_inicio = time.perf_counter()
+
     titulo_origen = unidad_origen.get("titulo", "")
     titulo_destino = unidad_destino.get("titulo", "")
     aprendizajes_origen = unidad_origen.get("aprendizajes", "")
@@ -290,11 +235,15 @@ def comparar_unidades(unidad_origen, unidad_destino):
         similitud_temas = temas_future.result()
         temas_comunes = temas_comunes_future.result()
 
+    # Calcular similitud ponderada usando las constantes
     similitud_ponderada = (
-            similitud_titulo * PESO_TITULO_UNIDAD +
-            similitud_aprendizaje * PESO_APRENDIZAJE_UNIDAD +
-            similitud_temas * PESO_TEMAS_UNIDAD
+        similitud_titulo * PESO_TITULO_UNIDAD +
+        similitud_aprendizaje * PESO_APRENDIZAJE_UNIDAD +
+        similitud_temas * PESO_TEMAS_UNIDAD
     )
+
+    tiempo_fin = time.perf_counter()
+    print(f"\n⏱ [comparar_unidades] Tiempo total comparación: {tiempo_fin - tiempo_inicio:.6f} segundos")
 
     return {
         "id_unidad_origen": unidad_origen.get("idUnidad"),
@@ -306,9 +255,34 @@ def comparar_unidades(unidad_origen, unidad_destino):
         "temas_comunes": temas_comunes
     }
 
+def calcular_similitud_seccion(texto1, texto2):
+    tiempo_inicio = time.perf_counter()
+
+    if not texto1 or not texto2:
+        tiempo_fin = time.perf_counter()
+        print(f"⏱ [calcular_similitud_seccion] Texto vacío: {tiempo_fin - tiempo_inicio:.6f} segundos")
+        return 0.0
+
+    texto1_norm, _ = procesar_texto(texto1)
+    texto2_norm, _ = procesar_texto(texto2)
+
+    emb1 = obtener_embeddings_bert(texto1_norm)
+    emb2 = obtener_embeddings_bert(texto2_norm)
+
+    similitud = float(calcular_similitud(emb1, emb2))
+
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [calcular_similitud_seccion] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+    print(f"  - Similitud calculada: {similitud:.4f}")
+
+    return similitud
 
 def calcular_similitud_unidades(unidades1, unidades2):
+    tiempo_inicio = time.perf_counter()
+
     if not unidades1 or not unidades2:
+        tiempo_fin = time.perf_counter()
+        print(f"⏱ [calcular_similitud_unidades] Unidades vacías: {tiempo_fin - tiempo_inicio:.6f} segundos")
         return {
             "unidades_emparejadas": [],
             "unidades_sin_par_origen": unidades1,
@@ -321,6 +295,7 @@ def calcular_similitud_unidades(unidades1, unidades2):
         combinaciones = [(u1, u2) for u1 in unidades1 for u2 in unidades2]
         resultados = list(executor.map(lambda pair: comparar_unidades(*pair), combinaciones))
 
+    # Usar similitud_ponderada en lugar del cálculo manual
     similitudes = np.array([r["similitud_ponderada"] for r in resultados])
     matriz_similitud = similitudes.reshape((len(unidades1), len(unidades2)))
 
@@ -352,8 +327,12 @@ def calcular_similitud_unidades(unidades1, unidades2):
         for j, u in enumerate(unidades2) if j not in unidades_destino_usadas
     ]
 
-    similitud_global = np.mean(
-        [u["similitud_ponderada"] for u in unidades_emparejadas]) if unidades_emparejadas else 0.0
+    similitud_global = np.mean([u["similitud_ponderada"] for u in unidades_emparejadas]) if unidades_emparejadas else 0.0
+
+    tiempo_fin = time.perf_counter()
+    print(f"\n⏱ [calcular_similitud_unidades] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+    print(f"  - Unidades emparejadas: {len(unidades_emparejadas)}")
+    print(f"  - Similitud global: {similitud_global:.4f}")
 
     return {
         "unidades_emparejadas": unidades_emparejadas,
@@ -363,136 +342,37 @@ def calcular_similitud_unidades(unidades1, unidades2):
         "porcentaje_emparejamiento_unidades": float(len(unidades_emparejadas) / max(len(unidades1), len(unidades2)))
     }
 
-
 def calcular_similitud_bibliografia(biblio1, biblio2):
+    tiempo_inicio = time.perf_counter()
+
     if not biblio1 or not biblio2:
+        tiempo_fin = time.perf_counter()
+        print(f"⏱ [calcular_similitud_bibliografia] Bibliografía vacía: {tiempo_fin - tiempo_inicio:.6f} segundos")
         return 0.0
+
     textos1 = [ref.get("referencia", "") for ref in biblio1]
     textos2 = [ref.get("referencia", "") for ref in biblio2]
     texto_combinado1 = " ".join(textos1)
     texto_combinado2 = " ".join(textos2)
-    return float(calcular_similitud_seccion(texto_combinado1, texto_combinado2))
 
+    similitud = calcular_similitud_seccion(texto_combinado1, texto_combinado2)
+
+    tiempo_fin = time.perf_counter()
+    print(f"⏱ [calcular_similitud_bibliografia] Tiempo total: {tiempo_fin - tiempo_inicio:.6f} segundos")
+    print(f"  - Similitud calculada: {similitud:.4f}")
+
+    return float(similitud)
 
 # ===============================================
-# 📌 ENDPOINTS DE LA API
+# 📌 Endpoints
 # ===============================================
-
-@app.route('/busqueda_semantica', methods=['POST'])
-def busqueda_semantica():
-    """
-    ENDPOINT OPTIMIZADO PARA BATCHING DE TENSOSRES
-    Recibe múltiples cursos y busca coincidencias en lote cruzando origen vs destino.
-    """
-    try:
-        tiempo_inicio = time.perf_counter()
-
-        # Limpieza periódica de cachés si se llenan mucho
-        with cache_lock:
-            if len(embedding_cache) > 2000:
-                embedding_cache.clear()
-            if len(text_processing_cache) > 2000:
-                text_processing_cache.clear()
-
-        data = request.get_json()
-        comparaciones = data.get("comparaciones", [])
-
-        if not comparaciones:
-            return jsonify({"status": "success", "comparaciones": []})
-
-        # 1. RECOLECTAR TODOS LOS TEXTOS ÚNICOS (Evita procesar el mismo curso N veces)
-        textos_unicos = set()
-        pares_a_comparar = []
-
-        for comp in comparaciones:
-            orig = comp.get("cursoOrigen", {})
-            dest = comp.get("cursoDestino", {})
-
-            # Normalizamos antes de procesar para mejorar el hit-rate del caché
-            t_o = normalizar_texto(f"{orig.get('nombre', '')} {orig.get('silabo', {}).get('sumilla', '')}")
-            t_d = normalizar_texto(f"{dest.get('nombre', '')} {dest.get('silabo', {}).get('sumilla', '')}")
-
-            textos_unicos.add(t_o)
-            textos_unicos.add(t_d)
-
-            pares_a_comparar.append({
-                "orig_obj": orig,
-                "dest_obj": dest,
-                "txt_o": t_o,
-                "txt_d": t_d
-            })
-
-        # 2. TENSOR BATCHING: Procesar todos los embeddings en paralelo a nivel de hardware (GPU/CPU)
-        print(f"\n🚀 Procesando lote de {len(textos_unicos)} textos únicos en BERT...")
-        embeddings_dict = obtener_embeddings_batch(list(textos_unicos))
-
-        # 3. CÁLCULO DE SIMILITUDES EN MEMORIA
-        resultados = []
-        for par in pares_a_comparar:
-            emb_o = embeddings_dict[par["txt_o"]]
-            emb_d = embeddings_dict[par["txt_d"]]
-
-            # CALCULO CORRECTO DEL COSENO ENTRE ORIGEN Y DESTINO
-            similitud_embeddings = float(cosine_similarity([emb_o], [emb_d])[0][0])
-
-            # Cálculo léxico de términos
-            terminos_result = extraer_terminos_clave_avanzado(par["txt_o"], par["txt_d"])
-            similitud_terminos = terminos_result["ponderacion_contextual"]
-
-            # Fusión 60% Semántica Contextual / 40% Coincidencia Léxica
-            similitud_contextual = ((similitud_embeddings * UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_BERT) +
-                                    (similitud_terminos * UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_JACCARD))
-
-            # Umbral de descarte para limpieza de resultados irrelevantes
-            if similitud_contextual < UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA:
-                continue
-
-            resultados.append({
-                "cursoOrigen": {
-                    "idCurso": int(par["orig_obj"].get("idCurso", 0)),
-                    "nombre": str(par["orig_obj"].get("nombre", ""))
-                },
-                "cursoDestino": {
-                    "idCurso": int(par["dest_obj"].get("idCurso", 0)),
-                    "nombre": str(par["dest_obj"].get("nombre", ""))
-                },
-                "resultado_resumido": {
-                    "similitud_global": float(round(similitud_contextual, 4)),
-                    "terminos_comunes": terminos_result["terminos_comunes"]
-                }
-            })
-
-        tiempo_total = float(round(time.perf_counter() - tiempo_inicio, 2))
-        print(f"✅ Lote completado. Tiempo total: {tiempo_total}s | Encontrados: {len(resultados)}")
-
-        # Ordenar resultados de mayor a menor similitud
-        resultados_ordenados = sorted(resultados, key=lambda x: -x["resultado_resumido"]["similitud_global"])
-
-        return jsonify(convert_floats({
-            "status": "success",
-            "tiempo_procesamiento_total_s": tiempo_total,
-            "comparaciones": resultados_ordenados
-        }))
-
-    except Exception as e:
-        print(f"\n❌ Error en busqueda_semantica: {str(e)}")
-        traceback.print_exc()
-        return jsonify(convert_floats({
-            "status": "error",
-            "error_message": str(e),
-            "stack_trace": traceback.format_exc()
-        })), 500
-
 
 @app.route('/comparar_cursos', methods=['POST'])
 def comparar_cursos():
-    """
-    ENDPOINT PARA EVALUACIÓN EXHAUSTIVA DE UNIDADES Y BIBLIOGRAFÍAS
-    Ahora optimizado con Pre-computación Batch para velocidad extrema.
-    """
     try:
         tiempo_inicio = time.perf_counter()
 
+        # Limpieza de cachés
         with cache_lock:
             if len(embedding_cache) > 2000:
                 embedding_cache.clear()
@@ -502,62 +382,13 @@ def comparar_cursos():
         data = request.get_json()
         comparaciones = data.get("comparaciones", [])
 
-        if not comparaciones:
-            return jsonify({"status": "success", "comparaciones": []})
-
-        # =======================================================
-        # 🚀 1. PRE-COMPUTACIÓN BATCH (EL TRUCO MAESTRO)
-        # =======================================================
-        textos_a_preprocesar = set()
-
-        for comp in comparaciones:
-            orig = comp.get("cursoOrigen", {}).get("silabo", {})
-            dest = comp.get("cursoDestino", {}).get("silabo", {})
-
-            # Recolectar Sumillas y Aprendizajes
-            textos_a_preprocesar.add(normalizar_texto(orig.get("sumilla", "")))
-            textos_a_preprocesar.add(normalizar_texto(dest.get("sumilla", "")))
-            textos_a_preprocesar.add(normalizar_texto(orig.get("aprendizaje_general", "")))
-            textos_a_preprocesar.add(normalizar_texto(dest.get("aprendizaje_general", "")))
-
-            # Recolectar Bibliografías combinadas
-            bib_o = " ".join([ref.get("referencia", "") for ref in orig.get("bibliografias", [])])
-            bib_d = " ".join([ref.get("referencia", "") for ref in dest.get("bibliografias", [])])
-            textos_a_preprocesar.add(normalizar_texto(bib_o))
-            textos_a_preprocesar.add(normalizar_texto(bib_d))
-
-            # Recolectar Unidades y temas individuales de Origen
-            for u in orig.get("unidades", []):
-                textos_a_preprocesar.add(normalizar_texto(u.get("titulo", "")))
-                textos_a_preprocesar.add(normalizar_texto(u.get("aprendizajes", "")))
-                textos_a_preprocesar.add(normalizar_texto(u.get("temas", "")))
-                # Extraer temas individuales para la función identificar_temas_comunes
-                for tema in split_pattern.split(u.get("temas", "")):
-                    if tema.strip(): textos_a_preprocesar.add(tema.strip())
-
-            # Recolectar Unidades y temas individuales de Destino
-            for u in dest.get("unidades", []):
-                textos_a_preprocesar.add(normalizar_texto(u.get("titulo", "")))
-                textos_a_preprocesar.add(normalizar_texto(u.get("aprendizajes", "")))
-                textos_a_preprocesar.add(normalizar_texto(u.get("temas", "")))
-                for tema in split_pattern.split(u.get("temas", "")):
-                    if tema.strip(): textos_a_preprocesar.add(tema.strip())
-
-        # Limpiar vacíos
-        textos_a_preprocesar.discard("")
-
-        print(f"\n🧠 Pre-computando lote de {len(textos_a_preprocesar)} fragmentos de texto en BERT...")
-        # ¡Magia! Generamos todos los embeddings de golpe y quedan en la caché
-        obtener_embeddings_batch(list(textos_a_preprocesar))
-
-        # =======================================================
-        # ⚙️ 2. PROCESAMIENTO MATEMÁTICO (Rápido gracias al Caché)
-        # =======================================================
         resultados = []
         tiempo_total_inicio = time.time()
 
         for comparacion in comparaciones:
             tiempo_comparacion_inicio = time.time()
+            print(f"\n🔍 Iniciando comparación de cursos...")
+
             curso_origen = comparacion.get("cursoOrigen", {})
             curso_destino = comparacion.get("cursoDestino", {})
             silabo_origen = curso_origen.get("silabo", {})
@@ -603,8 +434,7 @@ def comparar_cursos():
                     "similitud_aprendizajes": float(similitud_aprendizajes),
                     "similitud_unidades": float(resultado_unidades["similitud_global"]),
                     "similitud_bibliografia": float(similitud_bibliografia),
-                    "porcentaje_emparejamiento_unidades": float(
-                        resultado_unidades["porcentaje_emparejamiento_unidades"])
+                    "porcentaje_emparejamiento_unidades": float(resultado_unidades["porcentaje_emparejamiento_unidades"])
                 },
                 "resultado_detallado": convert_floats({
                     "unidades_emparejadas": [
@@ -624,9 +454,17 @@ def comparar_cursos():
             }
             resultados.append(convert_floats(resultado))
 
+            print(f"\n✅ Comparación completada en {tiempo_comparacion:.2f} ms")
+            print(f"  - Similitud sumilla: {similitud_sumilla:.4f}")
+            print(f"  - Similitud aprendizajes: {similitud_aprendizajes:.4f}")
+            print(f"  - Similitud unidades: {resultado_unidades['similitud_global']:.4f}")
+            print(f"  - Similitud bibliografía: {similitud_bibliografia:.4f}")
+
         tiempo_total = (time.time() - tiempo_total_inicio) * 1000
-        print(f"\n📊 Comparaciones exhaustivas: {len(comparaciones)}")
-        print(f"⏱ Tiempo Total: {tiempo_total:.2f} ms")
+        tiempo_fin = time.perf_counter()
+
+        print(f"\n📊 Comparaciones realizadas: {len(comparaciones)}")
+        print(f"⏱ Tiempo total de procesamiento: {tiempo_total:.2f} ms")
 
         return jsonify(convert_floats({
             "status": "success",
@@ -637,6 +475,7 @@ def comparar_cursos():
     except Exception as e:
         tiempo_fin = time.perf_counter()
         print(f"\n❌ Error en comparar_cursos: {str(e)}")
+        print(f"⏱ Tiempo hasta error: {tiempo_fin - tiempo_inicio:.6f} segundos")
         traceback.print_exc()
 
         return jsonify(convert_floats({
@@ -645,6 +484,155 @@ def comparar_cursos():
             "stack_trace": traceback.format_exc()
         })), 500
 
+
+@app.route('/busqueda_semantica', methods=['POST'])
+def busqueda_semantica():
+    try:
+        tiempo_inicio = time.perf_counter()
+
+        with cache_lock:
+            if len(embedding_cache) > 2000:
+                embedding_cache.clear()
+            if len(text_processing_cache) > 2000:
+                text_processing_cache.clear()
+
+        data = request.get_json()
+        comparaciones = data.get("comparaciones", [])
+
+        resultados = []
+
+        for comparacion in comparaciones:
+            tiempo_comparacion_inicio = time.perf_counter()
+
+            curso_origen = comparacion.get("cursoOrigen", {})
+            curso_destino = comparacion.get("cursoDestino", {})
+            silabo_origen = curso_origen.get("silabo", {})
+            silabo_destino = curso_destino.get("silabo", {})
+
+            texto_origen = f"{curso_origen.get('nombre', '')} {silabo_origen.get('sumilla', '')}"
+            texto_destino = f"{curso_destino.get('nombre', '')} {silabo_destino.get('sumilla', '')}"
+
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future_embeddings = executor.submit(
+                    obtener_embeddings_bert_contextual,
+                    texto_origen,
+                    texto_destino
+                )
+                future_terminos = executor.submit(
+                    extraer_terminos_clave_avanzado,
+                    texto_origen,
+                    texto_destino
+                )
+
+                embeddings_result = future_embeddings.result()
+                terminos_result = future_terminos.result()
+
+            similitud_contextual = calcular_similitud_contextual(
+                embeddings_result,
+                terminos_result
+            )
+
+            if similitud_contextual < 0.6:
+                continue
+
+            tiempo_comparacion = float(round(time.perf_counter() - tiempo_comparacion_inicio, 2))
+
+            resultado = {
+                "cursoOrigen": {
+                    "idCurso": int(curso_origen.get("idCurso", 0)),
+                    "nombre": str(curso_origen.get("nombre", "")),
+                    "sumilla": str(silabo_origen.get("sumilla", ""))
+                },
+                "cursoDestino": {
+                    "idCurso": int(curso_destino.get("idCurso", 0)),
+                    "nombre": str(curso_destino.get("nombre", "")),
+                    "sumilla": str(silabo_destino.get("sumilla", ""))
+                },
+                "resultado_resumido": {
+                    "similitud_global": float(similitud_contextual),
+                    "terminos_comunes": terminos_result.get("terminos_comunes", []),
+                    "contexto_compartido": terminos_result.get("contexto_compartido", []),
+                    "ponderacion_contextual": float(terminos_result.get("ponderacion_contextual", 0.0))
+                },
+                "tiempo_procesamiento_s": float(tiempo_comparacion)
+            }
+            resultados.append(convert_floats(resultado))
+
+        resultados_ordenados = sorted(
+            resultados,
+            key=lambda x: -x["resultado_resumido"]["similitud_global"]
+        )
+
+        tiempo_total = float(round(time.perf_counter() - tiempo_inicio, 2))
+
+        return jsonify(convert_floats({
+            "status": "success",
+            "tiempo_procesamiento_total_s": float(tiempo_total),
+            "comparaciones": resultados_ordenados
+        }))
+    except Exception as e:
+        print(f"\n❌ Error en busqueda_semantica: {str(e)}")
+        traceback.print_exc()
+        return jsonify(convert_floats({
+            "status": "error",
+            "error_message": str(e),
+            "stack_trace": traceback.format_exc()
+        })), 500
+
+def obtener_embeddings_bert_contextual(texto1, texto2):
+    texto_combinado = f"{texto1} [SEP] {texto2}"
+
+    inputs = tokenizer(
+        texto_combinado,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        max_length=512,
+        add_special_tokens=True
+    )
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()[0]
+
+    return {
+        "embeddings": embeddings,
+        "contexto_cruzado": True
+    }
+
+def extraer_terminos_clave_avanzado(texto1, texto2):
+    palabras1 = set(re.findall(r'\w+', texto1.lower()))
+    palabras2 = set(re.findall(r'\w+', texto2.lower()))
+
+    palabras1 = {p for p in palabras1 if p not in stopwords_personalizadas and len(p) > 3}
+    palabras2 = {p for p in palabras2 if p not in stopwords_personalizadas and len(p) > 3}
+
+    terminos_comunes = list(palabras1 & palabras2)
+    ponderacion_contextual = len(terminos_comunes) / max(len(palabras1), len(palabras2))
+
+    return {
+        "terminos_comunes": terminos_comunes[:15],
+        "total_terminos1": len(palabras1),
+        "total_terminos2": len(palabras2),
+        "ponderacion_contextual": float(ponderacion_contextual)
+    }
+
+def calcular_similitud_contextual(embeddings_result, terminos_result):
+    similitud_embeddings = float(cosine_similarity(
+        [embeddings_result["embeddings"]],
+        [embeddings_result["embeddings"]]
+    )[0][0])
+
+    similitud_terminos = terminos_result["ponderacion_contextual"]
+
+    similitud_contextual = (
+            similitud_embeddings * 0.6 +
+            similitud_terminos * 0.4
+    )
+
+    return float(round(similitud_contextual, 2))
 
 @app.route('/status', methods=['GET'])
 def status():
@@ -662,12 +650,11 @@ def status():
         }
     }))
 
-
 tiempo_fin_setup = time.perf_counter()
 tiempo_total_setup = tiempo_fin_setup - tiempo_inicio_script
 
 print(f"\n⏱ Tiempo total de configuración inicial: {tiempo_total_setup:.4f} segundos")
-print("✅ Servicio de Inteligencia Artificial listo para recibir peticiones\n")
+print("✅ Servicio listo para recibir peticiones\n")
 
 if __name__ == '__main__':
     app.run(port=5000, threaded=True)
