@@ -23,19 +23,21 @@ app = Flask(__name__)
 # 📌 CONSTANTES CONFIGURABLES
 # ===============================================
 
-# Pesos para el cálculo de similitud de unidades
+# Pesos
+PESO_SIMILITUD_COMPARACION_SEMANTICA_BERT = 0.80
+PESO_SIMILITUD_COMPARACION_SEMANTICA_JACCARD = 0.20
+
 PESO_TITULO_UNIDAD = 0.10
 PESO_APRENDIZAJE_UNIDAD = 0.20
 PESO_TEMAS_UNIDAD = 0.70
 
-# Umbrales
-UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_BERT = 0.80
-UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_JACCARD = 0.20
-UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA = 0.50
+PESO_SIMILITUD_BUSQUEDA_SEMANTICA_BERT = 0.70
+PESO_SIMILITUD_BUSQUEDA_SEMANTICA_JACCARD = 0.30
 
+# Umbrales
+UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA = 0.50 # Mínima similitud para considerar comparación
 UMBRAL_TEMAS_COMUNES = 0.45  # Mínima similitud para considerar temas comunes
 UMBRAL_EMPAREJAMIENTO_UNIDADES = 0.50  # Mínima similitud para emparejar unidades
-
 
 tiempo_inicio_script = time.perf_counter()
 
@@ -194,8 +196,8 @@ def extraer_terminos_clave_avanzado(texto1, texto2):
     palabras1 = set(re.findall(r'\w+', str(texto1).lower()))
     palabras2 = set(re.findall(r'\w+', str(texto2).lower()))
 
-    palabras1 = {p for p in palabras1 if p not in stopwords_personalizadas and len(p) > 3}
-    palabras2 = {p for p in palabras2 if p not in stopwords_personalizadas and len(p) > 3}
+    palabras1 = {p for p in palabras1 if p not in stopwords_personalizadas and len(p) > 1}
+    palabras2 = {p for p in palabras2 if p not in stopwords_personalizadas and len(p) > 1}
 
     terminos_comunes = list(palabras1 & palabras2)
     ponderacion_contextual = len(terminos_comunes) / max(len(palabras1), len(palabras2)) if max(len(palabras1),
@@ -261,15 +263,66 @@ def identificar_temas_comunes(texto1, texto2, umbral=UMBRAL_TEMAS_COMUNES):
     return temas_comunes
 
 
-def calcular_similitud_seccion(texto1, texto2):
+"""def calcular_similitud_seccion(texto1, texto2):
     if not texto1 or not texto2:
         return 0.0
     texto1_norm, _ = procesar_texto(texto1)
     texto2_norm, _ = procesar_texto(texto2)
     emb1 = obtener_embeddings_bert(texto1_norm)
     emb2 = obtener_embeddings_bert(texto2_norm)
-    return float(calcular_similitud(emb1, emb2))
+    return float(calcular_similitud(emb1, emb2))"""
 
+
+"""def calcular_similitud_seccion(texto1, texto2):
+    if not texto1 or not texto2:
+        return 0.0
+
+    texto1_norm, _ = procesar_texto(texto1)
+    texto2_norm, _ = procesar_texto(texto2)
+
+    # 1. Similitud Semántica (BERT - El contexto)
+    emb1 = obtener_embeddings_bert(texto1_norm)
+    emb2 = obtener_embeddings_bert(texto2_norm)
+    sim_bert = float(calcular_similitud(emb1, emb2))
+
+    # 2. Similitud Léxica (Jaccard - Palabras clave exactas)
+    terminos_result = extraer_terminos_clave_avanzado(texto1_norm, texto2_norm)
+    sim_jaccard = float(terminos_result["ponderacion_contextual"])
+
+    # 3. Fusión Híbrida Estricta (Usa tus pesos de 50/50)
+    sim_final = (sim_bert * PESO_SIMILITUD_COMPARACION_SEMANTICA_BERT) + (
+                sim_jaccard * PESO_SIMILITUD_COMPARACION_SEMANTICA_JACCARD)
+
+    return float(sim_final)"""
+
+
+def calcular_similitud_seccion(texto1, texto2):
+    if not texto1 or not texto2:
+        return 0.0
+
+    texto1_norm, _ = procesar_texto(texto1)
+    texto2_norm, _ = procesar_texto(texto2)
+
+    # 1. Similitud Semántica (BERT - Entiende sinónimos y contexto)
+    emb1 = obtener_embeddings_bert(texto1_norm)
+    emb2 = obtener_embeddings_bert(texto2_norm)
+    sim_bert = float(calcular_similitud(emb1, emb2))
+
+    # 2. Similitud Léxica (Jaccard - Solo palabras exactas)
+    terminos_result = extraer_terminos_clave_avanzado(texto1_norm, texto2_norm)
+    sim_jaccard = float(terminos_result["ponderacion_contextual"])
+
+    # 3. COMPUERTA LÉXICA (Penalización inteligente)
+    # Si BERT dice que hay similitud, pero NO comparten vocabulario técnico (Jaccard casi nulo):
+    if sim_bert > 0.40 and sim_jaccard < 0.03:
+        # Castigo: reducimos la confianza de BERT
+        sim_final = sim_bert * 0.50
+    else:
+        # Cálculo normal usando tus constantes configurables
+        sim_final = (sim_bert * PESO_SIMILITUD_COMPARACION_SEMANTICA_BERT) + (
+                    sim_jaccard * PESO_SIMILITUD_COMPARACION_SEMANTICA_JACCARD)
+
+    return float(min(sim_final, 1.0))
 
 def comparar_unidades(unidad_origen, unidad_destino):
     titulo_origen = unidad_origen.get("titulo", "")
@@ -440,8 +493,8 @@ def busqueda_semantica():
             similitud_terminos = terminos_result["ponderacion_contextual"]
 
             # Fusión 60% Semántica Contextual / 40% Coincidencia Léxica
-            similitud_contextual = ((similitud_embeddings * UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_BERT) +
-                                    (similitud_terminos * UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA_JACCARD))
+            similitud_contextual = ((similitud_embeddings * PESO_SIMILITUD_BUSQUEDA_SEMANTICA_BERT) +
+                                    (similitud_terminos * PESO_SIMILITUD_BUSQUEDA_SEMANTICA_JACCARD))
 
             # Umbral de descarte para limpieza de resultados irrelevantes
             if similitud_contextual < UMBRAL_SIMILITUD_BUSQUEDA_SEMANTICA:
